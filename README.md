@@ -2,7 +2,7 @@
   <img src="https://github.com/muhammad-fiaz/portfolio/assets/75434191/44252d99-9dff-4e5f-9bec-819e3fca7fb3"  alt="Hussein Bouik's Portfolio"/>
 </p>
 <div align="center">
-  <h1><a href="https://muhammadfiaz.com/">muhammadfiaz.com</a> | portfolio</h1>
+  <h1><a href="https://husseinbouik.tech/">husseinbouik.tech</a> | portfolio</h1>
   
 ![Stability](https://img.shields.io/badge/stability-good-blue.svg) ![MIT License](https://img.shields.io/badge/license-MIT-green)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/muhammad-fiaz/portfolio)
@@ -28,7 +28,7 @@
 
 </div>
 
-This project is built with Next.js and React, showcasing [Hussein Bouik](https://github.com/muhammad-fiaz/)'s [personal website](https://muhammadfiaz.com/).
+This project is built with Next.js and React, showcasing [Hussein Bouik](https://github.com/muhammad-fiaz/)'s [personal website](https://husseinbouik.tech/).
 
 **Feel free to use this project for your own portfolio or as a reference for your projects. If you find it helpful, don't forget to give it a ⭐️ to show your support. [Fork this repo](https://github.com/muhammad-fiaz/portfolio/fork) if you want to contribute✨**
 

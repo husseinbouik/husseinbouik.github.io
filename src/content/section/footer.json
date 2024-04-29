@@ -1,13 +1,13 @@
 {
 	"Websites": [
 		{
-			"person": "muhammadfiaz.com",
-			"link": "https://muhammadfiaz.com/",
+			"person": "husseinbouik.tech",
+			"link": "https://husseinbouik.tech/",
 			"note": ""
 		},
 		{
-			"person": "articles.muhammadfiaz.com",
-			"link": "https://articles.muhammadfiaz.com/",
+			"person": "articles.husseinbouik.tech",
+			"link": "https://articles.husseinbouik.tech/",
 			"note": ""
 		}
 
@@ -16,27 +16,27 @@
 	"links": [
 		{
 			"person": "Home",
-			"link": "https://muhammadfiaz.com/",
+			"link": "https://husseinbouik.tech/",
 			"note": ""
 		},
 		{ 
 			"person": "Documentations",
-			"link": "https://muhammadfiaz.com/docs",
+			"link": "https://husseinbouik.tech/docs",
 			"note": ""
 		},	{
 			"person": "Articles",
-			"link": "https://muhammadfiaz.com/articles",
+			"link": "https://husseinbouik.tech/articles",
 			"note": ""
 		},
 
 		{
 			"person": "Projects",
-			"link": "https://muhammadfiaz.com/projects",
+			"link": "https://husseinbouik.tech/projects",
 			"note": ""
 		},
 		{
 			"person": "Contact",
-			"link": "mailto:contact@muhammadfiaz.com",
+			"link": "mailto:contact@husseinbouik.tech",
 			"note": ""
 		}
 
