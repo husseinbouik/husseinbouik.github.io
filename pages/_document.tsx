@@ -73,7 +73,7 @@ export default function Document() {
                 <meta property="og:image:alt" content="Hussein Bouik"/>
                 <meta property="og:image:width" content="300"/>
                 <meta property="og:image:height" content="300"/>
-                <meta property="og:url" content="https://husseinbouik.tech"/>
+                <meta property="og:url" content="https://www.husseinbouik.tech"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:profile" content="https://github.com/husseinouik"/>
                 <meta property="og:site_name" content="Hussein Bouik"/>
