@@ -106,11 +106,11 @@
 	"version": "1.0.7",
 	"description": "Open source portfolio website built with Next.js amd TypeScript.",
 	"main": "pages/index.tsx",
-	"repository": "https://github.com/hussein-fiaz/portfolio.git",
-	"homepage": "https://github.com/hussein-fiaz/portfolio#readme",
+	"repository": "https://github.com/muhammad-fiaz/portfolio.git",
+	"homepage": "https://github.com/muhammad-fiaz/portfolio#readme",
 	"bugs": {
-		"url": "https://github.com/hussein-fiaz/portfolio/issues/new"
+		"url": "https://github.com/muhammad-fiaz/portfolio/issues/new"
 	},
-	"author": "hussein-fiaz <contact@husseinfiaz.com>",
+	"author": "muhammad-fiaz <contact@muhammadfiaz.com>",
 	"license": "MIT"
 }

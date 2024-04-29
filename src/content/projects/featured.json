@@ -1,7 +1,7 @@
 [
 	{
 		"project": "Logly",
-		"url": "https://github.com/hussein-fiaz/logly",
+		"url": "https://github.com/muhammad-fiaz/logly",
 		"repo": "Public",
 		"descriptionTitle": "logly is a log management package",
 		"description": "that aims to provide various log management features such as auto logging and customize the log with color and tags and disable specific log levels ease and more",
@@ -18,8 +18,8 @@
 
 	},
 	{
-		"project": "husseinfiaz.com",
-		"url": "https://github.com/hussein-fiaz/portfolio",
+		"project": "muhammadfiaz.com",
+		"url": "https://github.com/muhammad-fiaz/portfolio",
 		"repo": "Public",
 		"descriptionTitle": "An open-source portfolio website",
 		"description": "built on Next.js and React. A fast and responsive single page application.",
