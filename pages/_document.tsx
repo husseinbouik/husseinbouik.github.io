@@ -34,17 +34,17 @@ export default function Document() {
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
                 <meta name="language" content="English"/>
                 <meta name="revisit-after" content="1 days"/>
-                <link rel="canonical" href="https://muhammadfiaz.com"/>
+                <link rel="canonical" href="https://husseinbouik.tech"/>
                 <meta name="license" content="MIT License"/>
                 <meta httpEquiv="content-language" content="en-us"/>
 
-                <link rel="preconnect" href="https://muhammadfiaz.com"/>
+                <link rel="preconnect" href="https://husseinbouik.tech"/>
 
-                <link rel="dns-prefetch" href="https://muhammadfiaz.com"/>
+                <link rel="dns-prefetch" href="https://husseinbouik.tech"/>
 
                 <meta name="author" content="Hussein Bouik"/>
 
-                <link rel="alternate" hrefLang="en" href="https://muhammadfiaz.com"/>
+                <link rel="alternate" hrefLang="en" href="https://husseinbouik.tech"/>
 
                 <meta name="robots" content="index, follow"/>
                 <meta name="googlebot" content="index, follow"/>
@@ -67,27 +67,27 @@ export default function Document() {
                 <meta property="og:title" content="Hussein Bouik" key="title"/>
                 <meta property="og:description"
                       content="Hussein Bouik - A dedicated Full Stack Developer proficient in App/Web, Cloud, DevOps, AI/ML, and Design. Join my journey."/>
-                <meta property="og:image" content="https://avatars.githubusercontent.com/u/75434191?v=4"/>
-                <meta property="og:image:secure_url" content="https://avatars.githubusercontent.com/u/75434191?v=4"/>
+                <meta property="og:image" content="https://raw.githubusercontent.com/husseinbouik/images/main/elbacha-hussein.jpg"/>
+                <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/husseinbouik/images/main/elbacha-hussein.jpg"/>
                 <meta property="og:image:type" content="image/jpeg"/>
                 <meta property="og:image:alt" content="Hussein Bouik"/>
                 <meta property="og:image:width" content="300"/>
                 <meta property="og:image:height" content="300"/>
-                <meta property="og:url" content="https://muhammadfiaz.com"/>
+                <meta property="og:url" content="https://husseinbouik.tech"/>
                 <meta property="og:type" content="website"/>
-                <meta property="og:profile" content="https://github.com/muhammad-fiaz"/>
+                <meta property="og:profile" content="https://github.com/husseinouik"/>
                 <meta property="og:site_name" content="Hussein Bouik"/>
                 <meta property="og:locale" content="en_US"/>
 
 
                 <meta name="twitter:card" content="summary"/>
-                <meta name="twitter:site" content="https://twitter.com/muhammadfiaz_"/>
+                <meta name="twitter:site" content="https://twitter.com/"/>
                 <meta name="twitter:title" content="Hussein Bouik"/>
                 <meta name="twitter:description"
                       content="Hussein Bouik - A dedicated Full Stack Developer proficient in App/Web, Cloud, DevOps, AI/ML, and Design. Join my journey."/>
-                <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/75434191?v=4"/>
+                <meta name="twitter:image" content="https://raw.githubusercontent.com/husseinbouik/images/main/elbacha-hussein.jpg"/>
                 <meta name="twitter:creator" content="https://twitter.com/muhammadfiaz_"/>
-                <meta name="twitter:domain" content="https://muhammadfiaz.com"/>
+                <meta name="twitter:domain" content="https://husseinbouik.tech"/>
 
 
                 <link rel='apple-touch-startup-image' href='/img/logo_rounded.png' sizes='2048x2732'/>
@@ -149,7 +149,7 @@ export default function Document() {
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Hussein Bouik",
-          "url": "https://muhammadfiaz.com",
+          "url": "https://husseinbouik.tech",
           "sameAs": [
             "https://github.com/muhammad-fiaz",
             "https://www.linkedin.com/in/muhammad-fiaz-",
@@ -224,27 +224,27 @@ export default function Document() {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://muhammadfiaz.com/"
+              "item": "https://husseinbouik.tech/"
             },{
               "@type": "ListItem",
               "position": 2,
               "name": "Docs",
-              "item": "https://muhammadfiaz.com/docs"
+              "item": "https://husseinbouik.tech/docs"
             },{
               "@type": "ListItem",
               "position": 3,
               "name": "Articles",
-              "item": "https://muhammadfiaz.com/articles"
+              "item": "https://husseinbouik.tech/articles"
             },{
               "@type": "ListItem",
               "position": 4,
               "name": "Projects",
-              "item": "https://muhammadfiaz.com/projects"
+              "item": "https://husseinbouik.tech/projects"
             },{
               "@type": "ListItem",
               "position": 5,
               "name": "Sign In",
-              "item": "https://muhammadfiaz.com/signin"
+              "item": "https://husseinbouik.tech/signin"
             }]
           }
         `
