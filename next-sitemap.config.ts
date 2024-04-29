@@ -1,4 +1,4 @@
-const siteUrl = 'https://husseinfiaz.com'; // Replace with your website's URL
+const siteUrl = 'https://husseinbouik.com'; // Replace with your website's URL
 
 module.exports = {
     siteUrl: siteUrl,

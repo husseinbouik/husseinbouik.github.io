@@ -7,18 +7,18 @@
 	"version": "1.0.6",
 
 	"username": {
-		"github": "hussein-fiaz",
-		"medium": "@hussein-fiaz",
-		"dev": "husseinfiaz"
+		"github": "husseinbouik",
+		"medium": "@husseinbouik",
+		"dev": "husseinbouik"
 	},
 	"repository": {
-		"owner": "hussein-fiaz",
+		"owner": "husseinbouik",
 		"name": "portfolio",
 		"repoName": "portfolio"
 	},
 	"portfolio": {
 		"fork_this": "Open-Source project 🥰",
-		"repo_html": "https://github.com/hussein-fiaz/portfolio.git",
-		"repo_api": "https://api.github.com/repos/hussein-fiaz/portfolio"
+		"repo_html": "https://github.com/husseinbouik/portfolio.git",
+		"repo_api": "https://api.github.com/repos/husseinbouik/portfolio"
 	}
 }

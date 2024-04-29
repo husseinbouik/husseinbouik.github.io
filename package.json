@@ -33,8 +33,8 @@
 		"babel-plugin-macros": "^3.1.0",
 		"compression-webpack-plugin": "^11.1.0",
 		"devicon": "^2.16.0",
-		"fiaz": "latest",
-		"fiazjs": "latest",
+		"bouik": "latest",
+		"bouikjs": "latest",
 		"framer-motion": "^11.1.7",
 		"js-cookie": "^3.0.5",
 		"neurolinkjs": "latest",
@@ -106,11 +106,11 @@
 	"version": "1.0.7",
 	"description": "Open source portfolio website built with Next.js amd TypeScript.",
 	"main": "pages/index.tsx",
-	"repository": "https://github.com/hussein-fiaz/portfolio.git",
-	"homepage": "https://github.com/hussein-fiaz/portfolio#readme",
+	"repository": "https://github.com/husseinbouik/portfolio.git",
+	"homepage": "https://github.com/husseinbouik/portfolio#readme",
 	"bugs": {
-		"url": "https://github.com/hussein-fiaz/portfolio/issues/new"
+		"url": "https://github.com/husseinbouik/portfolio/issues/new"
 	},
-	"author": "hussein-fiaz <contact@husseinfiaz.com>",
+	"author": "husseinbouik <contact@husseinbouik.com>",
 	"license": "MIT"
 }

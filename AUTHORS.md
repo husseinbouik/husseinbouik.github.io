@@ -1,3 +1,3 @@
 # Authors
 
-- Hussein Bouik ([GitHub](https://github.com/hussein-fiaz))
+- Hussein Bouik ([GitHub](https://github.com/husseinbouik))

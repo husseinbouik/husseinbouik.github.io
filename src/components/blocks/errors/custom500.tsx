@@ -48,7 +48,7 @@ function Custom500() {
                 </p>
                 <p style={{ fontSize: '14px' }}>
                     If you think this issues or bugs, please report them{' '}
-                    <a href="https://github.com/hussein-fiaz/portfolio/issues/new">@hussein-fiaz</a>
+                    <a href="https://github.com/husseinbouik/portfolio/issues/new">@husseinbouik</a>
                 </p>
                 <button className="go-back-button404" onClick={handlerefresh}>
                     Refresh Page

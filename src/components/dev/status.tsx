@@ -114,14 +114,14 @@ const DevelopmentNotice: React.FC = () => {
                             style={{ marginBottom: '20px', width: '300px', height: '300px' }}
                         />
                     )}
-                    {hideContent ? null : (
+                    {/* {hideContent ? null : (
                         <>
                             <p style={{ fontSize: '18px', marginBottom: '20px' }}>
                                 Thank you for visiting my portfolio!👻
                             </p>
                             <p style={{ fontSize: '14px', marginBottom: '30px' }}>
                                 If you encounter any issues or bugs, please report them{' '}
-                                <a href="https://github.com/hussein-fiaz/portfolio/issues/new">@hussein-fiaz</a>
+                                <a href="https://github.com/husseinbouik/portfolio/issues/new">@husseinbouik</a>
                             </p>
                             {!isVerified ? (
                                 <>
@@ -137,11 +137,11 @@ const DevelopmentNotice: React.FC = () => {
                                 </>
                             ) : null}
                         </>
-                    )}
+                    )} */}
                     {WelMsg && (
                         <div>
                             <h2 style={{ fontSize: '32px', marginBottom: '20px'}}>
-                                <span dangerouslySetInnerHTML={{ __html: WelMsg.replace('Github', '<a href="https://github.com/hussein-fiaz" target="_blank" rel="noopener noreferrer" style="color: #3498db;">Github</a>') }} />
+                                <span dangerouslySetInnerHTML={{ __html: WelMsg.replace('Github', '<a href="https://github.com/husseinbouik" target="_blank" rel="noopener noreferrer" style="color: #3498db;">Github</a>') }} />
                             </h2>
                             {timerRemaining !== null && (
                                 <p style={{ fontSize: '16px', marginBottom: '10px', color: 'linear-gradient(to right, #3498db, #2ecc71)' }}>
@@ -188,7 +188,7 @@ const DevelopmentNotice: React.FC = () => {
                             Current Version:{' '}
                             {versionDetails ? (
                                 <a
-                                    href={`https://github.com/hussein-fiaz/portfolio/releases/tag/v${versionDetails.currentVersion}`}
+                                    href={`https://github.com/husseinbouik/portfolio/releases/tag/v${versionDetails.currentVersion}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

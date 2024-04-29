@@ -11,16 +11,16 @@ The pages within this folder define the content and functionality of your portfo
 
 Feel free to customize, extend, or create new pages to tailor your portfolio to your specific needs. You can also integrate components and assets from other folders within your project to build rich and engaging web pages.
 
-Make Sure to [Fork](https://github.com/hussein-fiaz/portfolio/fork) This Repository to your GitHub Account and [Star⭐ it](https://github.com/hussein-fiaz/portfolio/stargazers).
+Make Sure to [Fork](https://github.com/husseinbouik/portfolio/fork) This Repository to your GitHub Account and [Star⭐ it](https://github.com/husseinbouik/portfolio/stargazers).
 
 ## Support Me
 
 If you find this project helpful and enjoy my work, consider supporting me:
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-orange?logo=buy-me-a-coffee&s=20)](https://www.buymeacoffee.com/husseinfiaz)
-[![Patreon](https://img.shields.io/badge/Patreon-Support-red?logo=patreon&s=20)](https://www.patreon.com/hussein_fiaz)
-<a href="https://ko-fi.com/husseinfiaz"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Ko-fi" height="20"></a>
-[![Sponsor hussein-fiaz](https://img.shields.io/badge/Sponsor-hussein--fiaz-brightgreen?logo=github)](https://github.com/sponsors/hussein-fiaz)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-orange?logo=buy-me-a-coffee&s=20)](https://www.buymeacoffee.com/husseinbouik)
+[![Patreon](https://img.shields.io/badge/Patreon-Support-red?logo=patreon&s=20)](https://www.patreon.com/hussein_bouik)
+<a href="https://ko-fi.com/husseinbouik"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Ko-fi" height="20"></a>
+[![Sponsor husseinbouik](https://img.shields.io/badge/Sponsor-hussein-bouik-brightgreen?logo=github)](https://github.com/sponsors/husseinbouik)
 
 ## License
 
