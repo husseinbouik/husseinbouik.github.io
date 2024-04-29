@@ -1,13 +1,13 @@
 {
 	"Websites": [
 		{
-			"person": "muhammadfiaz.com",
-			"link": "https://muhammadfiaz.com/",
+			"person": "husseinfiaz.com",
+			"link": "https://husseinfiaz.com/",
 			"note": ""
 		},
 		{
-			"person": "articles.muhammadfiaz.com",
-			"link": "https://articles.muhammadfiaz.com/",
+			"person": "articles.husseinfiaz.com",
+			"link": "https://articles.husseinfiaz.com/",
 			"note": ""
 		}
 
@@ -16,27 +16,27 @@
 	"links": [
 		{
 			"person": "Home",
-			"link": "https://muhammadfiaz.com/",
+			"link": "https://husseinfiaz.com/",
 			"note": ""
 		},
 		{ 
 			"person": "Documentations",
-			"link": "https://muhammadfiaz.com/docs",
+			"link": "https://husseinfiaz.com/docs",
 			"note": ""
 		},	{
 			"person": "Articles",
-			"link": "https://muhammadfiaz.com/articles",
+			"link": "https://husseinfiaz.com/articles",
 			"note": ""
 		},
 
 		{
 			"person": "Projects",
-			"link": "https://muhammadfiaz.com/projects",
+			"link": "https://husseinfiaz.com/projects",
 			"note": ""
 		},
 		{
 			"person": "Contact",
-			"link": "mailto:contact@muhammadfiaz.com",
+			"link": "mailto:contact@husseinfiaz.com",
 			"note": ""
 		}
 
@@ -45,19 +45,19 @@
 
 	"social": [
 		{
-			"url": "https://medium.com/@muhammad-fiaz",
+			"url": "https://medium.com/@hussein-fiaz",
 			"icon": "medium"
 		},
 		{
-			"url": "https://dev.to/muhammadfiaz",
+			"url": "https://dev.to/husseinfiaz",
 			"icon": "dev"
 		},
 		{
-			"url": "https://www.linkedin.com/in/muhammad-fiaz-/",
+			"url": "https://www.linkedin.com/in/hussein-fiaz-/",
 			"icon": "linkedin"
 		},
 		{
-			"url": "https://github.com/muhammad-fiaz",
+			"url": "https://github.com/hussein-fiaz",
 			"icon": "github"
 		}
 	]

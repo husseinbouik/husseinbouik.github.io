@@ -43,7 +43,7 @@ export default function GithubGraphSection() {
                             >
                                 <GitHubCalendar
                                     key={`${year}-calendar`}
-                                    username="muhammad-fiaz"
+                                    username="hussein-fiaz"
                                     year={year}
                                     colorScheme="dark"
                                 />
