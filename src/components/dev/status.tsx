@@ -114,7 +114,7 @@ const DevelopmentNotice: React.FC = () => {
                             style={{ marginBottom: '20px', width: '300px', height: '300px' }}
                         />
                     )}
-                    {hideContent ? null : (
+                    {/* {hideContent ? null : (
                         <>
                             <p style={{ fontSize: '18px', marginBottom: '20px' }}>
                                 Thank you for visiting my portfolio!👻
@@ -137,7 +137,7 @@ const DevelopmentNotice: React.FC = () => {
                                 </>
                             ) : null}
                         </>
-                    )}
+                    )} */}
                     {WelMsg && (
                         <div>
                             <h2 style={{ fontSize: '32px', marginBottom: '20px'}}>
