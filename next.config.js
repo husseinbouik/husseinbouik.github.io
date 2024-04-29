@@ -75,6 +75,11 @@ Don't remove these this uses the protocol that are need to function properly
 				hostname: 'github.com',
 				pathname: '/muhammad-fiaz/portfolio/**',
 			},
+			{
+				protocol: 'https',
+				hostname: 'i.postimg.cc',
+				pathname: '/**',
+			}
 
 		],
 	},
