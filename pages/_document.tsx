@@ -11,7 +11,7 @@ export default function Document() {
             <Head>
                 {/*
 				Author: Hussein Bouik
-                 GitHub: Visit the GitHub repository at https://github.com/husseinbouik/portfolio/ for more details.
+                 GitHub: Visit the GitHub repository at https://github.com/hussein-fiaz/portfolio/ for more details.
                  license: MIT License
                   */}
                 <meta charSet="utf-8"/>
@@ -34,17 +34,17 @@ export default function Document() {
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
                 <meta name="language" content="English"/>
                 <meta name="revisit-after" content="1 days"/>
-                <link rel="canonical" href="https://husseinbouik.com"/>
+                <link rel="canonical" href="https://husseinfiaz.com"/>
                 <meta name="license" content="MIT License"/>
                 <meta httpEquiv="content-language" content="en-us"/>
 
-                <link rel="preconnect" href="https://husseinbouik.com"/>
+                <link rel="preconnect" href="https://husseinfiaz.com"/>
 
-                <link rel="dns-prefetch" href="https://husseinbouik.com"/>
+                <link rel="dns-prefetch" href="https://husseinfiaz.com"/>
 
                 <meta name="author" content="Hussein Bouik"/>
 
-                <link rel="alternate" hrefLang="en" href="https://husseinbouik.com"/>
+                <link rel="alternate" hrefLang="en" href="https://husseinfiaz.com"/>
 
                 <meta name="robots" content="index, follow"/>
                 <meta name="googlebot" content="index, follow"/>
@@ -73,21 +73,21 @@ export default function Document() {
                 <meta property="og:image:alt" content="Hussein Bouik"/>
                 <meta property="og:image:width" content="300"/>
                 <meta property="og:image:height" content="300"/>
-                <meta property="og:url" content="https://husseinbouik.com"/>
+                <meta property="og:url" content="https://husseinfiaz.com"/>
                 <meta property="og:type" content="website"/>
-                <meta property="og:profile" content="https://github.com/husseinbouik"/>
+                <meta property="og:profile" content="https://github.com/hussein-fiaz"/>
                 <meta property="og:site_name" content="Hussein Bouik"/>
                 <meta property="og:locale" content="en_US"/>
 
 
                 <meta name="twitter:card" content="summary"/>
-                <meta name="twitter:site" content="https://twitter.com/husseinbouik_"/>
+                <meta name="twitter:site" content="https://twitter.com/husseinfiaz_"/>
                 <meta name="twitter:title" content="Hussein Bouik"/>
                 <meta name="twitter:description"
                       content="Hussein Bouik - A dedicated Full Stack Developer proficient in App/Web, Cloud, DevOps, AI/ML, and Design. Join my journey."/>
                 <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/75434191?v=4"/>
-                <meta name="twitter:creator" content="https://twitter.com/husseinbouik_"/>
-                <meta name="twitter:domain" content="https://husseinbouik.com"/>
+                <meta name="twitter:creator" content="https://twitter.com/husseinfiaz_"/>
+                <meta name="twitter:domain" content="https://husseinfiaz.com"/>
 
 
                 <link rel='apple-touch-startup-image' href='/img/logo_rounded.png' sizes='2048x2732'/>
@@ -121,10 +121,10 @@ export default function Document() {
     Hussein Bouik Software Development Portfolio, Hussein Bouik Technology Projects,
     Hussein Bouik Computer Science, Hussein Bouik Cloud Computing, Hussein Bouik IT Professional,
     Hussein Bouik Technology Enthusiast, Hussein Bouik Computer Programmer, Hussein Bouik Code Portfolio,
-    Hussein Bouik Technology Student, Hussein Bouik Software Architect,bouik,bouik portfolio,bouik devops,bouik devops engineer,
-    bouik devops portfolio,bouik devops projects,bouik devops specialist,bouik devops professional,bouik devops engineer portfolio,
-    bouik devops engineer projects,bouik devops engineer specialist,bouik devops engineer professional,bouik devops engineer coding,
-    bouik devops engineer coding projects,bouik devops engineer coding portfolio,bouik devops engineer coding specialist,
+    Hussein Bouik Technology Student, Hussein Bouik Software Architect,fiaz,fiaz portfolio,fiaz devops,fiaz devops engineer,
+    fiaz devops portfolio,fiaz devops projects,fiaz devops specialist,fiaz devops professional,fiaz devops engineer portfolio,
+    fiaz devops engineer projects,fiaz devops engineer specialist,fiaz devops engineer professional,fiaz devops engineer coding,
+    fiaz devops engineer coding projects,fiaz devops engineer coding portfolio,fiaz devops engineer coding specialist,
     Open Source Contributor,open source,open source projects,open source portfolio,open source contributions,
     open source contributions portfolio,open source contributions projects,open source contributions coding,
     open source contributions coding projects,open source contributions coding portfolio,open source contributions coding specialist,
@@ -149,13 +149,13 @@ export default function Document() {
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Hussein Bouik",
-          "url": "https://husseinbouik.com",
+          "url": "https://husseinfiaz.com",
           "sameAs": [
-            "https://github.com/husseinbouik",
-            "https://www.linkedin.com/in/husseinbouik-",
-            "https://medium.com/@husseinbouik",
-            "https://twitter.com/husseinbouik_",
-            "https://dev.to/husseinbouik"
+            "https://github.com/hussein-fiaz",
+            "https://www.linkedin.com/in/hussein-fiaz-",
+            "https://medium.com/@hussein-fiaz",
+            "https://twitter.com/husseinfiaz_",
+            "https://dev.to/husseinfiaz"
           ]
         }`
                     }}
@@ -224,27 +224,27 @@ export default function Document() {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://husseinbouik.com/"
+              "item": "https://husseinfiaz.com/"
             },{
               "@type": "ListItem",
               "position": 2,
               "name": "Docs",
-              "item": "https://husseinbouik.com/docs"
+              "item": "https://husseinfiaz.com/docs"
             },{
               "@type": "ListItem",
               "position": 3,
               "name": "Articles",
-              "item": "https://husseinbouik.com/articles"
+              "item": "https://husseinfiaz.com/articles"
             },{
               "@type": "ListItem",
               "position": 4,
               "name": "Projects",
-              "item": "https://husseinbouik.com/projects"
+              "item": "https://husseinfiaz.com/projects"
             },{
               "@type": "ListItem",
               "position": 5,
               "name": "Sign In",
-              "item": "https://husseinbouik.com/signin"
+              "item": "https://husseinfiaz.com/signin"
             }]
           }
         `
@@ -259,10 +259,10 @@ export default function Document() {
             "name": "NeuroLink",
             "description": "NeuroLink is a Python package that aims to provide various AI capabilities, including a chatbot, image processing, audio processing, Django support, and more. It utilizes TensorFlow and other related technologies for natural language processing and AI tasks.",
             "alternateName": "neurolink",
-            "url": "https://github.com/husseinbouik/neurolink",
+            "url": "https://github.com/hussein-fiaz/neurolink",
             "logo": "https://private-user-images.githubusercontent.com/75434191/242214243-82fbf702-43e2-46e6-8e01-11758fa26310.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE2OTQ4NTE2ODksIm5iZiI6MTY5NDg1MTM4OSwicGF0aCI6Ii83NTQzNDE5MS8yNDIyMTQyNDMtODJmYmY3MDItNDNlMi00NmU2LThlMDEtMTE3NThmYTI2MzEwLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzA5MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMwOTE2VDA4MDMwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ3NjJmNzA5MGU5NWY4NTUxZTcxYmVmNzNlZTYzOTViN2FjNzE1YTM2MjM1OTNlOGIxNzk0ODE1NDczMDMzNGEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ay5bRLRoojQ33ZJLFnvjyq6Dq4qZfDY7quvv4WmgRLI",
              "sameAs": [
-            "https://www.linkedin.com/in/husseinbouik-/"
+            "https://www.linkedin.com/in/hussein-fiaz-/"
         ]          }
         `
                 }}/>

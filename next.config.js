@@ -43,7 +43,7 @@ Don't remove these this uses the protocol that are need to function properly
 			{
 				protocol: 'https',
 				hostname: '**.vercel.app',
-				pathname: '?app=husseinbouik-com-git-main-husseinbouik.vercel.app'
+				pathname: '?app=husseinfiaz-com-git-main-husseinfiaz.vercel.app'
 			},
 			{
 				protocol: 'https',
@@ -73,7 +73,7 @@ Don't remove these this uses the protocol that are need to function properly
 			{
 				protocol: 'https',
 				hostname: 'github.com',
-				pathname: '/husseinbouik/portfolio/**',
+				pathname: '/hussein-fiaz/portfolio/**',
 			},
 
 		],

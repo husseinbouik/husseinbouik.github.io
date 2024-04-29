@@ -1,8 +1,8 @@
 [
   {
-    "title": "husseinbouik.com",
+    "title": "husseinfiaz.com",
     "pubDate": "2023-07-05",
-    "link": "https://github.com/husseinbouik/portfolio#readme",
+    "link": "https://github.com/hussein-fiaz/portfolio#readme",
     "author": "Hussein Bouik",
     "thumbnail": "/img/jobs.png",
     "categories": ["Portfolio", "Website", "Blog","personal"]
@@ -10,7 +10,7 @@
   {
     "title": "logly",
     "pubDate": "2023-12-29",
-    "link": "https://github.com/husseinbouik/logly#readme",
+    "link": "https://github.com/hussein-fiaz/logly#readme",
     "author": "Hussein Bouik",
     "thumbnail": "/img/logly.png",
     "categories": ["Python","logging"]

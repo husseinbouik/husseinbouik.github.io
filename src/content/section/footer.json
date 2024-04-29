@@ -1,13 +1,13 @@
 {
 	"Websites": [
 		{
-			"person": "husseinbouik.com",
-			"link": "https://husseinbouik.com/",
+			"person": "husseinfiaz.com",
+			"link": "https://husseinfiaz.com/",
 			"note": ""
 		},
 		{
-			"person": "articles.husseinbouik.com",
-			"link": "https://articles.husseinbouik.com/",
+			"person": "articles.husseinfiaz.com",
+			"link": "https://articles.husseinfiaz.com/",
 			"note": ""
 		}
 
@@ -16,27 +16,27 @@
 	"links": [
 		{
 			"person": "Home",
-			"link": "https://husseinbouik.com/",
+			"link": "https://husseinfiaz.com/",
 			"note": ""
 		},
 		{ 
 			"person": "Documentations",
-			"link": "https://husseinbouik.com/docs",
+			"link": "https://husseinfiaz.com/docs",
 			"note": ""
 		},	{
 			"person": "Articles",
-			"link": "https://husseinbouik.com/articles",
+			"link": "https://husseinfiaz.com/articles",
 			"note": ""
 		},
 
 		{
 			"person": "Projects",
-			"link": "https://husseinbouik.com/projects",
+			"link": "https://husseinfiaz.com/projects",
 			"note": ""
 		},
 		{
 			"person": "Contact",
-			"link": "mailto:contact@husseinbouik.com",
+			"link": "mailto:contact@husseinfiaz.com",
 			"note": ""
 		}
 
@@ -45,19 +45,19 @@
 
 	"social": [
 		{
-			"url": "https://medium.com/@husseinbouik",
+			"url": "https://medium.com/@hussein-fiaz",
 			"icon": "medium"
 		},
 		{
-			"url": "https://dev.to/husseinbouik",
+			"url": "https://dev.to/husseinfiaz",
 			"icon": "dev"
 		},
 		{
-			"url": "https://www.linkedin.com/in/husseinbouik-/",
+			"url": "https://www.linkedin.com/in/hussein-fiaz-/",
 			"icon": "linkedin"
 		},
 		{
-			"url": "https://github.com/husseinbouik",
+			"url": "https://github.com/hussein-fiaz",
 			"icon": "github"
 		}
 	]

@@ -3,9 +3,9 @@ User-agent: *
 Allow: *
 
 # Host
-Host: https://husseinbouik.com
-Host: https://www.husseinbouik.com
+Host: https://husseinfiaz.com
+Host: https://www.husseinfiaz.com
 
 # Sitemaps
-Sitemap: https://husseinbouik.com/sitemap.xml
-Sitemap: https://husseinbouik.com/sitemap-0.xml
+Sitemap: https://husseinfiaz.com/sitemap.xml
+Sitemap: https://husseinfiaz.com/sitemap-0.xml
