@@ -1,16 +1,20 @@
-// Sections
-import GitRecentProjects from '../../components/sections/projects/recent'
-import FeaturedProjects from '../../components/sections/projects/featured'
 
-import Color  from '../../components/utils/page.colors.util'
 
-import settings from '../../content/_settings.json'
-import colors from '../../content/projects/_colors.json'
+const GitRecentProjects   = dynamic(import ('../../src/components/sections/projects/recent'));
+const FeaturedProjects  = dynamic(import ( '../../src/components/sections/projects/featured'));
+import dynamic from "next/dynamic";
 
-//
+import Color from '../../src/components/utils/page.colors'
+
+import settings from '../../src/content/_settings.json'
+import colors from '../../src/content/projects/_colors.json'
+import TitleProjects from "./title.projects";
+
+// this is the project page
 export default function Projects({ user, repos }) {
 	return (
 		<>
+			<TitleProjects/>
 		<Color colors={colors} />
 		<FeaturedProjects />
 		<GitRecentProjects user={user} repos={repos} />
@@ -18,9 +22,8 @@ export default function Projects({ user, repos }) {
 	)
 }
 
-// This gets called on every request
 export async function getServerSideProps({ res }) {
-
+	{/*This gets called on every request*/}
 	res.setHeader(
 		'Cache-Control',
 		'public, s-maxage=600, stale-while-revalidate=59'
