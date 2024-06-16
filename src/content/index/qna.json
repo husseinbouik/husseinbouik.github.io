@@ -1,31 +1,30 @@
 [
   {
-    "question": "Where are you currently studying?",
-    "answer": "I am currently studying computer science at the Velammal College of Engineering and Technology.",
+    "question": "Where did you pursue your formal education in computer science?",
+    "answer": " I earned my Bachelor's degree in Computer Science (Sciences Mathématiques et Informatique) from Université Abdelmalek Essaâdi in Tangier, Morocco. This program provided me with a solid foundation in core computer science concepts like data structures, algorithms, networks, and computer architecture. I also gained significant experience in programming languages such as C, HTML, CSS, PHP, and Java, and I developed a deep understanding of Linux and UML for system design and modeling.",
     "isOpen": false
 
   },
   {
-    "question": "Have you worked on any projects?",
-    "answer": "Yes, in addition to my personal projects and hobbies, I have worked on several projects, both individually and in teams. These projects have allowed me to apply theoretical knowledge to real-world scenarios, honing my practical skills in software development, web technologies, and computer networks.",
+    "question": "What additional training have you undertaken to enhance your skillset?",
+    "answer": " I completed a comprehensive training program at Solicode Training Center in Tangier, Morocco, earning both a Solicode Certificate and an OFPPT Certificate, as well as a certificate from Simplon. This program significantly expanded my skills in data analysis, data visualization, and the fundamentals of machine learning. The practical applications we covered solidified my understanding of data-driven insights and analysis, equipping me with valuable tools for data-informed decision-making.",
     "isOpen": false
 
   },
   {
-    "question": "What extracurricular activities have you participated in?",
-    "answer": "I have actively participated in extracurricular activities and technical events on campus, which have provided me with opportunities to expand my knowledge, network with fellow students, and enhance my leadership and communication skills.",
+    "question": "Have you worked on any projects that showcase your development skills?",
+    "answer": "Yes! I'm passionate about building impactful projects, and I've had the opportunity to work on several, both independently and as part of collaborative teams. Some highlights include:\n\n* **Mentorini:** Developed a web platform for mentorship, connecting students and mentors using PHP, HTML, CSS, JavaScript, and Bootstrap. My contributions included designing the user interface, managing user profiles, and implementing a robust search system to facilitate meaningful connections. \n* **Soli-LMS:** I played a key role in developing a component of the Soli-LMS project, focusing on creating and linking project-based learning activities for learners.  I implemented a system to connect projects with relevant skills, technologies, and skill levels, providing a structured learning path. This project utilized Laravel, Spatie, AdminLTE Laravel UI, PHP, and MySQL Workbenches. \n* **Coding Commanders (SoliHackathon Winner):**  As part of a winning team, I contributed to a solution that addressed water wastage at the SoliHackathon. Our innovative approach impressed the judges, and we earned first place. ",
+    "isOpen": false
+  },
+  {
+    "question": "How do you stay current with the latest advancements in technology?",
+    "answer": " I believe in continuous learning and staying at the forefront of the tech industry. I regularly read tech blogs, follow industry experts on social media, and participate in online courses and workshops to enhance my knowledge and skills. I'm also passionate about developing new projects, which allow me to apply my expertise and explore new ideas.",
     "isOpen": false
 
   },
   {
-    "question": "Can we recruit you?",
-    "answer": "Yes, I am currently looking for jobs and I have also done several projects as a hobby.",
-    "isOpen": false
-
-  },
-  {
-    "question": "How do you stay updated with the latest developments in your field?",
-    "answer": "I believe in continuous learning and staying updated with the latest trends. I regularly read tech blogs, follow industry experts on social media, and participate in online courses and workshops to enhance my knowledge and skills. I am also actively involved in developing new projects that allow me to apply and expand my expertise.",
+    "question": "Are you currently seeking new opportunities?",
+    "answer": "Yes, I'm actively exploring opportunities where I can contribute my skills and passion to innovative projects. I'm eager to join a team where I can make a meaningful impact and continue to learn and grow as a developer.",
     "isOpen": false
 
   }

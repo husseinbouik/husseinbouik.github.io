@@ -31,14 +31,14 @@ export default function Technical() {
 						<CopyBlock
 							title="Logical Thinking"
 							icon={['fas', 'chart-network']}
-							copy="With a strong foundation in both design and development, I leverage logical thinking to approach every project. I bring a unique perspective, constantly seeking innovative solutions and staying up-to-date with the latest industry trends."
+							copy="My approach to development is rooted in a strong foundation of logical thinking and problem-solving. I'm adept at breaking down complex challenges into manageable components, finding creative solutions, and delivering efficient results. My training in data analysis and visualization has further honed these skills, allowing me to analyze information, identify patterns, and make data-driven decisions. I'm always eager to learn new approaches and stay ahead of the curve in the ever-evolving tech landscape."
 							iconClass={technical.icon}
 							containerClass={technical.container}
 						/>
 
 						<BadgesBlock
 							title="Software I love to work with"
-							copy="As a self-taught programmer with a passion for project development, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. I particularly enjoy working with tools like VS Code and JetBrains software to create exceptional projects."
+							copy="I'm a self-taught programmer with a deep passion for building impactful projects. I'm comfortable working across the entire development spectrum, from front-end to back-end, and I'm always eager to learn new tools and technologies."
 							list={software}
 							block="software"
 							fullContainer="fullContainer"
@@ -48,7 +48,7 @@ export default function Technical() {
 
 						<BadgesBlock
 							title="Technologies I love to build with"
-							copy="As a passionate problem solver, I thrive on creating innovative solutions through coding. From front-end development to back-end systems and APIs, I embrace challenges and enjoy pushing the boundaries of what's possible."
+							copy="I'm a passionate problem-solver who thrives on using coding to create innovative solutions that make a tangible difference. My projects span diverse domains, from building educational platforms (Soli-LMS) to developing a water conservation solution (SoliHackathon), showcasing my ability to apply my skills to solve real-world problems. I'm always searching for new opportunities to leverage my expertise and make a positive contribution."
 							list={tech}
 							block="tech"
 							fullContainer="fullContainer"

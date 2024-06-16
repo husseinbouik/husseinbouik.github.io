@@ -7,13 +7,37 @@
     "thumbnail": "/img/jobs.png",
     "categories": ["Portfolio", "Website", "Blog","personal"]
   },
-  {
-    "title": "logly",
-    "pubDate": "2023-12-29",
-    "link": "https://github.com/husseinbouik/logly#readme",
-    "author": "Hussein Bouik",
-    "thumbnail": "/img/logly.png",
-    "categories": ["Python","logging"]
-  }
-
-]
+  
+    {
+      "title": "husseinbouik.tech",
+      "pubDate": "2023-07-05",
+      "link": "https://github.com/husseinbouik/portfolio#readme",
+      "author": "Hussein Bouik",
+      "thumbnail": "/img/jobs.png",
+      "categories": ["Portfolio", "Website", "Blog", "personal"]
+    },
+    {
+      "project": "Soli-LMS",
+      "pubDate": "2023-07-05", 
+      "link": "https://github.com/husseinbouik/soli-lms", 
+      "author": "Hussein Bouik",
+      "thumbnail": "/img/soli-lms.png", 
+      "categories": ["Laravel", "PHP", "MySQL", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "project": "Qatra",
+      "pubDate": "2023-07-05", 
+      "link": "#", 
+      "author": "Hussein Bouik",
+      "thumbnail": "/img/water-saving.png", 
+      "categories": ["PHP", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "project": "Mentorini",
+      "pubDate": "2023-07-05", 
+      "link": "https://github.com/husseinbouik/mentorini", 
+      "author": "Hussein Bouik",
+      "thumbnail": "/img/mentorini.png", 
+      "categories": ["PHP", "JavaScript", "HTML", "CSS", "Bootstrap"]
+    }
+  ]

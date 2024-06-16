@@ -1,21 +1,57 @@
 [
 	{
-		"project": "Logly",
-		"url": "https://github.com/husseinbouik/logly",
-		"repo": "Public",
-		"descriptionTitle": "logly is a log management package",
-		"description": "that aims to provide various log management features such as auto logging and customize the log with color and tags and disable specific log levels ease and more",
-		"imageOptions": [
-		],
-		"images": [
-			{ "key": "mock-stack",	"hover": "right", 	"h": "300", "w": "300", "url": "/img/logly.png" }
-
-		],
-		"stack": [
-			{ "key": "python", "name": "Python", "type": "devicon" }
-
-		]
-
+	  "project": "Soli-LMS",
+	  "url": "https://github.com/husseinbouik/soli-lms", 
+	  "repo": "Public",
+	  "descriptionTitle": "Soli-LMS: A Comprehensive Learning Management System",
+	  "description": "Developed a key component of the Soli-LMS project, focusing on creating and linking project-based learning activities for learners. Implemented a system to connect projects with relevant skills, technologies, and skill levels, providing a structured learning path. This project utilized Laravel, Spatie, AdminLTE Laravel UI, PHP, and MySQL Workbenches. Explored the potential of personalized learning recommendations to enhance the learning experience.",
+	  "imageOptions": [], 
+	  "images": [
+		{ "key": "soli-lms-screenshot", "hover": "left", "h": "300", "w": "400", "url": "/img/soli-lms.png" } 
+	  ],
+	  "stack": [
+		{ "key": "laravel", "name": "Laravel", "type": "devicon" },
+		{ "key": "php", "name": "PHP", "type": "devicon" },
+		{ "key": "mysql", "name": "MySQL", "type": "devicon" },
+		{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+		{ "key": "html5", "name": "HTML5", "type": "devicon" },
+		{ "key": "css3", "name": "CSS3", "type": "devicon" }
+	  ]
+	},
+	{
+	  "project": "Qatra",
+	  "url": "#", 
+	  "repo": "Public",
+	  "descriptionTitle": "Coding Commanders: Water Conservation Solution (SoliHackathon Winner)",
+	  "description": "As part of the Coding Commanders team, won first place at the SoliHackathon with a solution addressing water wastage. Developed an innovative solution that impressed the judges and earned recognition. Explored using sensor data analysis to optimize water usage.",
+	  "imageOptions": [],
+	  "images": [
+		{ "key": "water-saving-app", "hover": "right", "h": "300", "w": "400", "url": "/img/water-saving.png" } 
+	  ],
+	  "stack": [
+		{ "key": "php", "name": "PHP", "type": "devicon" },
+		{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+		{ "key": "html5", "name": "HTML5", "type": "devicon" },
+		{ "key": "css3", "name": "CSS3", "type": "devicon" }
+	  ]
+	},
+	{
+	  "project": "Mentorini",
+	  "url": "https://github.com/husseinbouik/mentorini", 
+	  "repo": "Public",
+	  "descriptionTitle": "Mentorini: A Mentoring Platform Connecting Learners and Experts",
+	  "description": "Developed a web platform for mentorship, connecting students and mentors using PHP, HTML, CSS, JavaScript, and Bootstrap. Designed the user interface, managed user profiles, and implemented a robust search system to facilitate meaningful connections. Explored using personalized matching algorithms to enhance the mentoring experience.",
+	  "imageOptions": [],
+	  "images": [
+		{ "key": "mentorini-screenshot", "hover": "left", "h": "300", "w": "400", "url": "/img/mentorini.png" } 
+	  ],
+	  "stack": [
+		{ "key": "php", "name": "PHP", "type": "devicon" },
+		{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
+		{ "key": "html5", "name": "HTML5", "type": "devicon" },
+		{ "key": "css3", "name": "CSS3", "type": "devicon" },
+		{ "key": "bootstrap", "name": "Bootstrap", "type": "devicon" }
+	  ]
 	},
 	{
 		"project": "husseinbouik.tech",

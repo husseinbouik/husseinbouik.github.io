@@ -171,15 +171,15 @@ export default function Document() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "Have you worked on any projects?",
+                "name": "What additional training have you undertaken to enhance your skillset?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, in addition to my personal projects and hobbies, I have worked on several projects, both individually and in teams. These projects have allowed me to apply theoretical knowledge to real-world scenarios, honing my practical skills in software development, web technologies, and computer networks."
+                  "text": " I completed a comprehensive training program at Solicode Training Center in Tangier, Morocco, earning both a Solicode Certificate and an OFPPT Certificate, as well as a certificate from Simplon. This program significantly expanded my skills in data analysis, data visualization, and the fundamentals of machine learning. The practical applications we covered solidified my understanding of data-driven insights and analysis, equipping me with valuable tools for data-informed decision-making."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Can we recruit you?",
+                "name": "How do you stay current with the latest advancements in technology?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Yes, I am currently looking for jobs and I have also done several open-source projects as well."
@@ -190,7 +190,7 @@ export default function Document() {
                 "name": "Who is Hussein Bouik?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hussein Bouik is a Full Stack Developer specializing in Cloud, DevOps, ML/AI, and Design. He is passionate about programming, innovation, and shaping the future. With expertise in various technologies and a strong background in software development, Hussein Bouik strives to create innovative solutions and contribute to the advancement of technology. His skill set includes proficiency in cloud computing, DevOps practices, machine learning/artificial intelligence, and design principles. Hussein Bouik is dedicated to staying up-to-date with the latest industry trends and leveraging his knowledge to drive impactful and transformative projects."
+                  "text": "Hussein Bouik is a Full Stack Developer specializing in Cloud, DevOps, ML/AI, and Design. He is passionate about programming, innovation, and shaping the future. With expertise in various technologies and a strong background in software development, Hussein Bouik strives to create innovative solutions and contribute to the advancement of technology. His skill set includes proficiency in cloud computing, DevOps practices, AI-powered solutions/Data insights, and design principles. Hussein Bouik is dedicated to staying up-to-date with the latest industry trends and leveraging his knowledge to drive impactful and transformative projects."
                 }
               },
               {

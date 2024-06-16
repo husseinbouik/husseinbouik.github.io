@@ -32,7 +32,7 @@ export default function Career() {
 									<h4>Permanent Full Time · Present</h4>
 							</span>
 							<p>
-								As a Full Stack Developer, my current focus lies in the field of complex project development. I am committed to continuously enhancing my skills and expanding my knowledge to gain valuable experience in this domain. By actively staying updated with the latest advancements and trends in the industry, I ensure that I am equipped with the necessary tools and techniques to tackle challenging projects. My primary goal is to contribute effectively to the development of sophisticated applications, leveraging my expertise in both front-end and back-end technologies. Through my dedication to continuous improvement, I strive to deliver high-quality solutions that meet the evolving needs of the industry.
+								I'm a passionate Full Stack Developer driven to excel in the realm of complex project development. My dedication to continuous learning keeps me at the forefront of industry advancements, ensuring I have the necessary tools and techniques to tackle demanding challenges. I'm skilled in both front-end and back-end technologies, and I leverage this expertise to contribute effectively to the development of sophisticated applications. My commitment to quality and innovation drives me to deliver impactful solutions that meet the evolving needs of the tech landscape.
 							</p>
 						</div>
 						<div className={career.companyAlt}></div>
