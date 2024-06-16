@@ -76,7 +76,7 @@ export default function Hero() {
 					<button
 						className={`button ${button.secondary} leaveSite`}
 
-						onClick={() => window.open('https://www.linkedin.com/in/muhammad-fiaz-', '_blank')}
+						onClick={() => window.open('https://www.linkedin.com/in/husseinbouik-', '_blank')}
 
 						onMouseEnter={() => setIsYescatTooltipVisible(true)}
 						onMouseLeave={() => setIsYescatTooltipVisible(false)}
