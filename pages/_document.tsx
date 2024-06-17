@@ -198,7 +198,7 @@ export default function Document() {
                 "name": "Where is Hussein Bouik from?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hussein Bouik is from Madurai, Tamil Nadu, India."
+                  "text": "Hussein Bouik is from Tangier ,Morocco."
                 }
               },
               {
