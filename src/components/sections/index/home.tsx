@@ -21,7 +21,7 @@ export default function Home() {
 				<SectionTitle
 					title="About Me"
 					preTitle="Synopsis"
-					subTitle="From an early age, my passion for creating new things has been a driving force. Immersed in the world of design and coding, I honed my skills and explored innovative solutions. This love for creation has shaped my career, fueling my desire to bring impactful and visually stunning projects to life. With meticulous attention to detail and a keen eye for aesthetics, I strive to craft exceptional and memorable experiences."
+					subTitle="My passion for creating new things ignited early on. I was drawn to the world of design and coding, where I could blend my creative vision with technical prowess. I love the process of crafting innovative solutions that are not only functional but also visually stunning. My goal is to create experiences that resonate with users and leave a lasting impression. I'm meticulous about detail and strive to deliver high-quality work that exceeds expectations. My journey as a web developer is fueled by this desire to make a difference, and I'm excited to continue pushing the boundaries of what's possible in the digital world."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
@@ -33,14 +33,14 @@ export default function Home() {
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={[ 'fas', 'user' ]}
-							copy="With a solid background in design and technical expertise, I am a skilled developer who excels in delivering high-quality solutions. Alongside my proficiency in coding, I possess strong leadership, time management, and multitasking skills, which I have honed through managing complex development projects. As a dedicated individual, I constantly seek opportunities to expand my knowledge and stay updated with the latest industry trends. With a passion for creating innovative and efficient applications, I am committed to bringing value and success to every development endeavor."
+							copy="My foundation in design and technology has equipped me with the skills to excel as a developer. I am adept at delivering high-quality solutions that meet and exceed expectations. Beyond my technical proficiency, I'm also a strong leader, capable of managing complex projects, prioritizing tasks effectively, and juggling multiple responsibilities. I am committed to continuous learning, constantly seeking new knowledge and staying current with industry trends. My passion for creating innovative and efficient applications drives me to bring value and success to every project I undertake."
 						/>
 						<CopyBlock
 							title="Development and Projects"
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={['fas', 'code']}
-							copy="Development and project execution are my passion. I thrive on the challenges of bringing ideas to life through coding and turning concepts into functional, robust solutions. With meticulous planning, efficient workflows, and a keen eye for detail, I ensure successful project delivery, meeting objectives and exceeding expectations."
+							copy="My passion lies in the process of development and project execution. I thrive on the challenge of transforming ideas into functional, robust solutions. From meticulous planning and efficient workflows to a keen eye for detail, I'm committed to ensuring successful project delivery, consistently exceeding expectations and achieving project objectives. I'm eager to leverage my skills and experience to build innovative applications that solve real problems and make a tangible difference in the world."
 						/>
 					</div>
 				</section>
@@ -51,14 +51,14 @@ export default function Home() {
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={['fas', 'shield-alt']}
-							copy="Security and privacy are paramount in my approach to development. I prioritize the protection of sensitive data and implement robust security measures. By adhering to industry best practices and staying updated on emerging threats, I ensure that users' information is safeguarded. Trust and confidentiality are the cornerstones of my work, fostering secure and private experiences for all."
+							copy="Security and privacy are fundamental principles in my approach to web development. I prioritize the protection of user data and employ robust security measures to safeguard sensitive information. I adhere to industry best practices, stay vigilant about emerging threats, and continuously enhance my knowledge to ensure the highest level of security for users. Building trust and confidentiality is paramount in my work, creating secure and private experiences for everyone."
 						/>
 						<CopyBlock
 							title="Constant Learning and Improvements"
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={['fas', 'book']}
-							copy="I have an insatiable thirst for knowledge and a passion for continuous learning and development. Keeping up with the latest industry trends and emerging technologies allows me to stay ahead of the curve. By actively seeking new challenges and expanding my skill set, I constantly push the boundaries of my abilities, ensuring that I deliver cutting-edge solutions and provide valuable insights to clients."
+							copy="I have an unquenchable thirst for knowledge and a passion for continuous learning and development. Staying ahead of the curve is crucial in the ever-evolving tech landscape. I actively seek new challenges and expand my skillset to ensure I'm delivering cutting-edge solutions and providing valuable insights to clients. My commitment to lifelong learning fuels my dedication to creating innovative and impactful projects."
 						/>
 
 
@@ -70,7 +70,7 @@ export default function Home() {
 							fullContainer="fullContainer"
 							block="methods"
 							icon="fingerprint"
-							copy="One of the most exhilarating aspects of my creative process is conducting in-depth research and meticulous planning for development projects. From Design Systems to Brand Strategy, I relish the opportunity to explore various touchpoints of user experience. Constantly seeking to expand my knowledge and skills, I immerse myself in research to stay ahead of industry trends. By strategically planning and executing projects, I aim to create exceptional digital experiences that exceed expectations and deliver measurable results."
+							copy="The research and planning phase is an essential and exhilarating part of my creative process. I delve deep into every aspect of a project, from design systems to brand strategy, to craft exceptional user experiences. My dedication to ongoing learning and research keeps me abreast of industry trends. By strategically planning and executing projects, I aim to deliver measurable results and create digital experiences that exceed expectations."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`} invertedColor={undefined}						/>
 					</div>
@@ -80,9 +80,9 @@ export default function Home() {
 	)
 }
 const methods = [
-	{ key: 'machinelearning', name: 'Machine Learning', type: 'fad', icon: 'devicon' },
-	{ key: 'artificialintelligence', name: 'Artificial Intelligence', type: 'fad', icon: 'devicon' },
-	{ key: 'deeplearning', name: 'Deep Learning', type: 'fad', icon: 'devicon' },
-	{ key: 'neuralnetworks', name: 'Neural Networks', type: 'fad', icon: 'devicon' },
+	{ key: 'machinelearning', name: 'AI-powered solutions', type: 'fad', icon: 'devicon' },
+	{ key: 'artificialintelligence', name: 'Data insights', type: 'fad', icon: 'devicon' },
+	{ key: 'deeplearning', name: 'AI-driven innovation', type: 'fad', icon: 'devicon' },
+	{ key: 'neuralnetworks', name: 'Smart tech', type: 'fad', icon: 'devicon' },
 
 ];

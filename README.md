@@ -1,38 +1,38 @@
 <p align="center">
-  <img src="https://github.com/muhammad-fiaz/portfolio/assets/75434191/44252d99-9dff-4e5f-9bec-819e3fca7fb3"  alt="Hussein Bouik's Portfolio"/>
+  <img src="https://github.com/husseinbouik/portfolio/assets/75434191/44252d99-9dff-4e5f-9bec-819e3fca7fb3"  alt="Hussein Bouik's Portfolio"/>
 </p>
 <div align="center">
   <h1><a href="https://husseinbouik.tech/">husseinbouik.tech</a> | portfolio</h1>
   
 ![Stability](https://img.shields.io/badge/stability-good-blue.svg) ![MIT License](https://img.shields.io/badge/license-MIT-green)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/muhammad-fiaz/portfolio)
-[![Build Passing](https://badge.buildkite.com/sample.svg?status=passing)](https://github.com/muhammad-fiaz/portfolio)
-[![Continuous Integration](https://github.com/muhammad-fiaz/portfolio/actions/workflows/prettier.yml/badge.svg)](https://github.com/muhammad-fiaz/portfolio/actions/workflows/prettier.yml)
-[![CodeQL](https://github.com/muhammad-fiaz/portfolio/actions/workflows/codeql.yml/badge.svg)](https://github.com/muhammad-fiaz/portfolio/actions/workflows/codeql.yml)
-[![Dependency Review](https://github.com/muhammad-fiaz/portfolio/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/muhammad-fiaz/portfolio/actions/workflows/dependency-review.yml)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/muhammad-fiaz/portfolio)
-[![Maintainer](https://img.shields.io/badge/maintainer-muhammad--fiaz-blue)](https://GitHub.com/muhammad-fiaz)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/husseinbouik/portfolio)
+[![Build Passing](https://badge.buildkite.com/sample.svg?status=passing)](https://github.com/husseinbouik/portfolio)
+[![Continuous Integration](https://github.com/husseinbouik/portfolio/actions/workflows/prettier.yml/badge.svg)](https://github.com/husseinbouik/portfolio/actions/workflows/prettier.yml)
+[![CodeQL](https://github.com/husseinbouik/portfolio/actions/workflows/codeql.yml/badge.svg)](https://github.com/husseinbouik/portfolio/actions/workflows/codeql.yml)
+[![Dependency Review](https://github.com/husseinbouik/portfolio/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/husseinbouik/portfolio/actions/workflows/dependency-review.yml)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/husseinbouik/portfolio)
+[![Maintainer](https://img.shields.io/badge/maintainer-muhammad--fiaz-blue)](https://github.com/husseinbouik)
 
-[![Latest Release](https://img.shields.io/github/release/muhammad-fiaz/portfolio.svg)](https://github.com/muhammad-fiaz/portfolio/releases/latest)
-[![Current Version](https://img.shields.io/badge/Current%20Version-v1.0.7-blue.svg)](https://github.com/muhammad-fiaz/portfolio/releases/tag/v1.0.7)
+[![Latest Release](https://img.shields.io/github/release/husseinbouik/portfolio.svg)](https://github.com/husseinbouik/portfolio/releases/latest)
+[![Current Version](https://img.shields.io/badge/Current%20Version-v1.0.7-blue.svg)](https://github.com/husseinbouik/portfolio/releases/tag/v1.0.7)
 
 
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-[![GitHub visitors](https://img.shields.io/github/contributors/muhammad-fiaz/portfolio.svg)](https://github.com/muhammad-fiaz/portfolio/graphs/contributors)
-![Popularity Views](https://komarev.com/ghpvc/?username=muhammad-fiaz&style=flat&label=Popularity)
-![GitHub stars](https://img.shields.io/github/stars/muhammad-fiaz/portfolio.svg?style=social&label=Stars)
+[![GitHub visitors](https://img.shields.io/github/contributors/husseinbouik/portfolio.svg)](https://github.com/husseinbouik/portfolio/graphs/contributors)
+![Popularity Views](https://komarev.com/ghpvc/?username=husseinbouik&style=flat&label=Popularity)
+![GitHub stars](https://img.shields.io/github/stars/husseinbouik/portfolio.svg?style=social&label=Stars)
 
-[![Follow me on GitHub](https://img.shields.io/github/followers/muhammad-fiaz?label=Follow&style=social)](https://github.com/muhammad-fiaz)
+[![Follow me on GitHub](https://img.shields.io/github/followers/husseinbouik?label=Follow&style=social)](https://github.com/husseinbouik)
 
 </div>
 
-This project is built with Next.js and React, showcasing [Hussein Bouik](https://github.com/muhammad-fiaz/)'s [personal website](https://husseinbouik.tech/).
+This project is built with Next.js and React, showcasing [Hussein Bouik](https://github.com/husseinbouik/)'s [personal website](https://husseinbouik.tech/).
 
-**Feel free to use this project for your own portfolio or as a reference for your projects. If you find it helpful, don't forget to give it a ⭐️ to show your support. [Fork this repo](https://github.com/muhammad-fiaz/portfolio/fork) if you want to contribute✨**
+**Feel free to use this project for your own portfolio or as a reference for your projects. If you find it helpful, don't forget to give it a ⭐️ to show your support. [Fork this repo](https://github.com/husseinbouik/portfolio/fork) if you want to contribute✨**
 
-**Support me by a little [sponsor ❤️](https://github.com/sponsors/muhammad-fiaz)**
+**Support me by a little [sponsor ❤️](https://github.com/sponsors/husseinbouik)**
 
 ## Table of Contents
 
@@ -58,17 +58,17 @@ This project is built with Next.js and React, showcasing [Hussein Bouik](https:/
 
 ### Release Notes
 
-For a detailed list of releases and changes, please visit the [GitHub Releases page](https://github.com/muhammad-fiaz/portfolio/releases).
+For a detailed list of releases and changes, please visit the [GitHub Releases page](https://github.com/husseinbouik/portfolio/releases).
 
 You can also refer to the [CHANGELOG.md](./CHANGELOG.md) file for comprehensive information about each release.
 
-if you have any suggestions or feedback, feel free to open an [issue](https://github.com/muhammad-fiaz/portfolio/issues) or a [pull request](https://github.com/muhammad-fiaz/portfolio/pulls).
+if you have any suggestions or feedback, feel free to open an [issue](https://github.com/husseinbouik/portfolio/issues) or a [pull request](https://github.com/husseinbouik/portfolio/pulls).
 
 ## Getting Started
 
 To run the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/muhammad-fiaz/portfolio.git`
+1. Clone the repository: `git clone https://github.com/husseinbouik/portfolio.git`
 2. Navigate to the project directory: `cd portfolio`
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm run dev`
@@ -148,18 +148,18 @@ Also, Read the [React.js Documentation](https://reactjs.org/docs/getting-started
 <h5> <strong> 💰 You can help this improve more by offering a little support❤️</strong></h5>
   
 
-[![Sponsor muhammad-fiaz](https://img.shields.io/badge/Sponsor-%231EAEDB.svg?&style=for-the-badge&logo=GitHub-Sponsors&logoColor=white)](https://github.com/sponsors/muhammad-fiaz)
+[![Sponsor husseinbouik](https://img.shields.io/badge/Sponsor-%231EAEDB.svg?&style=for-the-badge&logo=GitHub-Sponsors&logoColor=white)](https://github.com/sponsors/husseinbouik)
 
 </div>
 <div align="center">
 
-[![Star History Chart](https://api.star-history.com/svg?repos=muhammad-fiaz/portfolio&type=Date)](https://github.com/muhammad-fiaz/portfolio/)
+[![Star History Chart](https://api.star-history.com/svg?repos=husseinbouik/portfolio&type=Date)](https://github.com/husseinbouik/portfolio/)
 </div>
 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/muhammad-fiaz/portfolio/blob/main/LICENSE.md) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/husseinbouik/portfolio/blob/main/LICENSE.md) file for details.
 
 ## Contributing
 
@@ -177,21 +177,21 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-✅ See [latest release](https://github.com/muhammad-fiaz/portfolio/releases/latest) version for production use!
+✅ See [latest release](https://github.com/husseinbouik/portfolio/releases/latest) version for production use!
 
 ## Stay Connected!
 
-Thank you for checking out [my portfolio on GitHub](https://github.com/muhammad-fiaz/portfolio)! We're constantly working to improve and enhance the project. To ensure you're always up-to-date with the latest changes, we recommend following these steps:
+Thank you for checking out [my portfolio on GitHub](https://github.com/husseinbouik/portfolio)! We're constantly working to improve and enhance the project. To ensure you're always up-to-date with the latest changes, we recommend following these steps:
 
 1. **Watch This Repository:** Click the ⭐️ "Watch" button at the top right of the page to [receive notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/watching-and-unwatching-repositories) for any new releases, issues, or discussions.
 
-2. **Star the Repository:** If you find my portfolio useful or interesting, consider giving it a [star](https://github.com/muhammad-fiaz/portfolio/stargazers). This helps us gain visibility and shows your appreciation for the project.
+2. **Star the Repository:** If you find my portfolio useful or interesting, consider giving it a [star](https://github.com/husseinbouik/portfolio/stargazers). This helps us gain visibility and shows your appreciation for the project.
 
-3. **Fork for Contributions:** If you're interested in contributing to my portfolio, feel free to [fork](https://github.com/muhammad-fiaz/portfolio/fork) the repository, make changes, and submit a pull request. We welcome contributions from the community!
+3. **Fork for Contributions:** If you're interested in contributing to my portfolio, feel free to [fork](https://github.com/husseinbouik/portfolio/fork) the repository, make changes, and submit a pull request. We welcome contributions from the community!
 
-4. **Join the Discussion:** Check out the [Discussions](https://github.com/muhammad-fiaz/portfolio/discussions) tab to join conversations, ask questions, and share your ideas with other users and contributors.
+4. **Join the Discussion:** Check out the [Discussions](https://github.com/husseinbouik/portfolio/discussions) tab to join conversations, ask questions, and share your ideas with other users and contributors.
 
-5. **Stay Updated:** Periodically visit the repository's ["Releases" section](https://github.com/muhammad-fiaz/portfolio/releases) to find detailed information about each new release, including new features, bug fixes, and improvements.
+5. **Stay Updated:** Periodically visit the repository's ["Releases" section](https://github.com/husseinbouik/portfolio/releases) to find detailed information about each new release, including new features, bug fixes, and improvements.
 
 By following these steps, you'll be sure to stay connected with the latest developments and updates. I appreciate your interest in my portfolio and can't wait to see how it benefits you!
 
@@ -200,6 +200,6 @@ If you have any questions or feedback, please don't hesitate to reach out.
 Don't forget to Stay tuned for updates and new features!
 
 
-  <img   align="right" src="https://github.com/muhammad-fiaz/muhammad-fiaz/assets/75434191/ed52c517-611e-4647-9b35-acd001a287b9" width="20%" />
+  <img   align="right" src="https://github.com/husseinbouik/husseinbouik/assets/75434191/ed52c517-611e-4647-9b35-acd001a287b9" width="20%" />
 
 ### Happy Coding! 😊

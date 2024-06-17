@@ -11,7 +11,7 @@ export default function Document() {
             <Head>
                 {/*
 				Author: Hussein Bouik
-                 GitHub: Visit the GitHub repository at https://github.com/muhammad-fiaz/portfolio/ for more details.
+                 GitHub: Visit the GitHub repository at https://github.com/husseinbouik/portfolio/ for more details.
                  license: MIT License
                   */}
                 <meta charSet="utf-8"/>
@@ -151,9 +151,9 @@ export default function Document() {
           "name": "Hussein Bouik",
           "url": "https://husseinbouik.tech",
           "sameAs": [
-            "https://github.com/muhammad-fiaz",
-            "https://www.linkedin.com/in/muhammad-fiaz-",
-            "https://medium.com/@muhammad-fiaz",
+            "https://github.com/husseinbouik",
+            "https://www.linkedin.com/in/hussein-bouik-",
+            "https://medium.com/@husseinbouik",
             "https://twitter.com/muhammadfiaz_",
             "https://dev.to/muhammadfiaz"
           ]
@@ -171,15 +171,15 @@ export default function Document() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "Have you worked on any projects?",
+                "name": "What additional training have you undertaken to enhance your skillset?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, in addition to my personal projects and hobbies, I have worked on several projects, both individually and in teams. These projects have allowed me to apply theoretical knowledge to real-world scenarios, honing my practical skills in software development, web technologies, and computer networks."
+                  "text": " I completed a comprehensive training program at Solicode Training Center in Tangier, Morocco, earning both a Solicode Certificate and an OFPPT Certificate, as well as a certificate from Simplon. This program significantly expanded my skills in data analysis, data visualization, and the fundamentals of machine learning. The practical applications we covered solidified my understanding of data-driven insights and analysis, equipping me with valuable tools for data-informed decision-making."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Can we recruit you?",
+                "name": "How do you stay current with the latest advancements in technology?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Yes, I am currently looking for jobs and I have also done several open-source projects as well."
@@ -190,7 +190,7 @@ export default function Document() {
                 "name": "Who is Hussein Bouik?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hussein Bouik is a Full Stack Developer specializing in Cloud, DevOps, ML/AI, and Design. He is passionate about programming, innovation, and shaping the future. With expertise in various technologies and a strong background in software development, Hussein Bouik strives to create innovative solutions and contribute to the advancement of technology. His skill set includes proficiency in cloud computing, DevOps practices, machine learning/artificial intelligence, and design principles. Hussein Bouik is dedicated to staying up-to-date with the latest industry trends and leveraging his knowledge to drive impactful and transformative projects."
+                  "text": "Hussein Bouik is a Full Stack Developer specializing in Cloud, DevOps, ML/AI, and Design. He is passionate about programming, innovation, and shaping the future. With expertise in various technologies and a strong background in software development, Hussein Bouik strives to create innovative solutions and contribute to the advancement of technology. His skill set includes proficiency in cloud computing, DevOps practices, AI-powered solutions/Data insights, and design principles. Hussein Bouik is dedicated to staying up-to-date with the latest industry trends and leveraging his knowledge to drive impactful and transformative projects."
                 }
               },
               {
@@ -259,10 +259,10 @@ export default function Document() {
             "name": "NeuroLink",
             "description": "NeuroLink is a Python package that aims to provide various AI capabilities, including a chatbot, image processing, audio processing, Django support, and more. It utilizes TensorFlow and other related technologies for natural language processing and AI tasks.",
             "alternateName": "neurolink",
-            "url": "https://github.com/muhammad-fiaz/neurolink",
+            "url": "https://github.com/husseinbouik/neurolink",
             "logo": "https://private-user-images.githubusercontent.com/75434191/242214243-82fbf702-43e2-46e6-8e01-11758fa26310.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE2OTQ4NTE2ODksIm5iZiI6MTY5NDg1MTM4OSwicGF0aCI6Ii83NTQzNDE5MS8yNDIyMTQyNDMtODJmYmY3MDItNDNlMi00NmU2LThlMDEtMTE3NThmYTI2MzEwLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzA5MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMwOTE2VDA4MDMwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ3NjJmNzA5MGU5NWY4NTUxZTcxYmVmNzNlZTYzOTViN2FjNzE1YTM2MjM1OTNlOGIxNzk0ODE1NDczMDMzNGEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ay5bRLRoojQ33ZJLFnvjyq6Dq4qZfDY7quvv4WmgRLI",
              "sameAs": [
-            "https://www.linkedin.com/in/muhammad-fiaz-/"
+            "https://www.linkedin.com/in/hussein-bouik-/"
         ]          }
         `
                 }}/>
