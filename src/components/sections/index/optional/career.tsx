@@ -32,7 +32,7 @@ export default function Career() {
 									<h4>Permanent Full Time · Present</h4>
 							</span>
 							<p>
-								I'm a passionate Full Stack Developer driven to excel in the realm of complex project development. My dedication to continuous learning keeps me at the forefront of industry advancements, ensuring I have the necessary tools and techniques to tackle demanding challenges. I'm skilled in both front-end and back-end technologies, and I leverage this expertise to contribute effectively to the development of sophisticated applications. My commitment to quality and innovation drives me to deliver impactful solutions that meet the evolving needs of the tech landscape.
+								I&apos;m a passionate Full Stack Developer driven to excel in the realm of complex project development. My dedication to continuous learning keeps me at the forefront of industry advancements, ensuring I have the necessary tools and techniques to tackle demanding challenges. I&apos;m skilled in both front-end and back-end technologies, and I leverage this expertise to contribute effectively to the development of sophisticated applications. My commitment to quality and innovation drives me to deliver impactful solutions that meet the evolving needs of the tech landscape.
 							</p>
 						</div>
 						<div className={career.companyAlt}></div>
