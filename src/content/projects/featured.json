@@ -26,7 +26,7 @@
 	  "description": "As part of the Coding Commanders team, won first place at the SoliHackathon with a solution addressing water wastage. Developed an innovative solution that impressed the judges and earned recognition. Explored using sensor data analysis to optimize water usage.",
 	  "imageOptions": [],
 	  "images": [
-		{ "key": "water-saving-app", "hover": "right", "h": "300", "w": "400", "url": "/img/water-saving.png" } 
+		{ "key": "water-saving-app", "hover": "right", "h": "300", "w": "400", "url": "/img/Qatra.png" } 
 	  ],
 	  "stack": [
 		{ "key": "php", "name": "PHP", "type": "devicon" },
@@ -36,23 +36,41 @@
 	  ]
 	},
 	{
-	  "project": "Mentorini",
-	  "url": "https://github.com/husseinbouik/mentorini", 
-	  "repo": "Public",
-	  "descriptionTitle": "Mentorini: A Mentoring Platform Connecting Learners and Experts",
-	  "description": "Developed a web platform for mentorship, connecting students and mentors using PHP, HTML, CSS, JavaScript, and Bootstrap. Designed the user interface, managed user profiles, and implemented a robust search system to facilitate meaningful connections. Explored using personalized matching algorithms to enhance the mentoring experience.",
-	  "imageOptions": [],
-	  "images": [
-		{ "key": "mentorini-screenshot", "hover": "left", "h": "300", "w": "400", "url": "/img/mentorini.png" } 
-	  ],
-	  "stack": [
-		{ "key": "php", "name": "PHP", "type": "devicon" },
-		{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
-		{ "key": "html5", "name": "HTML5", "type": "devicon" },
-		{ "key": "css3", "name": "CSS3", "type": "devicon" },
-		{ "key": "bootstrap", "name": "Bootstrap", "type": "devicon" }
-	  ]
+		"project": "Mentorini",
+		"url": "https://github.com/husseinbouik/mentorini", 
+		"repo": "Public",
+		"descriptionTitle": "Mentorini: A Mentoring Platform Connecting Learners and Experts",
+		"description": "Developed a web platform for mentorship, connecting students and mentors using PHP, HTML, CSS, JavaScript, and Bootstrap. Designed the user interface, managed user profiles, and implemented a robust search system to facilitate meaningful connections. Explored using personalized matching algorithms to enhance the mentoring experience.",
+		"imageOptions": [],
+		"images": [
+		  { "key": "mentorini-screenshot", "hover": "left", "h": "300", "w": "400", "url": "/img/mentorini.png" } 
+		],
+		"stack": [
+		  { "key": "php", "name": "PHP", "type": "devicon" },
+		  { "key": "javascript", "name": "JavaScript", "type": "devicon" },
+		  { "key": "html5", "name": "HTML5", "type": "devicon" },
+		  { "key": "css3", "name": "CSS3", "type": "devicon" },
+		  { "key": "bootstrap", "name": "Bootstrap", "type": "devicon" }
+		]
 	},
+	{
+		"project": "JobMatch",
+		"url": "https://www.example.com/jobmatch (replace with your app URL if available)", 
+		"repo": "Private", 
+		"descriptionTitle": "JobMatch: Streamlining Career Exploration and Development",
+		"description": "Developed JobMatch, a mobile application designed for an entrepreneurship competition, aimed at simplifying career exploration and development. The app provides a user-friendly platform for searching job offers, internships, courses, and training opportunities. It features a streamlined interface that enables efficient filtering based on location and other criteria. Additionally, JobMatch integrates with partner platforms to offer a comprehensive suite of resources for career advancement.",
+		"imageOptions": [], 
+		"images": [
+		  { "key": "jobmatch-screenshot", "hover": "left", "h": "300", "w": "400", "url": "/img/jobmatch.png" }  
+		],
+		"stack": [
+		  { "key": "reactnative", "name": "React Native", "type": "devicon" }, 
+		  { "key": "javascript", "name": "JavaScript", "type": "devicon" },
+		  { "key": "nodejs", "name": "Node.js", "type": "devicon" }, 
+		  { "key": "mongodb", "name": "MongoDB", "type": "devicon" } 
+		]
+	  },
+	
 	{
 		"project": "husseinbouik.tech",
 		"url": "https://github.com/husseinbouik/portfolio",
