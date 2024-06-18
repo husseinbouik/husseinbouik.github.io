@@ -8,6 +8,14 @@
       "categories": ["Portfolio", "Website", "Blog", "personal"]
     },
     {
+      "project": "Qatra - Mobile",
+      "pubDate": "2024-05-16", 
+      "link": "#", 
+      "author": "Hussein Bouik",
+      "thumbnail": "/img/Qatra-mobile.png", 
+      "categories": ["Laravel","PHP", "JavaScript", "HTML", "CSS"]
+    },
+    {
       "project": "Mentorini",
       "pubDate": "2023-06-23", 
       "link": "https://github.com/husseinbouik/mentorini", 
@@ -18,7 +26,7 @@
     {
       "title": "husseinbouik.tech",
       "pubDate": "2024-02-05",
-      "link": "https://github.com/husseinbouik/portfolio#readme",
+      "link": "https://github.com/husseinbouik/husseinbouik.github.io#readme",
       "author": "Hussein Bouik",
       "thumbnail": "/img/jobs.png",
       "categories": ["Portfolio", "Website", "Blog", "personal"]

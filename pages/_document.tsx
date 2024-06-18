@@ -11,7 +11,7 @@ export default function Document() {
             <Head>
                 {/*
 				Author: Hussein Bouik
-                 GitHub: Visit the GitHub repository at https://github.com/husseinbouik/portfolio/ for more details.
+                 GitHub: Visit the GitHub repository at https://github.com/husseinbouik/husseinbouik.github.io/ for more details.
                  license: MIT License
                   */}
                 <meta charSet="utf-8"/>

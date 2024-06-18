@@ -106,8 +106,8 @@
 	"version": "1.0.7",
 	"description": "Open source portfolio website built with Next.js amd TypeScript.",
 	"main": "pages/index.tsx",
-	"repository": "https://github.com/husseinbouik/portfolio.git",
-	"homepage": "https://github.com/husseinbouik/portfolio#readme",
+	"repository": "https://github.com/husseinbouik/husseinbouik.github.io.git",
+	"homepage": "https://github.com/husseinbouik/husseinbouik.github.io#readme",
 	"bugs": {
 		"url": "https://github.com/husseinbouik/husseinbouik.github.io/issues/new"
 	},

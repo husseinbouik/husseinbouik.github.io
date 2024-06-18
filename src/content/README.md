@@ -5,7 +5,7 @@ And we can fetch this from here to display the contents in portfolio website. So
 
 Feel free to expand and customize these data to suit your needs.
 
-Make Sure to [Fork](https://github.com/husseinbouik/portfolio/fork) This Repository to your GitHub Account and [Star⭐ it](https://github.com/husseinbouik/portfolio/stargazers).
+Make Sure to [Fork](https://github.com/husseinbouik/husseinbouik.github.io/fork) This Repository to your GitHub Account and [Star⭐ it](https://github.com/husseinbouik/husseinbouik.github.io/stargazers).
 
 ## Support Me
 
@@ -20,5 +20,5 @@ Enjoying my work? Consider supporting me by buying me a cup of coffee or becomin
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/husseinbouik/portfolio/blob/main/LICENSE.md) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/husseinbouik/husseinbouik.github.io/blob/main/LICENSE.md) file for details.
 

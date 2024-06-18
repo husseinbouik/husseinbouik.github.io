@@ -188,7 +188,7 @@ const DevelopmentNotice: React.FC = () => {
                             Current Version:{' '}
                             {versionDetails ? (
                                 <a
-                                    href={`https://github.com/husseinbouik/portfolio/releases/tag/v${versionDetails.currentVersion}`}
+                                    href={`https://github.com/husseinbouik/husseinbouik.github.io/releases/tag/v${versionDetails.currentVersion}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

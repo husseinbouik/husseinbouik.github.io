@@ -17,7 +17,7 @@ These folders play distinct roles in shaping the portfolio website.
 
 Feel free to customize, extend, or create new components and content files to tailor your portfolio to your specific needs. This structure promotes organization and separation of concerns, making your project more maintainable and scalable.
 
-Make Sure to [Fork](https://github.com/husseinbouik/portfolio/fork) This Repository to your GitHub Account and [Star⭐ it](https://github.com/husseinbouik/portfolio/stargazers).
+Make Sure to [Fork](https://github.com/husseinbouik/husseinbouik.github.io/fork) This Repository to your GitHub Account and [Star⭐ it](https://github.com/husseinbouik/husseinbouik.github.io/stargazers).
 
 ## Support Me
 

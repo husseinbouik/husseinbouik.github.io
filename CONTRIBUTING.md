@@ -10,7 +10,7 @@ This project and its community adhere to the [Code of Conduct](./CODE_OF_CONDUCT
 
 We welcome contributions in the form of bug reports, feature requests, code improvements, and more. Here's how you can contribute:
 
-1. **Fork the Repository:** Click the ["Fork"](https://github.com/husseinbouik/portfolio/fork) button on the top right of the repository's page:
+1. **Fork the Repository:** Click the ["Fork"](https://github.com/husseinbouik/husseinbouik.github.io/fork) button on the top right of the repository's page:
 
 
 2. Clone your fork to your local machine:
