@@ -21,7 +21,7 @@ We welcome contributions in the form of bug reports, feature requests, code impr
  
 ## Reporting Issues 🐞
 
-If you find any issues or have suggestions for improvements, please open an issue on the [Issues](https://github.com/husseinbouik/portfolio/issues) page. Include a clear description of the problem or suggestion.
+If you find any issues or have suggestions for improvements, please open an issue on the [Issues](https://github.com/husseinbouik/husseinbouik.github.io/issues) page. Include a clear description of the problem or suggestion.
 
 Thank you for contributing to my Portfolio!❤️
    

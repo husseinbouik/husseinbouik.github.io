@@ -121,7 +121,7 @@ const DevelopmentNotice: React.FC = () => {
                             </p>
                             <p style={{ fontSize: '14px', marginBottom: '30px' }}>
                                 If you encounter any issues or bugs, please report them{' '}
-                                <a href="https://github.com/husseinbouik/portfolio/issues/new">@husseinbouik</a>
+                                <a href="https://github.com/husseinbouik/husseinbouik.github.io/issues/new">@husseinbouik</a>
                             </p>
                             {!isVerified ? (
                                 <>

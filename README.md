@@ -62,7 +62,7 @@ For a detailed list of releases and changes, please visit the [GitHub Releases p
 
 You can also refer to the [CHANGELOG.md](./CHANGELOG.md) file for comprehensive information about each release.
 
-if you have any suggestions or feedback, feel free to open an [issue](https://github.com/husseinbouik/portfolio/issues) or a [pull request](https://github.com/husseinbouik/portfolio/pulls).
+if you have any suggestions or feedback, feel free to open an [issue](https://github.com/husseinbouik/husseinbouik.github.io/issues) or a [pull request](https://github.com/husseinbouik/portfolio/pulls).
 
 ## Getting Started
 
