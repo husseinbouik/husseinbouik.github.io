@@ -121,7 +121,7 @@ const DevelopmentNotice: React.FC = () => {
                             </p>
                             <p style={{ fontSize: '14px', marginBottom: '30px' }}>
                                 If you encounter any issues or bugs, please report them{' '}
-                                <a href="https://github.com/husseinbouik/portfolio/issues/new">@husseinbouik</a>
+                                <a href="https://github.com/husseinbouik/husseinbouik.github.io/issues/new">@husseinbouik</a>
                             </p>
                             {!isVerified ? (
                                 <>
@@ -188,7 +188,7 @@ const DevelopmentNotice: React.FC = () => {
                             Current Version:{' '}
                             {versionDetails ? (
                                 <a
-                                    href={`https://github.com/husseinbouik/portfolio/releases/tag/v${versionDetails.currentVersion}`}
+                                    href={`https://github.com/husseinbouik/husseinbouik.github.io/releases/tag/v${versionDetails.currentVersion}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

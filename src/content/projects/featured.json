@@ -1,83 +1,149 @@
 [
 	{
 	  "project": "Soli-LMS",
-	  "url": "https://github.com/husseinbouik/soli-lms", 
+	  "url": "https://github.com/husseinbouik/soli-lms",
 	  "repo": "Public",
 	  "descriptionTitle": "Soli-LMS: A Comprehensive Learning Management System",
-	  "description": "Developed a key component of the Soli-LMS project, focusing on creating and linking project-based learning activities for learners. Implemented a system to connect projects with relevant skills, technologies, and skill levels, providing a structured learning path. This project utilized Laravel, Spatie, AdminLTE Laravel UI, PHP, and MySQL Workbenches. Explored the potential of personalized learning recommendations to enhance the learning experience.",
-	  "imageOptions": [], 
+	  "description": "Developed a key component of the Soli-LMS project, focusing on creating and linking project-based learning activities for learners. Implemented a system to connect projects with relevant skills and levels, providing a structured learning path. Explored personalized learning recommendations to enhance the learning experience.",
+	  "imageOptions": [{"key": "size", "value": "large"}],
 	  "images": [
-		{ "key": "soli-lms-screenshot", "hover": "left", "h": "300", "w": "400", "url": "/img/soli-lms.png" } 
+		{
+		  "key": "soli-lms-screenshot",
+		  "hover": "left",
+		  "h": "300",
+		  "w": "400",
+		  "url": "/img/soli-lms.png"
+		}
 	  ],
 	  "stack": [
-		{ "key": "laravel", "name": "Laravel", "type": "devicon" },
-		{ "key": "php", "name": "PHP", "type": "devicon" },
-		{ "key": "mysql", "name": "MySQL", "type": "devicon" },
-		{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
-		{ "key": "html5", "name": "HTML5", "type": "devicon" },
-		{ "key": "css3", "name": "CSS3", "type": "devicon" }
+		{"key": "laravel", "name": "Laravel", "type": "devicon"},
+		{"key": "php", "name": "PHP", "type": "devicon"},
+		{"key": "mysql", "name": "MySQL", "type": "devicon"},
+		{"key": "javascript", "name": "JavaScript", "type": "devicon"},
+		{"key": "html5", "name": "HTML5", "type": "devicon"},
+		{"key": "css3", "name": "CSS3", "type": "devicon"}
 	  ]
 	},
 	{
 	  "project": "Qatra",
-	  "url": "#", 
+	  "url": "#",
 	  "repo": "Public",
 	  "descriptionTitle": "Coding Commanders: Water Conservation Solution (SoliHackathon Winner)",
-	  "description": "As part of the Coding Commanders team, won first place at the SoliHackathon with a solution addressing water wastage. Developed an innovative solution that impressed the judges and earned recognition. Explored using sensor data analysis to optimize water usage.",
-	  "imageOptions": [],
+	  "description": "Won first place at the SoliHackathon with a solution addressing water wastage. Developed an innovative solution that impressed the judges and earned recognition. Explored using sensor data analysis to optimize water usage.",
+	  "imageOptions": [{"key": "size", "value": "large"}],
 	  "images": [
-		{ "key": "water-saving-app", "hover": "right", "h": "300", "w": "400", "url": "/img/water-saving.png" } 
+		{
+		  "key": "water-saving-app",
+		  "hover": "right",
+		  "h": "300",
+		  "w": "400",
+		  "url": "/img/Qatra.png"
+		}
 	  ],
 	  "stack": [
-		{ "key": "php", "name": "PHP", "type": "devicon" },
-		{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
-		{ "key": "html5", "name": "HTML5", "type": "devicon" },
-		{ "key": "css3", "name": "CSS3", "type": "devicon" }
+		{"key": "php", "name": "PHP", "type": "devicon"},
+		{"key": "javascript", "name": "JavaScript", "type": "devicon"},
+		{"key": "html5", "name": "HTML5", "type": "devicon"},
+		{"key": "css3", "name": "CSS3", "type": "devicon"}
 	  ]
 	},
 	{
 	  "project": "Mentorini",
-	  "url": "https://github.com/husseinbouik/mentorini", 
+	  "url": "https://github.com/husseinbouik/mentorini",
 	  "repo": "Public",
 	  "descriptionTitle": "Mentorini: A Mentoring Platform Connecting Learners and Experts",
-	  "description": "Developed a web platform for mentorship, connecting students and mentors using PHP, HTML, CSS, JavaScript, and Bootstrap. Designed the user interface, managed user profiles, and implemented a robust search system to facilitate meaningful connections. Explored using personalized matching algorithms to enhance the mentoring experience.",
-	  "imageOptions": [],
+	  "description": "Developed a web platform for mentorship, connecting students and mentors. Designed the user interface, managed user profiles, and implemented a search system to facilitate meaningful connections. Explored using personalized matching algorithms to enhance the mentoring experience.",
+	  "imageOptions": [{"key": "size", "value": "large"}],
 	  "images": [
-		{ "key": "mentorini-screenshot", "hover": "left", "h": "300", "w": "400", "url": "/img/mentorini.png" } 
+		{
+		  "key": "mentorini-screenshot",
+		  "hover": "left",
+		  "h": "300",
+		  "w": "400",
+		  "url": "/img/mentorini.png"
+		}
 	  ],
 	  "stack": [
-		{ "key": "php", "name": "PHP", "type": "devicon" },
-		{ "key": "javascript", "name": "JavaScript", "type": "devicon" },
-		{ "key": "html5", "name": "HTML5", "type": "devicon" },
-		{ "key": "css3", "name": "CSS3", "type": "devicon" },
-		{ "key": "bootstrap", "name": "Bootstrap", "type": "devicon" }
+		{"key": "php", "name": "PHP", "type": "devicon"},
+		{"key": "javascript", "name": "JavaScript", "type": "devicon"},
+		{"key": "html5", "name": "HTML5", "type": "devicon"},
+		{"key": "css3", "name": "CSS3", "type": "devicon"},
+		{"key": "bootstrap", "name": "Bootstrap", "type": "devicon"}
+	  ]
+	},{
+		"project": "Qatra - Mobile version",
+		"url": "#",
+		"repo": "Public",
+		"descriptionTitle": "Coding Commanders: Water Conservation Solution (SoliHackathon Winner)",
+		"description": "Won first place at the SoliHackathon with a solution addressing water wastage. Developed an innovative solution that impressed the judges and earned recognition. Explored using sensor data analysis to optimize water usage.",
+		"imageOptions": [{"key": "size", "value": "large"}],
+		"images": [
+		  {
+			"key": "water-saving-app",
+			"hover": "right",
+			"h": "300",
+			"w": "400",
+			"url": "/img/Qatra-mobile.png"
+		  }
+		],
+		"stack": [
+		  {"key": "php", "name": "PHP", "type": "devicon"},
+		  {"key": "javascript", "name": "JavaScript", "type": "devicon"},
+		  {"key": "html5", "name": "HTML5", "type": "devicon"},
+		  {"key": "css3", "name": "CSS3", "type": "devicon"}
+		]
+	  },
+	{
+	  "project": "JobMatch",
+	  "url": "https://www.example.com/jobmatch (replace with your app URL if available)",
+	  "repo": "Private",
+	  "descriptionTitle": "JobMatch: Streamlining Career Exploration and Development",
+	  "description": "Developed JobMatch, a mobile application designed for an entrepreneurship competition. The app provides a user-friendly platform for searching job offers, internships, courses, and training opportunities. It features efficient filtering based on location and other criteria. JobMatch integrates with partner platforms to offer a comprehensive suite of resources for career advancement.",
+	  "imageOptions": [{"key": "size", "value": "large"}],
+	  "images": [
+		{
+		  "key": "jobmatch-screenshot",
+		  "hover": "left",
+		  "h": "550",
+		  "w": "330",
+		  "url": "/img/jobmatch.png"
+		}
+	  ],
+	  "stack": [
+		{"key": "reactnative", "name": "React Native", "type": "devicon"},
+		{"key": "javascript", "name": "JavaScript", "type": "devicon"},
+		{"key": "nodejs", "name": "Node.js", "type": "devicon"},
+		{"key": "mongodb", "name": "MongoDB", "type": "devicon"}
 	  ]
 	},
 	{
-		"project": "husseinbouik.tech",
-		"url": "https://github.com/husseinbouik/portfolio",
-		"repo": "Public",
-		"descriptionTitle": "An open-source portfolio website",
-		"description": "built on Next.js and React. A fast and responsive single page application.",
-		"imageOptions": [
-			{ "key": "size", 		"value": "large" }
-		],
-		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "550", "w": "330",  "url": "/img/img-mock.png" }
-		],
-		"stack": [
-			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
-			{ "key": "react", 		"name": "React", 		"type": "devicon" },
-			{ "key": "nodejs", 		"name": "Node.js", 		"type": "devicon" },
-			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
-			{ "key": "typescript", 	"name": "Typescript", 	"type": "devicon" },
-			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
-			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
-			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
-			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" },
-			{"key": "python", "name": "Python", "type": "devicon"},
-			{"key": "django", "name": "Django", "type": "devicon"}
-
-		]
+	  "project": "husseinbouik.tech",
+	  "url": "https://github.com/husseinbouik/husseinbouik.github.io",
+	  "repo": "Public",
+	  "descriptionTitle": "An open-source portfolio website",
+	  "description": "Built on Next.js and React. A fast and responsive single page application.",
+	  "imageOptions": [{"key": "size", "value": "large"}],
+	  "images": [
+		{
+		  "key": "portfolio",
+		  "hover": "left",
+		  "h": "550",
+		  "w": "330",
+		  "url": "/img/img-mock.png"
+		}
+	  ],
+	  "stack": [
+		{"key": "nextjs", "name": "Next.js", "type": "devicon"},
+		{"key": "react", "name": "React", "type": "devicon"},
+		{"key": "nodejs", "name": "Node.js", "type": "devicon"},
+		{"key": "javascript", "name": "JavaScript", "type": "devicon"},
+		{"key": "typescript", "name": "Typescript", "type": "devicon"},
+		{"key": "html5", "name": "HTML5", "type": "devicon"},
+		{"key": "css3", "name": "CSS3", "type": "devicon"},
+		{"key": "sass", "name": "SCSS", "type": "devicon"},
+		{"key": "git", "name": "Git(Hub)", "type": "devicon"},
+		{"key": "python", "name": "Python", "type": "devicon"},
+		{"key": "django", "name": "Django", "type": "devicon"}
+	  ]
 	}
-]
+  ]

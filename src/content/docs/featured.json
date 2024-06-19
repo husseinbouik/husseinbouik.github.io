@@ -1,24 +1,39 @@
-[
-  {
-    "title": "husseinbouik.tech",
-    "pubDate": "2023-07-05",
-    "link": "https://github.com/husseinbouik/portfolio#readme",
-    "author": "Hussein Bouik",
-    "thumbnail": "/img/jobs.png",
-    "categories": ["Portfolio", "Website", "Blog","personal"]
-  },
-  
+[ 
+    {
+      "title": "JobMatch",
+      "pubDate": "2023-06-18",
+      "link": "https://github.com/husseinbouik/",
+      "author": "Hussein Bouik",
+      "thumbnail": "/img/jobmatch.png",
+      "categories": ["Portfolio", "Website", "Blog", "personal"]
+    },
+    {
+      "project": "Qatra - Mobile",
+      "pubDate": "2024-05-16", 
+      "link": "#", 
+      "author": "Hussein Bouik",
+      "thumbnail": "/img/Qatra-mobile.png", 
+      "categories": ["Laravel","PHP", "JavaScript", "HTML", "CSS"]
+    },
+    {
+      "project": "Mentorini",
+      "pubDate": "2023-06-23", 
+      "link": "https://github.com/husseinbouik/mentorini", 
+      "author": "Hussein Bouik",
+      "thumbnail": "/img/mentorini.png", 
+      "categories": ["PHP", "JavaScript", "HTML", "CSS", "Bootstrap"]
+    },
     {
       "title": "husseinbouik.tech",
-      "pubDate": "2023-07-05",
-      "link": "https://github.com/husseinbouik/portfolio#readme",
+      "pubDate": "2024-02-05",
+      "link": "https://github.com/husseinbouik/husseinbouik.github.io#readme",
       "author": "Hussein Bouik",
       "thumbnail": "/img/jobs.png",
       "categories": ["Portfolio", "Website", "Blog", "personal"]
     },
     {
       "project": "Soli-LMS",
-      "pubDate": "2023-07-05", 
+      "pubDate": "2024-06-11", 
       "link": "https://github.com/husseinbouik/soli-lms", 
       "author": "Hussein Bouik",
       "thumbnail": "/img/soli-lms.png", 
@@ -26,18 +41,10 @@
     },
     {
       "project": "Qatra",
-      "pubDate": "2023-07-05", 
+      "pubDate": "2024-05-16", 
       "link": "#", 
       "author": "Hussein Bouik",
-      "thumbnail": "/img/water-saving.png", 
-      "categories": ["PHP", "JavaScript", "HTML", "CSS"]
-    },
-    {
-      "project": "Mentorini",
-      "pubDate": "2023-07-05", 
-      "link": "https://github.com/husseinbouik/mentorini", 
-      "author": "Hussein Bouik",
-      "thumbnail": "/img/mentorini.png", 
-      "categories": ["PHP", "JavaScript", "HTML", "CSS", "Bootstrap"]
+      "thumbnail": "/img/Qatra.png", 
+      "categories": ["Laravel","PHP", "JavaScript", "HTML", "CSS"]
     }
   ]
