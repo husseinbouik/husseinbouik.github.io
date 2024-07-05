@@ -18,7 +18,7 @@ Make Sure to [Fork](https://github.com/husseinbouik/husseinbouik.github.io/fork)
 If you find this project helpful and enjoy my work, consider supporting me:
 
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-orange?logo=buy-me-a-coffee&s=20)](https://www.buymeacoffee.com/husseinbouik)
-[![Patreon](https://img.shields.io/badge/Patreon-Support-red?logo=patreon&s=20)](https://www.patreon.com/muhammad_fiaz)
+[![Patreon](https://img.shields.io/badge/Patreon-Support-red?logo=patreon&s=20)](https://www.patreon.com/hussein_bouik)
 <a href="https://ko-fi.com/husseinbouik"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Ko-fi" height="20"></a>
 [![Sponsor husseinbouik](https://img.shields.io/badge/Sponsor-hussein--bouik-brightgreen?logo=github)](https://github.com/sponsors/husseinbouik)
 
