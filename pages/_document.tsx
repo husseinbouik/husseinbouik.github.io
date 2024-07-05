@@ -155,7 +155,7 @@ export default function Document() {
             "https://www.linkedin.com/in/hussein-bouik-",
             "https://medium.com/@husseinbouik",
             "https://twitter.com/muhammadfiaz_",
-            "https://dev.to/muhammadfiaz"
+            "https://dev.to/husseinbouik"
           ]
         }`
                     }}
