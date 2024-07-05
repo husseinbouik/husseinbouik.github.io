@@ -4,7 +4,7 @@ Welcome to my portfolio repository! Your contributions and suggestions are welco
 
 ## Code of Conduct
 
-This project and its community adhere to the [Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report any unacceptable behavior to [email](s.muhammadfiaz2003@gmail.com).
+This project and its community adhere to the [Code of Conduct](./CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report any unacceptable behavior to [email](s.husseinbouik2003@gmail.com).
 
 ## How to Contribute 👻
 
