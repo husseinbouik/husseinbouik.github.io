@@ -86,7 +86,7 @@ export default function Document() {
                 <meta name="twitter:description"
                       content="Hussein Bouik - A dedicated Full Stack Developer proficient in App/Web, Cloud, DevOps, AI/ML, and Design. Join my journey."/>
                 <meta name="twitter:image" content="https://raw.githubusercontent.com/husseinbouik/images/main/elbacha-hussein.jpg"/>
-                <meta name="twitter:creator" content="https://twitter.com/muhammadfiaz_"/>
+                <meta name="twitter:creator" content="https://twitter.com/husseinbouik_"/>
                 <meta name="twitter:domain" content="https://husseinbouik.tech"/>
 
 
@@ -154,7 +154,7 @@ export default function Document() {
             "https://github.com/husseinbouik",
             "https://www.linkedin.com/in/hussein-bouik-",
             "https://medium.com/@husseinbouik",
-            "https://twitter.com/muhammadfiaz_",
+            "https://twitter.com/husseinbouik_",
             "https://dev.to/husseinbouik"
           ]
         }`

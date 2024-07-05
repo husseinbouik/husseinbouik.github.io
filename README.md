@@ -11,7 +11,7 @@
 [![CodeQL](https://github.com/husseinbouik/husseinbouik.github.io/actions/workflows/codeql.yml/badge.svg)](https://github.com/husseinbouik/husseinbouik.github.io/actions/workflows/codeql.yml)
 [![Dependency Review](https://github.com/husseinbouik/husseinbouik.github.io/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/husseinbouik/husseinbouik.github.io/actions/workflows/dependency-review.yml)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/husseinbouik/husseinbouik.github.io)
-[![Maintainer](https://img.shields.io/badge/maintainer-muhammad--fiaz-blue)](https://github.com/husseinbouik)
+[![Maintainer](https://img.shields.io/badge/maintainer-hussein--bouik-blue)](https://github.com/husseinbouik)
 
 [![Latest Release](https://img.shields.io/github/release/husseinbouik/portfolio.svg)](https://github.com/husseinbouik/husseinbouik.github.io/releases/latest)
 [![Current Version](https://img.shields.io/badge/Current%20Version-v1.0.7-blue.svg)](https://github.com/husseinbouik/husseinbouik.github.io/releases/tag/v1.0.7)
