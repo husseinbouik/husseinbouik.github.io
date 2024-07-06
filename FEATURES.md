@@ -125,10 +125,10 @@ Please follow the [Contributing Guidelines](./CONTRIBUTING.md) to contribute to 
 
 Enjoying my work? Consider supporting me by buying me a cup of coffee or becoming a patron.
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-orange?logo=buy-me-a-coffee&s=20)](https://www.buymeacoffee.com/muhammadfiaz)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-orange?logo=buy-me-a-coffee&s=20)](https://www.buymeacoffee.com/husseinbouik)
 [![Patreon](https://img.shields.io/badge/Patreon-Support-red?logo=patreon&s=20)](https://www.patreon.com/muhammad_fiaz)
-<a href="https://ko-fi.com/muhammadfiaz"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Ko-fi" height="20"></a>
-[![Sponsor husseinbouik](https://img.shields.io/badge/Sponsor-muhammad--fiaz-brightgreen?logo=github)](https://github.com/sponsors/husseinbouik)
+<a href="https://ko-fi.com/husseinbouik"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Ko-fi" height="20"></a>
+[![Sponsor husseinbouik](https://img.shields.io/badge/Sponsor-hussein--bouik-brightgreen?logo=github)](https://github.com/sponsors/husseinbouik)
 
 
 Thank you for checking out [my portfolio on GitHub](https://github.com/husseinbouik/husseinbouik.github.io)! We're constantly working to improve and enhance the project. To ensure you're always up-to-date with the latest changes, we recommend following these steps:
