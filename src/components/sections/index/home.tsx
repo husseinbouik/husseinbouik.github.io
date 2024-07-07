@@ -25,7 +25,7 @@ export default function Home() {
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-						<Image src="https://raw.githubusercontent.com/husseinbouik/images/main/elbacha-hussein.jpg" width={600} height={800} alt="Hussein Bouik"   loading="eager" />
+						<Image src="https://raw.githubusercontent.com/husseinbouik/images/main/hussein-bouik-kasbah.jpg" width={600} height={800} alt="Hussein Bouik"   loading="eager" />
 					</div>
 					<div className={about.copy}>
 						<CopyBlock
