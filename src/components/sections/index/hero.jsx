@@ -21,7 +21,7 @@ export default function Hero() {
 
 	return (
 		<Section classProp={`${hero.section}`}>
-			<Container spacing={'VerticalXXXL'}  className="pt-[30%] md:pt-[15%]">
+			<Container spacing={'VerticalXXXL'} className="custom-container">
 				<TypeAnimation
 					className={`${hero.preHeader}`}
 					sequence={[
