@@ -13,9 +13,11 @@ const Container: React.FC<ContainerProps> = ({ classProp, spacing, children }) =
 	const _class = classProp ? classProp : '';
 
 	return (
-		<div className={`${styles.readingWidth} ${_class} ${Spacing(spacing)}`}>
-			{children}
-		</div>
+<div className={`${styles.readingWidth} ${_class} ${Spacing(spacing)} ${styles.paddingTop}`}>
+  {children}
+</div>
+
+
 	);
 };
 
