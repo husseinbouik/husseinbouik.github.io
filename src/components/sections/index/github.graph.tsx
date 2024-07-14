@@ -8,9 +8,9 @@ import SectionTitle from "../../blocks/section.title";
 import Section from "../../structure/section";
 import Container from "../../structure/container";
 
-const contributionYears = [2023, 2022, 2021, 2020];
+const contributionYears = [2024,2023, 2022];
 export default function GithubGraphSection() {
-    const [year, setYear] = useState(2023);
+    const [year, setYear] = useState(2024);
 
     return (
         <Section classProp={`${styles.section} borderBottom`}>
