@@ -31,6 +31,32 @@
 		font-weight: 400;
 		margin: 1rem 0;
 	}
+	.availability {
+		display: inline-flex;
+		align-items: center;
+		gap: .6rem;
+		font-family: var(--font-accent);
+		font-size: .85rem;
+		font-weight: 400;
+		color: var(--primary-bright);
+		border: 1px solid var(--primary-dark);
+		border-radius: 99rem;
+		padding: .45rem 1.1rem;
+		margin: 0 0 1.25rem 0;
+		background: var(--background-dim);
+	}
+	.availabilityDot {
+		width: .55rem;
+		height: .55rem;
+		border-radius: 50%;
+		background-color: #22c55e;
+		flex-shrink: 0;
+		animation: availabilityPulse 2s ease-in-out infinite;
+	}
+	@keyframes availabilityPulse {
+		0%, 100% { opacity: 1; }
+		50% { opacity: .35; }
+	}
 	.tooltipContent {
 		position: absolute;
 		top: -110px;
@@ -107,6 +133,33 @@
 		}
 	}
 
+	.stats {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5rem 2.75rem;
+		margin-top: 2.25rem;
+	}
+
+	.stat {
+		display: flex;
+		flex-direction: column;
+		gap: .15rem;
+	}
+
+	.statValue {
+		font-family: var(--font-sans);
+		font-size: 1.75rem;
+		font-weight: 700;
+		letter-spacing: -.05rem;
+		color: var(--primary-bright);
+	}
+
+	.statLabel {
+		font-family: var(--font-accent);
+		font-size: .78rem;
+		color: var(--primary);
+	}
+
 	@include media($max: $mobile) {
 		height: auto;
 		min-height: 100vh;
@@ -121,6 +174,15 @@
 		button {
 			font-size: .875rem;
 			padding: 0.75rem 2rem;
+		}
+		.stats {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.25rem;
+			margin-top: 2rem;
+		}
+		.statValue {
+			font-size: 1.5rem;
 		}
 	}
 }

@@ -14,6 +14,13 @@ import button from '../../../styles/scss/blocks/button.module.scss';
 
 import content from '../../../content/index/hero.json';
 
+const stats = [
+	{ value: '3+', label: 'Years Experience' },
+	{ value: '6', label: 'Featured Projects' },
+	{ value: '20+', label: 'Technologies' },
+	{ value: '5', label: 'Languages Spoken' },
+];
+
 export default function Hero() {
 	const [, setTypingStatus] = useState('Initializing');
 	const [isHiremeTooltipVisible, setIsHiremeTooltipVisible] = useState(false);
@@ -22,6 +29,12 @@ export default function Hero() {
 	return (
 		<Section classProp={`${hero.section}`}>
 			<Container spacing={'VerticalXXXL'} >
+				{content.availability?.show && (
+					<p className={hero.availability}>
+						<span className={hero.availabilityDot} aria-hidden="true" />
+						{content.availability.text}
+					</p>
+				)}
 				<TypeAnimation
 					className={`${hero.preHeader}`}
 					sequence={[
@@ -50,7 +63,7 @@ export default function Hero() {
 				/>
 				<section>
 					<h1 className={hero.header}>{content.header.name}</h1>
-					<h1 className={`${hero.header} ${hero.primaryDim}`}>{content.header.usp}</h1>
+					<p className={`${hero.header} ${hero.primaryDim}`}>{content.header.usp}</p>
 				</section>
 				<section>
 					<p className={`${hero.primaryBright} subtitle ${space(['verticalLrg'])}`}>
@@ -59,7 +72,7 @@ export default function Hero() {
 				</section>
 				<section style={{ position: 'relative' }} className={hero.ctaRow}>
 					<button
-						className={`button ${button.primary}`}
+						className={`${button.btn} ${button.btnPrimary}`}
 						onClick={() => (window.location = 'mailto:husseinbouik5@gmail.com')}
 						onMouseEnter={() => setIsHiremeTooltipVisible(true)}
 						onMouseLeave={() => setIsHiremeTooltipVisible(false)}
@@ -69,12 +82,12 @@ export default function Hero() {
 					{isHiremeTooltipVisible && (
 						<div className={`${hero.tooltipContent} ${hero.hireme_tooltip}`}>
 
-							<Image src="/gif/hireme.gif" width={100} height={100} alt="Yescat GIF" />
+							<Image src="/gif/hireme.gif" width={100} height={100} alt="Teal cartoon cat with big sparkling yellow eyes" />
 
 						</div>
 					)}
 					<button
-						className={`button ${button.secondary} leaveSite`}
+						className={`${button.btn} ${button.btnSecondary} leaveSite`}
 
 						onClick={() => window.open(content.buttons.secondary.url, '_blank')}
 
@@ -86,10 +99,18 @@ export default function Hero() {
 					{isYescatTooltipVisible && (
 						<div className={`${hero.tooltipContent} ${hero.yescat_tooltip}`}>
 
-							<Image src="/gif/yes.gif" width={100} height={100} alt="GIF" />
+							<Image src="/gif/yes.gif" width={100} height={100} alt="Pixel-art character cheering against a fiery background" />
 
 						</div>
 					)}
+				</section>
+				<section className={hero.stats} aria-label="Key facts">
+					{stats.map(({ value, label }) => (
+						<div key={label} className={hero.stat}>
+							<span className={hero.statValue}>{value}</span>
+							<span className={hero.statLabel}>{label}</span>
+						</div>
+					))}
 				</section>
 			</Container>
 			<HeroBg theme="bg-color-1" />

@@ -65,7 +65,7 @@ export default function Document() {
                 <link rel="manifest" href="/manifest.json"/>
 
 
-                <meta property="og:title" content="Hussein Bouik" key="title"/>
+                <meta property="og:title" content="Hussein Bouik — Software Engineer" key="title"/>
                 <meta property="og:description"
                       content="Hussein Bouik — Software Engineer building enterprise .NET microservices, immersive 3D web experiences, and AI-powered systems. Currently at NTT DATA on the UN Volunteers platform."/>
                 <meta property="og:image" content="https://raw.githubusercontent.com/husseinbouik/images/main/elbacha-hussein.jpg"/>
@@ -83,7 +83,7 @@ export default function Document() {
 
                 <meta name="twitter:card" content="summary"/>
                 <meta name="twitter:site" content="https://twitter.com/"/>
-                <meta name="twitter:title" content="Hussein Bouik"/>
+                <meta name="twitter:title" content="Hussein Bouik — Software Engineer"/>
                 <meta name="twitter:description"
                       content="Hussein Bouik — Software Engineer building enterprise .NET microservices, immersive 3D web experiences, and AI-powered systems. Currently at NTT DATA on the UN Volunteers platform."/>
                 <meta name="twitter:image" content="https://raw.githubusercontent.com/husseinbouik/images/main/elbacha-hussein.jpg"/>

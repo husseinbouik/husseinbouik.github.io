@@ -53,7 +53,10 @@ interface MyAppProps extends AppProps{
 }
 
 const MyApp: React.FC<MyAppProps> = ({ Component, pageProps }) => {
-    const [isLoading, setIsLoading] = useState(true);
+    // Initialize from settings so server-side prerendering outputs real content
+    // (previously this started as `true`, which meant crawlers and the static
+    // export only ever saw the empty loading screen).
+    const [isLoading, setIsLoading] = useState(settings.splashscreen);
 
     useEffect(() => {
         // Check if splashscreen is enabled in settings

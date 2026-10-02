@@ -22,9 +22,15 @@ export default function Footer(): JSX.Element {
 
 	useEffect(() => {
 		fetch(settings.portfolio.repo_api)
-			.then(response => response.json())
+			.then(response => {
+				if (!response.ok) throw new Error(`GitHub API responded with ${response.status}`);
+				return response.json();
+			})
 			.then(json => {
 				const { stargazers_count, forks_count } = json;
+				if (typeof stargazers_count !== 'number' || typeof forks_count !== 'number') {
+					throw new Error('Unexpected GitHub API response shape');
+				}
 				setGitHubInfo({
 					stars: stargazers_count,
 					forks: forks_count,
@@ -32,6 +38,13 @@ export default function Footer(): JSX.Element {
 			})
 			.catch(e => console.error(e));
 	}, []);
+
+	const socialLabels: Record<string, string> = {
+		medium: 'Medium',
+		dev: 'DEV Community',
+		linkedin: 'LinkedIn',
+		github: 'GitHub',
+	};
 
 	return (
 		<footer className={css.container}>
@@ -74,7 +87,13 @@ export default function Footer(): JSX.Element {
 						<li className={css.socialList}>
 							{content.social.map(({ url, icon }, index) => {
 								return (
-									<a key={index} href={url} rel="noreferrer" target="_blank">
+									<a
+										key={index}
+										href={url}
+										rel="noreferrer"
+										target="_blank"
+										aria-label={socialLabels[icon] ?? icon}
+									>
 										<Icon icon={['fab', icon] as any} />
 									</a>
 								);
@@ -83,23 +102,25 @@ export default function Footer(): JSX.Element {
 
 					</ul>
 				</section>
-				<section className={css.github}>
-					<a href={settings.portfolio.repo_html} rel="noreferrer" target="_blank">
-						<h5>{settings.portfolio.fork_this}</h5>
-						<ul>
-							<li>
-								<p>
-									<Icon icon={['fas', 'code-branch']} /> Forks: {gitHubInfo.forks}
-								</p>
-							</li>
-							<li>
-								<p>
-									<Icon icon={['fas', 'star']} /> Stars: {gitHubInfo.stars}
-								</p>
-							</li>
-						</ul>
-					</a>
-				</section>
+				{gitHubInfo.stars !== null && gitHubInfo.forks !== null && (
+					<section className={css.github}>
+						<a href={settings.portfolio.repo_html} rel="noreferrer" target="_blank">
+							<h5>{settings.portfolio.fork_this}</h5>
+							<ul>
+								<li>
+									<p>
+										<Icon icon={['fas', 'code-branch']} /> Forks: {gitHubInfo.forks}
+									</p>
+								</li>
+								<li>
+									<p>
+										<Icon icon={['fas', 'star']} /> Stars: {gitHubInfo.stars}
+									</p>
+								</li>
+							</ul>
+						</a>
+					</section>
+				)}
 			</Container>
 			<canvas id="gradient-canvas" className={''} data-transition-in=""></canvas>
 		</footer>
