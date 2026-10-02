@@ -31,14 +31,14 @@ export default function Technical() {
 						<CopyBlock
 							title="Logical Thinking"
 							icon={['fas', 'chart-network']}
-							copy="My approach to development is rooted in a strong foundation of logical thinking and problem-solving. I'm adept at breaking down complex challenges into manageable components, finding creative solutions, and delivering efficient results. My training in data analysis and visualization has further honed these skills, allowing me to analyze information, identify patterns, and make data-driven decisions. I'm always eager to learn new approaches and stay ahead of the curve in the ever-evolving tech landscape."
+							copy="My approach to development is rooted in a strong foundation of logical thinking and problem-solving, backed by my degree in mathematics and computer science. I'm adept at breaking down complex challenges into manageable components, finding creative solutions, and delivering efficient results. I'm always eager to learn new approaches and stay ahead of the curve in the ever-evolving tech landscape."
 							iconClass={technical.icon}
 							containerClass={technical.container}
 						/>
 
 						<BadgesBlock
 							title="Software I love to work with"
-							copy="I'm a self-taught programmer with a deep passion for building impactful projects. I'm comfortable working across the entire development spectrum, from front-end to back-end, and I'm always eager to learn new tools and technologies."
+							copy="I'm a software engineer who works across the entire development spectrum — from enterprise .NET backends to immersive 3D web experiences. I'm comfortable owning the full lifecycle, from architecture to delivery, and I'm always eager to learn new tools and technologies."
 							list={software}
 							block="software"
 							fullContainer="fullContainer"
@@ -48,7 +48,7 @@ export default function Technical() {
 
 						<BadgesBlock
 							title="Technologies I love to build with"
-							copy="I'm a passionate problem-solver who thrives on using coding to create innovative solutions that make a tangible difference. My projects span diverse domains, from building educational platforms (Soli-LMS) to developing a water conservation solution (SoliHackathon), showcasing my ability to apply my skills to solve real-world problems. I'm always searching for new opportunities to leverage my expertise and make a positive contribution."
+							copy="I'm a passionate problem-solver who thrives on using code to create solutions that make a tangible difference. My projects span demanding domains — from the UN Volunteers enterprise platform (.NET microservices on Azure) to real-time 3D product configurators (React Three Fiber) to AI-assisted automation running in production — always choosing the right tool for the problem."
 							list={tech}
 							block="tech"
 							fullContainer="fullContainer"
