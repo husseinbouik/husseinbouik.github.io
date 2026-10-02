@@ -1,4 +1,4 @@
-const siteUrl = 'https://husseinbouik.tech'; // Replace with your website's URL
+const siteUrl = 'https://husseinbouik-github-io.vercel.app'; // Replace with your website's URL
 
 module.exports = {
     siteUrl: siteUrl,

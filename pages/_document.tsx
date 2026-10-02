@@ -34,17 +34,17 @@ export default function Document() {
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"/>
                 <meta name="language" content="English"/>
                 <meta name="revisit-after" content="1 days"/>
-                <link rel="canonical" href="https://husseinbouik.tech"/>
+                <link rel="canonical" href="https://husseinbouik-github-io.vercel.app"/>
                 <meta name="license" content="MIT License"/>
                 <meta httpEquiv="content-language" content="en-us"/>
 
-                <link rel="preconnect" href="https://husseinbouik.tech"/>
+                <link rel="preconnect" href="https://husseinbouik-github-io.vercel.app"/>
 
-                <link rel="dns-prefetch" href="https://husseinbouik.tech"/>
+                <link rel="dns-prefetch" href="https://husseinbouik-github-io.vercel.app"/>
 
                 <meta name="author" content="Hussein Bouik"/>
 
-                <link rel="alternate" hrefLang="en" href="https://husseinbouik.tech"/>
+                <link rel="alternate" hrefLang="en" href="https://husseinbouik-github-io.vercel.app"/>
 
                 <meta name="robots" content="index, follow"/>
                 <meta name="googlebot" content="index, follow"/>
@@ -66,16 +66,16 @@ export default function Document() {
 
                 <meta property="og:title" content="Hussein Bouik" key="title"/>
                 <meta property="og:description"
-                      content="Hussein Bouik - A dedicated Full Stack Developer proficient in App/Web, Cloud, DevOps, AI/ML, and Design. Join my journey."/>
+                      content="Hussein Bouik — Software Engineer building enterprise .NET microservices, immersive 3D web experiences, and AI-powered systems. Currently at NTT DATA on the UN Volunteers platform."/>
                 <meta property="og:image" content="https://raw.githubusercontent.com/husseinbouik/images/main/elbacha-hussein.jpg"/>
                 <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/husseinbouik/images/main/elbacha-hussein.jpg"/>
                 <meta property="og:image:type" content="image/jpeg"/>
                 <meta property="og:image:alt" content="Hussein Bouik"/>
                 <meta property="og:image:width" content="300"/>
                 <meta property="og:image:height" content="300"/>
-                <meta property="og:url" content="https://www.husseinbouik.tech"/>
+                <meta property="og:url" content="https://husseinbouik-github-io.vercel.app"/>
                 <meta property="og:type" content="website"/>
-                <meta property="og:profile" content="https://github.com/husseinouik"/>
+                <meta property="og:profile" content="https://github.com/husseinbouik"/>
                 <meta property="og:site_name" content="Hussein Bouik"/>
                 <meta property="og:locale" content="en_US"/>
 
@@ -84,10 +84,10 @@ export default function Document() {
                 <meta name="twitter:site" content="https://twitter.com/"/>
                 <meta name="twitter:title" content="Hussein Bouik"/>
                 <meta name="twitter:description"
-                      content="Hussein Bouik - A dedicated Full Stack Developer proficient in App/Web, Cloud, DevOps, AI/ML, and Design. Join my journey."/>
+                      content="Hussein Bouik — Software Engineer building enterprise .NET microservices, immersive 3D web experiences, and AI-powered systems. Currently at NTT DATA on the UN Volunteers platform."/>
                 <meta name="twitter:image" content="https://raw.githubusercontent.com/husseinbouik/images/main/elbacha-hussein.jpg"/>
                 <meta name="twitter:creator" content="https://twitter.com/husseinbouik_"/>
-                <meta name="twitter:domain" content="https://husseinbouik.tech"/>
+                <meta name="twitter:domain" content="https://husseinbouik-github-io.vercel.app"/>
 
 
                 <link rel='apple-touch-startup-image' href='/img/logo_rounded.png' sizes='2048x2732'/>
@@ -149,7 +149,7 @@ export default function Document() {
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Hussein Bouik",
-          "url": "https://husseinbouik.tech",
+          "url": "https://husseinbouik-github-io.vercel.app",
           "sameAs": [
             "https://github.com/husseinbouik",
             "https://www.linkedin.com/in/hussein-bouik-",
@@ -224,27 +224,27 @@ export default function Document() {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://husseinbouik.tech/"
+              "item": "https://husseinbouik-github-io.vercel.app/"
             },{
               "@type": "ListItem",
               "position": 2,
               "name": "Docs",
-              "item": "https://husseinbouik.tech/docs"
+              "item": "https://husseinbouik-github-io.vercel.app/docs"
             },{
               "@type": "ListItem",
               "position": 3,
               "name": "Articles",
-              "item": "https://husseinbouik.tech/articles"
+              "item": "https://husseinbouik-github-io.vercel.app/articles"
             },{
               "@type": "ListItem",
               "position": 4,
               "name": "Projects",
-              "item": "https://husseinbouik.tech/projects"
+              "item": "https://husseinbouik-github-io.vercel.app/projects"
             },{
               "@type": "ListItem",
               "position": 5,
               "name": "Sign In",
-              "item": "https://husseinbouik.tech/signin"
+              "item": "https://husseinbouik-github-io.vercel.app/signin"
             }]
           }
         `
@@ -257,7 +257,7 @@ export default function Document() {
             "@context": "https://schema.org",
             "@type": "ResearchProject",
             "name": "NeuroLink",
-            "description": "NeuroLink is a Python package that aims to provide various AI capabilities, including a chatbot, image processing, audio processing, Django support, and more. It utilizes TensorFlow and other related technologies for natural language processing and AI tasks.",
+            "description": "Hussein Bouik — Software Engineer building enterprise .NET microservices, immersive 3D web experiences (React Three Fiber), and AI-powered systems. Currently at NTT DATA working on the Unified Volunteers Platform for the United Nations Volunteers.",
             "alternateName": "neurolink",
             "url": "https://github.com/husseinbouik/neurolink",
             "logo": "https://private-user-images.githubusercontent.com/75434191/242214243-82fbf702-43e2-46e6-8e01-11758fa26310.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE2OTQ4NTE2ODksIm5iZiI6MTY5NDg1MTM4OSwicGF0aCI6Ii83NTQzNDE5MS8yNDIyMTQyNDMtODJmYmY3MDItNDNlMi00NmU2LThlMDEtMTE3NThmYTI2MzEwLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzA5MTYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMwOTE2VDA4MDMwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ3NjJmNzA5MGU5NWY4NTUxZTcxYmVmNzNlZTYzOTViN2FjNzE1YTM2MjM1OTNlOGIxNzk0ODE1NDczMDMzNGEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ay5bRLRoojQ33ZJLFnvjyq6Dq4qZfDY7quvv4WmgRLI",

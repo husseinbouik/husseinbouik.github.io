@@ -1,6 +1,12 @@
 
 import React from "react";
-import {Player} from "@lottiefiles/react-lottie-player";
+import dynamic from "next/dynamic";
+
+// SSR-safe: lottie player accesses `document` at module scope
+const Player = dynamic(
+	() => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
+	{ ssr: false }
+);
 
 function LoadingScreen() {
     return (
