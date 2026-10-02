@@ -80,9 +80,9 @@ export default function Home() {
 	)
 }
 const methods = [
-	{ key: 'machinelearning', name: 'AI-powered solutions', type: 'fad', icon: 'devicon' },
-	{ key: 'artificialintelligence', name: 'Data insights', type: 'fad', icon: 'devicon' },
-	{ key: 'deeplearning', name: 'AI-driven innovation', type: 'fad', icon: 'devicon' },
-	{ key: 'neuralnetworks', name: 'Smart tech', type: 'fad', icon: 'devicon' },
+	{ key: 'machinelearning', name: 'AI-powered solutions', type: 'fas', icon: 'devicon' },
+	{ key: 'artificialintelligence', name: 'Data insights', type: 'fas', icon: 'devicon' },
+	{ key: 'deeplearning', name: 'AI-driven innovation', type: 'fas', icon: 'devicon' },
+	{ key: 'neuralnetworks', name: 'Smart tech', type: 'fas', icon: 'devicon' },
 
 ];

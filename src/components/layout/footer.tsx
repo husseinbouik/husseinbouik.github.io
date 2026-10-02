@@ -45,7 +45,7 @@ export default function Footer(): JSX.Element {
 							return (
 								<li key={index}>
 									<a href={link} rel="noreferrer" target="_blank">
-										{person} <Icon icon={['fad', 'arrow-up-right-from-square']} />
+										{person} <Icon icon={['fas', 'arrow-up-right-from-square']} />
 									</a>
 									<p>{note}</p>
 								</li>
@@ -60,7 +60,7 @@ export default function Footer(): JSX.Element {
 							return (
 								<li key={index}>
 									<a href={link} rel="noreferrer" target="_blank">
-										{person} <Icon icon={['fad', 'arrow-up-right-from-square']} />
+										{person} <Icon icon={['fas', 'arrow-up-right-from-square']} />
 									</a>
 									<p>{note}</p>
 								</li>
@@ -89,12 +89,12 @@ export default function Footer(): JSX.Element {
 						<ul>
 							<li>
 								<p>
-									<Icon icon={['fad', 'code-branch']} /> Forks: {gitHubInfo.forks}
+									<Icon icon={['fas', 'code-branch']} /> Forks: {gitHubInfo.forks}
 								</p>
 							</li>
 							<li>
 								<p>
-									<Icon icon={['fad', 'star']} /> Stars: {gitHubInfo.stars}
+									<Icon icon={['fas', 'star']} /> Stars: {gitHubInfo.stars}
 								</p>
 							</li>
 						</ul>

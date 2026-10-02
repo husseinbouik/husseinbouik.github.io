@@ -53,7 +53,7 @@ export default function PageWithJSbasedForm() {
 	}
 
 	const [theIcon, setIcon] = useState({
-		prefix: "fad",
+		prefix: "fas",
 		icon: "star",
 	});
 
