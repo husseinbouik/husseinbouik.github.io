@@ -57,7 +57,7 @@ export default function Hero() {
 						{content.paragraph}
 					</p>
 				</section>
-				<section style={{ position: 'relative' }}>
+				<section style={{ position: 'relative' }} className={hero.ctaRow}>
 					<button
 						className={`button ${button.primary}`}
 						onClick={() => (window.location = 'mailto:husseinbouik5@gmail.com')}
@@ -76,7 +76,7 @@ export default function Hero() {
 					<button
 						className={`button ${button.secondary} leaveSite`}
 
-						onClick={() => window.open('https://www.linkedin.com/in/husseinbouik-', '_blank')}
+						onClick={() => window.open(content.buttons.secondary.url, '_blank')}
 
 						onMouseEnter={() => setIsYescatTooltipVisible(true)}
 						onMouseLeave={() => setIsYescatTooltipVisible(false)}

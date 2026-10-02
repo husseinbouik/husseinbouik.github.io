@@ -155,3 +155,11 @@
 		}
 	}
 }
+// ---- Mobile: reclaim horizontal space ----
+@include media($max: $mobile) {
+	.section {
+		.position {
+			margin-left: 1rem;
+		}
+	}
+}

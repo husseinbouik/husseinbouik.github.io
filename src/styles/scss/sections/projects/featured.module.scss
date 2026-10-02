@@ -326,3 +326,44 @@
 	}
 }
 
+
+// ---- Mobile overhaul: readable text, stacked full-width 16:9 images ----
+@include media($max: $mobile) {
+	.projectHeader {
+		p {
+			font-size: 1.1rem;
+			line-height: 1.55;
+		}
+		.header {
+			flex-wrap: wrap;
+			gap: 1rem;
+		}
+	}
+	.project {
+		.imageContainer {
+			height: auto;
+			width: 100%;
+			flex-shrink: 1;
+		}
+		.imageAnimationContainer {
+			position: relative;
+			height: auto;
+			width: 100%;
+			overflow: hidden;
+			border-radius: 1rem;
+			> div > div {
+				> span {
+					position: relative !important;
+					right: auto !important;
+					display: block;
+					img {
+						width: 100% !important;
+						height: auto !important;
+						aspect-ratio: 16 / 9;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+}

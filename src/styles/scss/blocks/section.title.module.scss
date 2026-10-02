@@ -11,3 +11,9 @@
 		color: var(--primary);
 	}
 }
+// ---- Fluid headings ----
+.title {
+	h2 {
+		font-size: clamp(1.75rem, 6vw, var(--font-xl));
+	}
+}

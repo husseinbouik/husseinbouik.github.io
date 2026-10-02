@@ -15,11 +15,12 @@ export default function Document() {
                  license: MIT License
                   */}
                 <meta charSet="utf-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
                 {/* eslint-disable-next-line @next/next/no-title-in-document-head */}
-                <title>Hussein Bouik</title>
+                <title>Hussein Bouik — Software Engineer</title>
                 <meta name="description"
-                      content="Hussein Bouik - A dedicated Full Stack Developer proficient in App/Web, Cloud, DevOps, AL/ML, and Design. Join my journey."/>
+                      content="Hussein Bouik — Software Engineer building enterprise .NET microservices, immersive 3D web experiences (React Three Fiber), and AI-powered systems. Currently at NTT DATA on the UN Volunteers platform."/>
 
                 {/*These are need for PWA*/}
                 <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -152,7 +153,7 @@ export default function Document() {
           "url": "https://husseinbouik-github-io.vercel.app",
           "sameAs": [
             "https://github.com/husseinbouik",
-            "https://www.linkedin.com/in/hussein-bouik-",
+            "https://www.linkedin.com/in/hussein-bouik/",
             "https://medium.com/@husseinbouik",
             "https://twitter.com/husseinbouik_",
             "https://dev.to/husseinbouik"
@@ -174,7 +175,7 @@ export default function Document() {
                 "name": "What additional training have you undertaken to enhance your skillset?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": " I completed a comprehensive training program at Solicode Training Center in Tangier, Morocco, earning both a Solicode Certificate and an OFPPT Certificate, as well as a certificate from Simplon. This program significantly expanded my skills in data analysis, data visualization, and the fundamentals of machine learning. The practical applications we covered solidified my understanding of data-driven insights and analysis, equipping me with valuable tools for data-informed decision-making."
+                  "text": "I completed a two-year hands-on program in web and mobile development at Solicode Training Center in Tangier, Morocco (2022-2024), earning a professional web development certificate through Simplon. It took me from fundamentals to shipping complete full-stack and mobile applications in Agile teams."
                 }
               },
               {
@@ -182,7 +183,7 @@ export default function Document() {
                 "name": "How do you stay current with the latest advancements in technology?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, I am currently looking for jobs and I have also done several open-source projects as well."
+                  "text": "I stay current by building real projects with modern stacks — currently .NET microservices, React Three Fiber, and AI-assisted development workflows — alongside continuous learning through documentation, courses, and the developer community."
                 }
               },
               {
@@ -190,7 +191,7 @@ export default function Document() {
                 "name": "Who is Hussein Bouik?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hussein Bouik is a Full Stack Developer specializing in Cloud, DevOps, ML/AI, and Design. He is passionate about programming, innovation, and shaping the future. With expertise in various technologies and a strong background in software development, Hussein Bouik strives to create innovative solutions and contribute to the advancement of technology. His skill set includes proficiency in cloud computing, DevOps practices, AI-powered solutions/Data insights, and design principles. Hussein Bouik is dedicated to staying up-to-date with the latest industry trends and leveraging his knowledge to drive impactful and transformative projects."
+                  "text": "Hussein Bouik is a Software Engineer building enterprise .NET microservices, immersive 3D web experiences with React Three Fiber, and AI-powered systems. He currently works at NTT DATA on the Unified Volunteers Platform for the United Nations Volunteers."
                 }
               },
               {
@@ -198,7 +199,7 @@ export default function Document() {
                 "name": "Where is Hussein Bouik from?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hussein Bouik is from Tangier ,Morocco."
+                  "text": "Hussein Bouik is from Tangier, Morocco."
                 }
               },
               {
@@ -206,7 +207,7 @@ export default function Document() {
                 "name": "What does Hussein Bouik do?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Hussein Bouik leverages Cloud, DevOps, ML/AI, Design, and web/mobile apps to benefit people with optimized operations and user-friendly experiences."
+                  "text": "Hussein Bouik builds enterprise-grade backends (.NET microservices, clean architecture, Azure), real-time 3D web configurators (React Three Fiber / Three.js), and AI-assisted automation already running in production."
                 }
               }
             ]

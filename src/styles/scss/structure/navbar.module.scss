@@ -247,3 +247,17 @@
 	display: inline-block;
 	width: 8px;
 }
+
+// ---- Mobile: comfortable tap targets ----
+@include media($max: $mobile) {
+	.container {
+		.menuContent {
+			ul {
+				li a {
+					display: block;
+					padding: .75rem 1.5rem;
+				}
+			}
+		}
+	}
+}

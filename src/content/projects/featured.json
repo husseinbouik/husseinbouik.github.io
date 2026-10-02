@@ -1,1 +1,277 @@
-[{"description":"Enterprise platform centralizing volunteer registration, candidate profiles, host agency management, opportunity creation, assignments, and recruitment workflows for the United Nations Volunteers. Full-stack features across a React/TypeScript frontend and .NET microservices backend with role-based access, multilingual UI, document handling, and external UNV system integrations — on a cloud-native Azure/Kubernetes architecture using CQRS, Sagas, Service Bus, and event-driven communication.","descriptionTitle":"Unified Volunteers Platform — UN Volunteers × NTT DATA","project":"Unified Volunteers Platform","repo":"Private","stack":[{"key":"dotnetcore","name":".NET","type":"devicon"},{"key":"csharp","name":"C#","type":"devicon"},{"key":"react","name":"React","type":"devicon"},{"key":"typescript","name":"TypeScript","type":"devicon"},{"key":"azure","name":"Azure","type":"devicon"},{"key":"kubernetes","name":"Kubernetes","type":"devicon"}],"url":"https://www.linkedin.com/in/hussein-bouik/"},{"description":"High-performance 3D configurator systems for a next-generation product customization platform at Tecnibo. Modular frontend architecture for doors, partitions, walls, zoning, and dressings with spatial planning and real-time product manipulation — reusable 3D components, performance-optimized rendering, and fluid interactions.","descriptionTitle":"Oaksome — Real-time 3D Product Configurators","project":"Oaksome 3D Configurators","repo":"Private","stack":[{"key":"react","name":"React","type":"devicon"},{"key":"typescript","name":"TypeScript","type":"devicon"},{"key":"threejs","name":"Three.js","type":"devicon"},{"key":"javascript","name":"JavaScript","type":"devicon"},{"key":"tailwindcss","name":"Tailwind CSS","type":"devicon"}],"url":"https://www.linkedin.com/in/hussein-bouik/"},{"description":"Commercial and financial ERP modules at WinBooks Maroc: purchase/sales orders, delivery notes, traceability, and a multi-invoicing module. Built an AI-powered bank-statement importer with LlamaIndex Cloud that automatically reads, classifies, and inserts debit/credit transactions — plus workflow redesigns for performance and data synchronization.","descriptionTitle":"WinHub — ERP Modules & AI Bank-Statement Importer","project":"WinHub ERP + AI Importer","repo":"Private","stack":[{"key":"dotnetcore","name":".NET","type":"devicon"},{"key":"csharp","name":"C#","type":"devicon"},{"key":"microsoftsqlserver","name":"SQL Server","type":"devicon"},{"key":"python","name":"Python","type":"devicon"}],"url":"https://www.linkedin.com/in/hussein-bouik/"},{"description":"Platform letting emergency responders access critical building information via QR codes. Built the backend with Node.js and Prisma ORM, a React frontend, and Stripe payment integration (subscriptions and one-time purchases) with webhooks for real-time synchronization.","descriptionTitle":"NotfallCode — Emergency Info via QR","project":"NotfallCode","repo":"Private","stack":[{"key":"nodejs","name":"Node.js","type":"devicon"},{"key":"react","name":"React","type":"devicon"},{"key":"postgresql","name":"PostgreSQL","type":"devicon"},{"key":"javascript","name":"JavaScript","type":"devicon"}],"url":"https://notfallcode.de"},{"description":"Hackathon project built with my team to tackle water waste. The app tracks household water consumption, encourages users to reduce usage through challenges and insights, and rewards them for saving water — making conservation tangible and motivating.","descriptionTitle":"QATRA — Hackathon: Water Saving, Rewarded","images":[{"h":"242","hover":"left","key":"qatra-desktop","url":"/img/Qatra.png","w":"400"},{"h":"310","hover":"right","key":"qatra-mobile","url":"/img/Qatra-mobile.png","w":"160"}],"project":"QATRA","repo":"Public","stack":[{"key":"react","name":"React","type":"devicon"},{"key":"javascript","name":"JavaScript","type":"devicon"},{"key":"html5","name":"HTML5","type":"devicon"},{"key":"css3","name":"CSS3","type":"devicon"}],"url":"https://github.com/husseinbouik"},{"description":"Page showcasing filtered startup support programs across Africa for the Startup Researcher platform. Built with Next.js and Sanity.io with advanced filtering and categorization for discoverability — fast, responsive, and designed for founders.","descriptionTitle":"Opportunity Radar — Startup Programs Across Africa","project":"Opportunity Radar","repo":"Private","stack":[{"key":"nextjs","name":"Next.js","type":"devicon"},{"key":"react","name":"React","type":"devicon"},{"key":"javascript","name":"JavaScript","type":"devicon"}],"url":"https://www.linkedin.com/in/hussein-bouik/"}]
+[
+  {
+    "description": "Enterprise platform centralizing volunteer registration, candidate profiles, host agency management, opportunity creation, assignments, and recruitment workflows for the United Nations Volunteers. Full-stack features across a React/TypeScript frontend and .NET microservices backend with role-based access, multilingual UI, document handling, and external UNV system integrations — on a cloud-native Azure/Kubernetes architecture using CQRS, Sagas, Service Bus, and event-driven communication.",
+    "descriptionTitle": "Unified Volunteers Platform — UN Volunteers × NTT DATA",
+    "project": "Unified Volunteers Platform",
+    "repo": "Private",
+    "stack": [
+      {
+        "key": "dotnetcore",
+        "name": ".NET",
+        "type": "devicon"
+      },
+      {
+        "key": "csharp",
+        "name": "C#",
+        "type": "devicon"
+      },
+      {
+        "key": "react",
+        "name": "React",
+        "type": "devicon"
+      },
+      {
+        "key": "typescript",
+        "name": "TypeScript",
+        "type": "devicon"
+      },
+      {
+        "key": "azure",
+        "name": "Azure",
+        "type": "devicon"
+      },
+      {
+        "key": "kubernetes",
+        "name": "Kubernetes",
+        "type": "devicon"
+      }
+    ],
+    "url": "https://www.linkedin.com/in/hussein-bouik/",
+    "imageOptions": [
+      {
+        "key": "size",
+        "value": "large"
+      }
+    ],
+    "images": [
+      {
+        "key": "uvp",
+        "hover": "left",
+        "h": "360",
+        "w": "640",
+        "url": "/img/uvp.png"
+      }
+    ]
+  },
+  {
+    "description": "High-performance 3D configurator systems for a next-generation product customization platform at Tecnibo. Modular frontend architecture for doors, partitions, walls, zoning, and dressings with spatial planning and real-time product manipulation — reusable 3D components, performance-optimized rendering, and fluid interactions.",
+    "descriptionTitle": "Oaksome — Real-time 3D Product Configurators",
+    "project": "Oaksome 3D Configurators",
+    "repo": "Private",
+    "stack": [
+      {
+        "key": "react",
+        "name": "React",
+        "type": "devicon"
+      },
+      {
+        "key": "typescript",
+        "name": "TypeScript",
+        "type": "devicon"
+      },
+      {
+        "key": "threejs",
+        "name": "Three.js",
+        "type": "devicon"
+      },
+      {
+        "key": "javascript",
+        "name": "JavaScript",
+        "type": "devicon"
+      },
+      {
+        "key": "tailwindcss",
+        "name": "Tailwind CSS",
+        "type": "devicon"
+      }
+    ],
+    "url": "https://www.linkedin.com/in/hussein-bouik/",
+    "imageOptions": [
+      {
+        "key": "size",
+        "value": "large"
+      }
+    ],
+    "images": [
+      {
+        "key": "oaksome",
+        "hover": "left",
+        "h": "360",
+        "w": "640",
+        "url": "/img/oaksome.png"
+      }
+    ]
+  },
+  {
+    "description": "Commercial and financial ERP modules at WinBooks Maroc: purchase/sales orders, delivery notes, traceability, and a multi-invoicing module. Built an AI-powered bank-statement importer with LlamaIndex Cloud that automatically reads, classifies, and inserts debit/credit transactions — plus workflow redesigns for performance and data synchronization.",
+    "descriptionTitle": "WinHub — ERP Modules & AI Bank-Statement Importer",
+    "project": "WinHub ERP + AI Importer",
+    "repo": "Private",
+    "stack": [
+      {
+        "key": "dotnetcore",
+        "name": ".NET",
+        "type": "devicon"
+      },
+      {
+        "key": "csharp",
+        "name": "C#",
+        "type": "devicon"
+      },
+      {
+        "key": "microsoftsqlserver",
+        "name": "SQL Server",
+        "type": "devicon"
+      },
+      {
+        "key": "python",
+        "name": "Python",
+        "type": "devicon"
+      }
+    ],
+    "url": "https://www.linkedin.com/in/hussein-bouik/",
+    "imageOptions": [
+      {
+        "key": "size",
+        "value": "large"
+      }
+    ],
+    "images": [
+      {
+        "key": "winhub",
+        "hover": "left",
+        "h": "360",
+        "w": "640",
+        "url": "/img/winhub.png"
+      }
+    ]
+  },
+  {
+    "description": "Platform letting emergency responders access critical building information via QR codes. Built the backend with Node.js and Prisma ORM, a React frontend, and Stripe payment integration (subscriptions and one-time purchases) with webhooks for real-time synchronization.",
+    "descriptionTitle": "NotfallCode — Emergency Info via QR",
+    "project": "NotfallCode",
+    "repo": "Private",
+    "stack": [
+      {
+        "key": "nodejs",
+        "name": "Node.js",
+        "type": "devicon"
+      },
+      {
+        "key": "react",
+        "name": "React",
+        "type": "devicon"
+      },
+      {
+        "key": "postgresql",
+        "name": "PostgreSQL",
+        "type": "devicon"
+      },
+      {
+        "key": "javascript",
+        "name": "JavaScript",
+        "type": "devicon"
+      }
+    ],
+    "url": "https://notfallcode.de",
+    "imageOptions": [
+      {
+        "key": "size",
+        "value": "large"
+      }
+    ],
+    "images": [
+      {
+        "key": "notfallcode",
+        "hover": "left",
+        "h": "360",
+        "w": "640",
+        "url": "/img/notfallcode.png"
+      }
+    ]
+  },
+  {
+    "description": "Hackathon project built with my team to tackle water waste. The app tracks household water consumption, encourages users to reduce usage through challenges and insights, and rewards them for saving water — making conservation tangible and motivating.",
+    "descriptionTitle": "QATRA — Hackathon: Water Saving, Rewarded",
+    "images": [
+      {
+        "h": "242",
+        "hover": "left",
+        "key": "qatra-desktop",
+        "url": "/img/Qatra.png",
+        "w": "400"
+      },
+      {
+        "h": "310",
+        "hover": "right",
+        "key": "qatra-mobile",
+        "url": "/img/Qatra-mobile.png",
+        "w": "160"
+      }
+    ],
+    "project": "QATRA",
+    "repo": "Public",
+    "stack": [
+      {
+        "key": "react",
+        "name": "React",
+        "type": "devicon"
+      },
+      {
+        "key": "javascript",
+        "name": "JavaScript",
+        "type": "devicon"
+      },
+      {
+        "key": "html5",
+        "name": "HTML5",
+        "type": "devicon"
+      },
+      {
+        "key": "css3",
+        "name": "CSS3",
+        "type": "devicon"
+      }
+    ],
+    "url": "https://github.com/husseinbouik"
+  },
+  {
+    "description": "Page showcasing filtered startup support programs across Africa for the Startup Researcher platform. Built with Next.js and Sanity.io with advanced filtering and categorization for discoverability — fast, responsive, and designed for founders.",
+    "descriptionTitle": "Opportunity Radar — Startup Programs Across Africa",
+    "project": "Opportunity Radar",
+    "repo": "Private",
+    "stack": [
+      {
+        "key": "nextjs",
+        "name": "Next.js",
+        "type": "devicon"
+      },
+      {
+        "key": "react",
+        "name": "React",
+        "type": "devicon"
+      },
+      {
+        "key": "javascript",
+        "name": "JavaScript",
+        "type": "devicon"
+      }
+    ],
+    "url": "https://www.linkedin.com/in/hussein-bouik/",
+    "imageOptions": [
+      {
+        "key": "size",
+        "value": "large"
+      }
+    ],
+    "images": [
+      {
+        "key": "radar",
+        "hover": "left",
+        "h": "360",
+        "w": "640",
+        "url": "/img/radar.png"
+      }
+    ]
+  }
+]

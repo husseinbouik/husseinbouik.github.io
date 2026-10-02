@@ -201,3 +201,10 @@ a {
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+// ---- Mobile safety nets ----
+body {
+	overflow-x: clip;
+}
+img {
+	max-width: 100%;
+}
