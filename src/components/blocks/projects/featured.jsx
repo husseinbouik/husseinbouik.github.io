@@ -10,104 +10,63 @@ import Icon from '../../utils/icon'
 
 import css from '../../../styles/scss/sections/projects/featured.module.scss'
 
-export default function FeaturedProject({ content }, index) {
+export default function FeaturedProject({ content, index }) {
 
-	const { project, url, repo, descriptionTitle,description, stack, imageOptions, images } = content
+	const { project, url, repo, descriptionTitle, description, stack, images } = content
 
 	const controls = useAnimation();
 	const { ref, inView  } = useInView({
-		"threshold": 0.25,
-		"triggerOnce": false
+		"threshold": 0.1,
+		"triggerOnce": true
 	})
 
 	useEffect( () => {
-		if ( inView ) {	controls.start("visible") }
-		if ( !inView ) { controls.start("hidden") }
+		if ( inView ) { controls.start("visible") }
 	}, [ controls, inView ] )
 
-	return (
-		<m.section 	
-			key={index}
-			className={css.project} 
-			//framer-motion
-			ref={ref}
-			variants={container}
-			initial={[ "rest", "hidden" ]}
-			whileHover="hover"
-			animate={controls} >
-			
-			<div className={css.details}>
-				<div className={css.projectHeader}>
-					<div className={css.header}>
-						<h3 className="highlight">{project}</h3><span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>	
-					</div>
-					<div className={css.description}>
-						<p><strong>{descriptionTitle}</strong> {description}</p>
-					</div>
-					<div className={css.stackContainer}>
-						<Badges list={stack} block="stack" fullContainer={false} color={false} />
-					</div>
-					<m.div variants={''} className={css.viewProject}>
-						<Icon icon={[ 'fas', 'arrow-right-to-bracket' ]} />
-					</m.div>
-				</div>
-			</div>
+	const image = (images || [])[0]
 
-			<div className={css.imageContainer}>
-				<span className={`${css.imageAnimationContainer}`}>
-					{ (images || []).map( ({key, url, hover, h, w }, index) => {
-						hover = ( hover === 'left' ) ? hoverLeft : hoverRight
-						return (
-							<m.div key={`${index}-${key}`} variants={item}>
-								<m.div variants={hover}>
-									<Image src={url} alt="x" height={h} width={w}  loading="eager"
-									/>
-								</m.div>
-							</m.div>
-						)}
-					) }
-				</span>
+	return (
+		<m.article
+			key={index}
+			className={css.project}
+			ref={ref}
+			variants={item}
+			initial="hidden"
+			animate={controls} >
+
+			{ image && (
+				<a href={url} target="_blank" rel="noreferrer" className={css.cardImage} aria-label={project}>
+					<Image src={image.url} alt={project} width={1280} height={720} loading="lazy" />
+				</a>
+			)}
+
+			<div className={css.details}>
+				<div className={css.header}>
+					<h3 className="highlight">{project}</h3>
+					<span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>
+				</div>
+				<p className={css.description}><strong>{descriptionTitle}</strong> {description}</p>
+				<div className={css.stackContainer}>
+					<Badges list={stack} block="stack" fullContainer={false} color={false} />
+				</div>
+				<a href={url} target="_blank" rel="noreferrer" className={css.viewProject} aria-label={`Open ${project}`}>
+					<Icon icon={[ 'fas', 'arrow-right-to-bracket' ]} />
+				</a>
 			</div>
-		</m.section>
+		</m.article>
 	)
 }
 
-const container = {
-	hidden: { 
-		transition: {
-			delayChildren: 0.125,
-			staggerChildren: 0.0625
-		}
-	},
-	visible: {
-		transition: {
-			delayChildren: 0.125,
-			staggerChildren: 0.25,
-		}
-	},
-	rest: {
-		transition: {
-			delayChildren: 0,
-			staggerChildren: 0,
-		}
-	},
-	hover: {
-		transition: {
-			delayChildren: 0,
-			staggerChildren: 0,
-		}
-	}
-}
-
 const item = {
-	hidden: { 
-		y: 75, 
+	hidden: {
+		y: 40,
 		opacity: 0,
 		transition: {
 			type: "tween",
 			ease: "easeIn",
-			duration: .35, 
-		}
+			duration: .3,
+		},
 	},
 	visible: {
 		y: 0,
@@ -115,26 +74,7 @@ const item = {
 		transition: {
 			type: "tween",
 			ease: "easeOut",
-			duration: .5, 
-		}
+			duration: .5,
+		},
 	},
 }
-
-const hoverLeft = {
-	rest: {
-		x: 0
-	},
-	hover: {
-		x: -20
-	}
-}
-
-const hoverRight = {
-	rest: {
-		x: 0
-	},
-	hover: {
-		x: 20
-	}
-}
-

@@ -5,133 +5,104 @@
 	border-bottom: 1px solid var(--primary-dark);
 }
 
+
+.projectsGrid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	margin-top: 3rem;
+}
+
 .project {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-direction: column;
 	user-select: none;
 
-	border-radius: 2rem;
+	border-radius: 1.5rem;
+	overflow: hidden;
 	background-color: var(--background-dim2);
-    border: 1px solid var(--primary-dark);
-
-	.viewProject svg {
-		@include transition;
-	}
-
-	&:nth-of-type(2n) {
-		flex-direction: row-reverse;
-	}
+	border: 1px solid var(--primary-dark);
+	transition: transform .3s ease, border-color .3s ease;
 
 	&:hover {
 		cursor: pointer;
-
-		.viewProject svg {
-			@include transition;
-			color: var(--neon-1-1);
-		}
+		transform: translateY(-4px);
+		border-color: var(--primary-dim);
 	}
 }
 
+.cardImage {
+	display: block;
+	position: relative;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	flex-shrink: 0;
+	background-color: var(--background-dim);
 
-.projectHeader  {
-	display: flex;
-	flex-direction: column;
-	gap: var(--size-3x);
-
-	p {
-		font-size: 1.75rem;
-		line-height: 1.2;
-
-		strong {
-			color: var(--primary-bright);
-		}
+	img {
+		width: 100% !important;
+		height: 100% !important;
+		object-fit: cover;
+		display: block;
+		transition: transform .5s ease;
 	}
 
-	.viewProject {
-		svg {
-			height: 1.5rem;
-			color: var(--primary);	
-		}
+	.project:hover & img {
+		transform: scale(1.04);
 	}
-
-	.header {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 2rem;
-
-		a {
-			flex-grow: 0;
-			flex-shrink: 1;
-		}
-
-		.privateOr {
-			flex-grow: 0;
-			flex-shrink: 1;
-			height: fit-content;
-		}
-	}
-
 }
 
 .details {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 0;
-	flex-shrink: 1;
-	gap: var(--size-3x);
-	overflow: hidden;
+	gap: 1.25rem;
+	padding: 1.75rem;
 
-	padding: 2rem;
+	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 1rem;
 
-	h3 {
-		position: relative;
-	}
-
-	h4 {
-		margin-bottom: var(--size-1x);
-	}
-
-	ul {
-		z-index: 2;
-	}
-
-	img {
-		display: none;
+		h3 {
+			margin: 0;
+			position: relative;
+		}
 	}
 }
 
-.imageContainer {
-	z-index: 3;
-	position: relative;
-	display: block;
-	width: 50%;
-	border-radius: 1rem;
-	flex-grow: 1;
-	flex-shrink: 0;
+.description {
+	font-size: 1.05rem;
+	line-height: 1.6;
 
-	.imageAnimationContainer {
-		position: absolute;
-		overflow: hidden;
-		border-radius: 2rem;
-		height: calc(100% - 6rem);
-		width: calc(100% + 1rem);
-		right: 0;
-		bottom: 0;
+	strong {
+		color: var(--primary-bright);
+	}
+}
 
+.stackContainer {
+	ul {
+		z-index: 2;
+	}
+}
 
-		> div > div {
+.viewProject {
+	svg {
+		height: 1.5rem;
+		color: var(--primary);
+		transition: color .3s ease;
+	}
 
-			> span {
-				position: absolute !important;
-				right: 4rem;
-	
-				img {
-					width: calc(556px / 1.25) !important;
-				}
-			}
-		}
+	.project:hover & svg {
+		color: var(--neon-1-1);
+	}
+}
+
+@include media($min: $mobile) {
+	.projectsGrid {
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
@@ -250,120 +221,3 @@
 	}
 }
 
-@include media($max: $mobile) {
-	.project {
-		&:nth-of-type(n) {
-			flex-direction: column;
-
-			&:hover {
-				.details {
-					border-color: var(--primary-dim2);
-				}
-			}
-
-			.details {
-				border-radius: 1rem;
-				padding: var(--size-2x);
-			}
-
-			.stackContainer {
-				--padding-top: 1.5rem;
-
-				h4 { 
-					text-align: center;
-					display: none;
-				}
-				ul {
-					font-size: .6rem;
-				}
-			}
-
-			.imageContainer {
-				height: 100px;
-				width: 100%;
-			}
-
-			.imageAnimationContainer {
-				height: calc(100% + 6rem);
-				width: 100%;
-		
-				> div > div {
-					> span {
-						img {
-							width: calc(556px / 2) !important;
-						}
-					}
-				}
-			}
-		}
-
-		&:nth-of-type(2n+1) {
-			.imageAnimationContainer {
-				> div > div {
-					> span {
-						right: 2rem;
-					}
-				}
-			}
-		}
-
-		&:nth-of-type(2n) {
-			.imageAnimationContainer {
-				> div > div {
-					> span {
-						right: 0rem;
-					}
-				}
-			}
-		}
-	}
-	
-	.bgContainer {
-		.orbitalBg {
-			width: unset;
-			height: 100%;
-		}
-	}
-}
-
-
-// ---- Mobile overhaul: readable text, stacked full-width 16:9 images ----
-@include media($max: $mobile) {
-	.projectHeader {
-		p {
-			font-size: 1.1rem;
-			line-height: 1.55;
-		}
-		.header {
-			flex-wrap: wrap;
-			gap: 1rem;
-		}
-	}
-	.project {
-		.imageContainer {
-			height: auto;
-			width: 100%;
-			flex-shrink: 1;
-		}
-		.imageAnimationContainer {
-			position: relative;
-			height: auto;
-			width: 100%;
-			overflow: hidden;
-			border-radius: 1rem;
-			> div > div {
-				> span {
-					position: relative !important;
-					right: auto !important;
-					display: block;
-					img {
-						width: 100% !important;
-						height: auto !important;
-						aspect-ratio: 16 / 9;
-						object-fit: cover;
-					}
-				}
-			}
-		}
-	}
-}
