@@ -48,7 +48,7 @@ export default function Footer(): JSX.Element {
 
 	return (
 		<footer className={css.container}>
-			<Container spacing={['verticalXXLrg', 'bottomLrg']}>
+			<Container spacing={['verticalLrg', 'bottomLrg']}>
 				<section className={css.sections}>
 					<ul className={css.thanks}>
 						<li>
