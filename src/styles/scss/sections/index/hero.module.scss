@@ -16,7 +16,11 @@
 	border-bottom: 1px solid var(--primary-dark);
 
 	max-height: 1440px;
-	height: 100vh;
+	min-height: 100vh;
+	/* Clear the fixed navbar so the hero heading is never hidden behind it.
+	   With a fixed `height: 100vh`, taller-than-viewport content overflowed
+	   upward and the name got clipped under the navbar on shorter screens. */
+	padding-top: 6rem;
 	width: 100%;
 	justify-content: center;
 
