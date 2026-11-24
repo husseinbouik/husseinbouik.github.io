@@ -100,7 +100,12 @@
 		margin: 0;
 	}
 	.primaryDim {
-		color: var(--primary-bright);
+		color: var(--secondary);
+		font-size: clamp(1.35rem, 4vw, 2.3rem);
+		font-weight: 600;
+		letter-spacing: -.02rem;
+		line-height: 1.25;
+		margin-top: .75rem;
 	}
 
 	.primaryBright {

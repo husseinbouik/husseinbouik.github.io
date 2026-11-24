@@ -11,14 +11,15 @@ import React from "react";
  */
 interface SectionProps {
 	classProp?: string;
+	id?: string;
 	children: React.ReactNode;
 }
 
-const Section: React.FC<SectionProps> = ({ classProp, children }) => {
+const Section: React.FC<SectionProps> = ({ classProp, id, children }) => {
 	const _class = classProp ? classProp : '';
 
 	return (
-		<div className={`${sections.default} ${_class}`}>
+		<div id={id} className={`${sections.default} ${_class}`}>
 			{children}
 		</div>
 	);

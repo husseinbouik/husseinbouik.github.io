@@ -43,6 +43,18 @@ export default function Navbar() {
 		menuToggle(false);
 	}, []);
 
+	// Close the mobile menu with Escape and return focus to the toggle
+	useEffect(() => {
+		const onKeyDown = (e: KeyboardEvent) => {
+			if (e.key === 'Escape') {
+				menuToggle(false);
+				document.getElementById('nav-toggle')?.focus();
+			}
+		};
+		document.addEventListener('keydown', onKeyDown);
+		return () => document.removeEventListener('keydown', onKeyDown);
+	}, []);
+
 	// useEffect: Define and manage route change events
 	useEffect(() => {
 		// Define a class for route change events
@@ -138,6 +150,8 @@ export default function Navbar() {
 			}
 
 			maybeHideNav() {
+				// Auto-hiding nav removed (a11y): the nav stays visible/sticky.
+				return;
 				/**
 				 * If scrolling down, else if scrolling up
 				 *
@@ -184,14 +198,14 @@ export default function Navbar() {
 					<Link className={css.logo} href="/">
 						{settings.name}
 					</Link>
-					<button onClick={toggleMenu} className={css.mobileToggle} data-open={menuState}>
+					<button id="nav-toggle" onClick={toggleMenu} className={css.mobileToggle} data-open={menuState} aria-label="Toggle navigation menu" aria-expanded={!!menuState} aria-controls="nav-menu-content">
 						<div>
 							<span></span>
 							<span></span>
 						</div>
 					</button>
 				</li>
-				<li data-open={menuState} className={css.menuContent}>
+				<li id="nav-menu-content" data-open={menuState} className={css.menuContent}>
 					<ul>
 						{content.map(({ url, title }, index) => {
 							return (
@@ -207,7 +221,7 @@ export default function Navbar() {
 				</li>
 			</ul>
 
-			<span onClick={toggleMenu} className={css.menuBlackout} data-open={menuState}></span>
+			<button type="button" aria-label="Close navigation menu" onClick={toggleMenu} className={css.menuBlackout} data-open={menuState}></button>
 		</nav>
 	);
 }

@@ -4,7 +4,7 @@ import React from 'react';
 const SITE_URL = 'https://husseinbouik-github-io.vercel.app';
 const TITLE = 'Hussein Bouik — Software Engineer';
 const DESCRIPTION =
-	'Hussein Bouik — Software Engineer specializing in Enterprise .NET Microservices, Immersive 3D Web (React Three Fiber), and AI-Powered Systems. Currently at NTT DATA building the UN Volunteers platform.';
+	'Hussein Bouik — Software Engineer specializing in Enterprise .NET Microservices and Immersive 3D Web (React Three Fiber), integrating AI services into production workflows. Currently at NTT DATA building the UN Volunteers platform.';
 
 export default function TitleIndex() {
     return (

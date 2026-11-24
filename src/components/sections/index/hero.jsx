@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { TypeAnimation } from 'react-type-animation';
+import React from 'react';
+import Link from 'next/link';
 
 import Section from '../../structure/section';
 import Container from '../../structure/container';
-import Image from 'next/image';
 
 import space from '../../utils/spacing';
 
@@ -14,53 +13,14 @@ import button from '../../../styles/scss/blocks/button.module.scss';
 
 import content from '../../../content/index/hero.json';
 
-const stats = [
-	{ value: '3+', label: 'Years Experience' },
-	{ value: '6', label: 'Featured Projects' },
-	{ value: '20+', label: 'Technologies' },
-	{ value: '5', label: 'Languages Spoken' },
-];
-
 export default function Hero() {
-	const [, setTypingStatus] = useState('Initializing');
-	const [isHiremeTooltipVisible, setIsHiremeTooltipVisible] = useState(false);
-	const [isYescatTooltipVisible, setIsYescatTooltipVisible] = useState(false);
-
 	return (
 		<Section classProp={`${hero.section}`}>
-			<Container spacing={'VerticalXXXL'} >
-				{content.availability?.show && (
-					<p className={hero.availability}>
-						<span className={hero.availabilityDot} aria-hidden="true" />
-						{content.availability.text}
-					</p>
-				)}
-				<TypeAnimation
-					className={`${hero.preHeader}`}
-					sequence={[
-						content.intro.startDelay,
-						() => {
-							setTypingStatus('typing');
-						},
-						content.intro.start,
-						() => {
-							setTypingStatus('typed');
-						},
-						content.intro.deleteDelay,
-						() => {
-							setTypingStatus('deleting');
-						},
-						content.intro.end,
-						() => {
-							setTypingStatus('deleted');
-						},
-						content.intro.restartDelay,
-					]}
-					speed={content.intro.speed}
-					deletionSpeed={content.intro.deletionSpeed}
-					wrapper={content.intro.wrapper}
-					repeat={Infinity}
-				/>
+			<Container spacing={'VerticalXXXL'}>
+				<p className={hero.availability}>
+					<span className={hero.availabilityDot} aria-hidden="true" />
+					{content.status}
+				</p>
 				<section>
 					<h1 className={hero.header}>{content.header.name}</h1>
 					<p className={`${hero.header} ${hero.primaryDim}`}>{content.header.usp}</p>
@@ -70,42 +30,20 @@ export default function Hero() {
 						{content.paragraph}
 					</p>
 				</section>
-				<section style={{ position: 'relative' }} className={hero.ctaRow}>
-					<button
-						className={`${button.btn} ${button.btnPrimary}`}
-						onClick={() => (window.location = 'mailto:husseinbouik5@gmail.com')}
-						onMouseEnter={() => setIsHiremeTooltipVisible(true)}
-						onMouseLeave={() => setIsHiremeTooltipVisible(false)}
-					>
+				<section className={hero.ctaRow}>
+					<Link href={content.buttons.primary.url} className={`${button.btn} ${button.btnPrimary}`}>
 						{content.buttons.primary.title}
-					</button>
-					{isHiremeTooltipVisible && (
-						<div className={`${hero.tooltipContent} ${hero.hireme_tooltip}`}>
-
-							<Image src="/gif/hireme.gif" width={100} height={100} alt="Teal cartoon cat with big sparkling yellow eyes" />
-
-						</div>
-					)}
-					<button
-						className={`${button.btn} ${button.btnSecondary} leaveSite`}
-
-						onClick={() => window.open(content.buttons.secondary.url, '_blank')}
-
-						onMouseEnter={() => setIsYescatTooltipVisible(true)}
-						onMouseLeave={() => setIsYescatTooltipVisible(false)}
+					</Link>
+					<a
+						href={content.buttons.secondary.url}
+						download="Hussein_Bouik_CV.pdf"
+						className={`${button.btn} ${button.btnSecondary}`}
 					>
 						{content.buttons.secondary.title}
-					</button>
-					{isYescatTooltipVisible && (
-						<div className={`${hero.tooltipContent} ${hero.yescat_tooltip}`}>
-
-							<Image src="/gif/yes.gif" width={100} height={100} alt="Pixel-art character cheering against a fiery background" />
-
-						</div>
-					)}
+					</a>
 				</section>
 				<section className={hero.stats} aria-label="Key facts">
-					{stats.map(({ value, label }) => (
+					{content.stats.map(({ value, label }) => (
 						<div key={label} className={hero.stat}>
 							<span className={hero.statValue}>{value}</span>
 							<span className={hero.statLabel}>{label}</span>

@@ -15,7 +15,7 @@ import Education from "./education";
 
 export default function Career() {
 	return (
-		<Section classProp={`${career.section} borderBottom`}>
+		<Section id="experience" classProp={`${career.section} borderBottom`}>
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
 					title="Experience"
@@ -59,7 +59,7 @@ export default function Career() {
 								<h4>WINS · WinBooks Maroc · Full-time · Nov 2024 — Jul 2025</h4>
 							</span>
 							<p>
-								Developed commercial and financial ERP modules (WinHub) in .NET/C# — plus an AI-powered bank-statement importer using LlamaIndex Cloud that automates reading, classifying, and inserting transactions.
+								Developed commercial and financial ERP modules (WinHub) in .NET/C# — plus a bank-statement importer that integrates an AI document-processing service (LlamaIndex Cloud) to read, classify, and insert transactions automatically.
 							</p>
 						</div>
 						<div className={career.companyAlt}></div>

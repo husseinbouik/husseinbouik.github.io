@@ -7,13 +7,13 @@ import css from '../../../styles/scss/sections/index/contact.module.scss';
 
 export default function Contact() {
 	return (
-		<Section classProp={css.section}>
+		<Section id="contact" classProp={css.section}>
 			<Container spacing={['verticalXXXLrg']}>
 				<div className={css.centered}>
 					<SectionTitle
 						preTitle="Contact"
-						title="Have a project in mind?"
-						subTitle="I'm open to freelance projects and full-time opportunities with teams building ambitious products. The fastest way to reach me is email — I usually reply within a day."
+						title="Let's talk"
+						subTitle="I'm interested in full-time roles with teams building ambitious products. The fastest way to reach me is email — I usually reply within a day."
 					/>
 					<div className={css.ctaRow}>
 						<button

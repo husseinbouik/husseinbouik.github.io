@@ -15,13 +15,8 @@ export default function SetTheme() {
 	const [theme, setTheme] = useState();
 
 	const toggleTheme = () => {
-		if (theme === "light") {
-			setTheme("dark");
-		} else if (theme === "dark") {
-			setTheme("unicorn");
-		} else if (theme === "unicorn") {
-			setTheme("light");
-		}
+		// Two themes only — the "unicorn" theme was retired in the redesign.
+		setTheme(theme === "light" ? "dark" : "light");
 	};
 
 	const buttonIcon = (theme) => {
@@ -53,7 +48,9 @@ export default function SetTheme() {
 			? "dark"
 			: "light";
 
-		return themeLocalStorage ?? themeSystem;
+		// Migrate any stored "unicorn" value to dark. Dark is the default
+		// (the Precision Instrument identity is graphite-first); light is one toggle away.
+		return themeLocalStorage === "unicorn" ? "dark" : (themeLocalStorage ?? "dark");
 	};
 
 	useEffect(() => {

@@ -144,7 +144,7 @@ a svg{
 #gradient-canvas{
     position:absolute;
     z-index:-1;
-    opacity:100%;
+    opacity:55%;
     left:0;
     top:0;
     width:100%;
@@ -177,3 +177,19 @@ button:focus-visible,
     border-radius: .25rem;
 }
 /*# sourceMappingURL=global.css.map */
+
+/* Precision Instrument: faint blueprint grid over the page background */
+body{
+    background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
+/* Reduced motion: stop loops, reveals and smooth transitions for users who ask */
+@media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

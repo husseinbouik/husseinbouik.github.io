@@ -18,7 +18,7 @@
 	flex-direction: column;
 	user-select: none;
 
-	border-radius: 1.5rem;
+	border-radius: .375rem;
 	overflow: hidden;
 	background-color: var(--background-dim2);
 	border: 1px solid var(--primary-dark);
@@ -34,7 +34,7 @@
 .cardImage {
 	display: block;
 	position: relative;
-	aspect-ratio: 16 / 9;
+	aspect-ratio: 16 / 10;
 	overflow: hidden;
 	flex-shrink: 0;
 	background-color: var(--background-dim);
@@ -221,3 +221,138 @@
 	}
 }
 
+
+/* ---- Card v2 (Precision Instrument) ---- */
+.metaRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.tag {
+	font-family: var(--font-accent);
+	font-size: var(--font-xs);
+	font-weight: 600;
+	letter-spacing: .08rem;
+	text-transform: uppercase;
+	color: var(--secondary);
+	border: 1px solid var(--secondary);
+	padding: .2rem .55rem;
+	border-radius: .25rem;
+}
+
+.year {
+	font-family: var(--font-accent);
+	font-size: var(--font-xs);
+	letter-spacing: .08rem;
+	text-transform: uppercase;
+	color: var(--primary-dim);
+}
+
+.stackLine {
+	font-family: var(--font-accent);
+	font-size: var(--font-xs);
+	letter-spacing: .06rem;
+	color: var(--primary-dim);
+}
+
+.credit {
+	font-family: var(--font-accent);
+	font-size: var(--font-s);
+	color: var(--primary);
+}
+
+.badgeNote {
+	font-family: var(--font-accent);
+	font-size: var(--font-xs);
+	letter-spacing: .05rem;
+	text-transform: uppercase;
+	color: var(--primary-dim);
+}
+
+.actions {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+	align-items: center;
+}
+
+.actionPrimary {
+	font-family: var(--font-accent);
+	font-weight: 700;
+	font-size: var(--font-s);
+	color: var(--secondary);
+
+	&:hover {
+		color: var(--secondary-bright);
+	}
+}
+
+.actionLink {
+	font-family: var(--font-accent);
+	font-weight: 600;
+	font-size: var(--font-s);
+	color: var(--primary);
+
+	&:hover {
+		color: var(--primary-bright);
+	}
+}
+
+.engine {
+	border-top: 1px solid var(--primary-dark);
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+
+	p {
+		font-size: var(--font-s);
+	}
+}
+
+.engineLabel {
+	font-family: var(--font-accent);
+	font-size: var(--font-xs);
+	font-weight: 600;
+	letter-spacing: .08rem;
+	color: var(--secondary);
+}
+
+.projectMuted {
+	.cardImage img {
+		filter: saturate(.55) brightness(.85);
+	}
+}
+
+.projectSmall {
+	.details {
+		padding: 1.25rem;
+		gap: .9rem;
+	}
+
+	.description {
+		font-size: var(--font-r);
+	}
+}
+
+.moreLink {
+	margin-top: 2.5rem;
+	font-family: var(--font-accent);
+	font-weight: 700;
+
+	a {
+		color: var(--secondary);
+	}
+}
+
+.cardImage {
+	border-radius: 0;
+
+	img {
+		border-radius: 0;
+	}
+}
