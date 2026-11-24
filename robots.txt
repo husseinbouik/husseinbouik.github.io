@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: *
+
+# Host
+Host: https://husseinbouik.tech
+Host: https://www.husseinbouik.tech
+
+# Sitemaps
+Sitemap: https://husseinbouik.tech/sitemap.xml
+Sitemap: https://husseinbouik.tech/sitemap-0.xml
