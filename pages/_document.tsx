@@ -2,7 +2,7 @@ import {Head, Html, Main, NextScript} from 'next/document'
 import Script from 'next/script';
 import React from "react";
 
-const SITE_URL = "https://husseinbouik-github-io.vercel.app";
+const SITE_URL = "https://husseinbouik.github.io";
 const DESCRIPTION = "Hussein Bouik — Software Engineer building enterprise .NET microservices and immersive 3D web experiences (React Three Fiber), integrating AI services into production workflows. Currently at NTT DATA on the UN Volunteers platform. Tangier, Morocco.";
 
 export default function Document() {

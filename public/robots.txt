@@ -3,9 +3,8 @@ User-agent: *
 Allow: *
 
 # Host
-Host: https://husseinbouik.tech
-Host: https://www.husseinbouik.tech
+Host: https://husseinbouik.github.io
 
 # Sitemaps
-Sitemap: https://husseinbouik.tech/sitemap.xml
-Sitemap: https://husseinbouik.tech/sitemap-0.xml
+Sitemap: https://husseinbouik.github.io/sitemap.xml
+Sitemap: https://husseinbouik.github.io/sitemap-0.xml

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 
-const SITE_URL = 'https://husseinbouik-github-io.vercel.app';
+const SITE_URL = 'https://husseinbouik.github.io';
 const TITLE = 'Hussein Bouik — Software Engineer';
 const DESCRIPTION =
 	'Hussein Bouik — Software Engineer specializing in Enterprise .NET Microservices and Immersive 3D Web (React Three Fiber), integrating AI services into production workflows. Currently at NTT DATA building the UN Volunteers platform.';

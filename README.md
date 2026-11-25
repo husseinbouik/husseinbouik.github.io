@@ -4,7 +4,7 @@ Personal portfolio of **Hussein Bouik**, Software Engineer building enterprise .
 
 **Tech stack:** Next.js 14, React 18, TypeScript, SCSS, Framer Motion.
 
-**Deployed on Vercel:** https://husseinbouik-github-io.vercel.app
+**Live site:** https://husseinbouik.github.io/
 
 ## Updating content
 
