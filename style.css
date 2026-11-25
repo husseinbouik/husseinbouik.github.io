@@ -266,3 +266,76 @@ footer .fl{display:flex;gap:26px;font-size:12.5px;font-weight:600;letter-spacing
   .portrait{height:min(545px,88%);width:auto;aspect-ratio:400/545;}
   .badge{height:19%;width:auto;aspect-ratio:1/1;bottom:18%;left:10%;font-size:11.5px;}
 }
+/* ================= MOTION LAYER (cursor A + CTA motion) =================
+   Ported from the verified motion demo. All animation is gated behind
+   prefers-reduced-motion: no-preference; the cursor additionally only
+   exists on fine pointers once motion.js engages it (body.cursor-on). */
+@media (prefers-reduced-motion: no-preference){
+  /* --- Cursor A — dot + trailing ring (elements created by motion.js) --- */
+  .cur{position:fixed;left:0;top:0;pointer-events:none;z-index:200;opacity:0;}
+  body.cursor-on .cur{opacity:1;}
+  #curDot{width:8px;height:8px;border-radius:50%;background:var(--accent);}
+  #curRing{width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.8);
+    box-shadow:0 0 0 1px rgba(33,33,33,.22);
+    transition:width .25s,height .25s,border-color .25s,background .25s;}
+  #curRing.big{width:60px;height:60px;border-color:var(--accent);background:rgba(46,107,255,.08);}
+
+  /* --- CTA motion: fill sweep + label flip + arrow slide + press --- */
+  .btn{position:relative;overflow:hidden;isolation:isolate;
+    transition:transform .18s ease,color .3s ease,border-color .3s ease;}
+  .btn-talk{position:relative;overflow:hidden;isolation:isolate;
+    transition:transform .18s ease,border-color .3s ease;}
+  .demo-play{overflow:hidden;isolation:isolate;
+    transition:transform .18s ease,color .3s ease,background .3s ease;}
+  .btn::before,.btn-talk::before,.demo-play::before{
+    content:"";position:absolute;inset:0;z-index:-1;
+    transform:scaleX(0);transform-origin:left center;
+    transition:transform .38s cubic-bezier(.65,0,.25,1);}
+  .btn:hover::before,.btn:focus-visible::before,
+  .btn-talk:hover::before,.btn-talk:focus-visible::before,
+  .demo-play:hover::before,.demo-play:focus-visible::before{transform:scaleX(1);}
+  .btn-solid::before{background:#fff;}
+  .btn-solid:hover,.btn-solid:focus-visible{color:var(--ink);}
+  .btn-line::before{background:var(--accent);}
+  .btn-line:hover,.btn-line:focus-visible{border-color:var(--accent);}
+  .btn-line-ink::before{background:var(--ink);}
+  .btn-line-ink:hover,.btn-line-ink:focus-visible{color:#fff;border-color:var(--ink);}
+  .btn-talk::before{background:var(--accent);}
+  .btn-talk:hover,.btn-talk:focus-visible{border-color:var(--accent);}
+  .demo-play::before{background:#fff;}
+  .demo-play:hover{background:var(--accent);color:var(--ink);}
+  .btn:active,.btn-talk:active,.demo-play:active{transform:scale(.96);}
+
+  /* Arrow slides (spans already in the markup, plus .marr wrapped by motion.js) */
+  .marr{display:inline-block;transition:transform .32s cubic-bezier(.65,0,.25,1);}
+  .btn-solid:hover .marr,.btn-solid:focus-visible .marr{transform:translateX(5px);}
+  .btn-talk .arr{transition:transform .32s cubic-bezier(.65,0,.25,1);}
+  .btn-talk:hover .arr,.btn-talk:focus-visible .arr{transform:translateX(3px);}
+  .viewall span,.work .links a span,.lk span{display:inline-block;
+    transition:transform .32s cubic-bezier(.65,0,.25,1);}
+  .viewall:hover span,.viewall:focus-visible span{transform:translateX(4px);}
+  .work .links a:hover span,.work .links a:focus-visible span,
+  .lk:hover span,.lk:focus-visible span{transform:translate(2px,-2px);}
+  .work h3 .go{transition:transform .32s cubic-bezier(.65,0,.25,1);}
+  .work h3 .go:hover,.work h3 .go:focus-visible{transform:translate(3px,-3px);}
+  .viewall,.lk{display:inline-block;}
+  .viewall,.lk,.work .links a{transition:transform .18s ease;}
+  .viewall:active,.lk:active,.work .links a:active{transform:scale(.96);}
+
+  /* Circular GET IN TOUCH badge — radial fill + press */
+  .badge2{position:relative;overflow:hidden;isolation:isolate;
+    transition:transform .18s ease,color .3s ease;}
+  .badge2::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:50%;
+    background:#fff;transform:scale(0);
+    transition:transform .38s cubic-bezier(.65,0,.25,1);}
+  a:hover .badge2,a:focus-visible .badge2{color:var(--ink);}
+  a:hover .badge2::before,a:focus-visible .badge2::before{transform:scale(1);}
+  a:hover .badge2 .marr{transform:translate(3px,-3px);}
+  a:active .badge2{transform:scale(.94);}
+}
+@media (pointer:fine) and (prefers-reduced-motion: no-preference){
+  body.cursor-on,body.cursor-on a,body.cursor-on button,body.cursor-on [role="button"]{cursor:none;}
+}
+@media (prefers-reduced-motion: reduce){
+  .cur{display:none !important;}
+}
