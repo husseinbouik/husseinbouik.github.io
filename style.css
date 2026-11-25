@@ -362,3 +362,53 @@ footer .fl{display:flex;gap:26px;font-size:12.5px;font-weight:600;letter-spacing
 @media (prefers-reduced-motion: reduce){
   .cur{display:none !important;}
 }
+
+/* ---------- MORE PROJECTS — HOVER PREVIEW ---------- */
+/* Row name slide + blue on hover (desktop) */
+.more .nm{transition:color .3s ease,transform .3s ease;}
+.more .row.hovering .nm{color:var(--accent);transform:translateX(10px);}
+
+/* mobile thumbnail — hidden on desktop */
+.thumb{display:none;}
+
+/* floating preview card (desktop) */
+#pv{position:fixed;left:55%;top:0;width:340px;aspect-ratio:16/10;z-index:60;pointer-events:none;
+  border-radius:16px;overflow:hidden;background:var(--ink);
+  box-shadow:0 34px 64px rgba(33,33,33,.28),0 4px 16px rgba(33,33,33,.14);
+  opacity:0;transform:rotate(-1.6deg) scale(.92) translateY(14px);
+  transition:opacity .38s ease,transform .38s cubic-bezier(.22,.9,.3,1);}
+#pv.on{opacity:1;transform:rotate(-1.6deg) scale(1) translateY(0);}
+#pv .slide{position:absolute;inset:0;opacity:0;transform:scale(1.05);
+  transition:opacity .45s ease,transform .6s ease;}
+#pv .slide.act{opacity:1;transform:scale(1);}
+#pv .slide img{width:100%;height:100%;object-fit:cover;display:block;}
+#pv .cap{position:absolute;left:12px;bottom:12px;z-index:3;background:#fff;color:var(--ink);
+  font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;}
+/* typographic placeholder slide */
+#pv .slide.ph{background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:34px 34px;}
+#pv .ph .pname{font-family:var(--disp);text-transform:uppercase;color:#fff;font-size:21px;text-align:center;padding:0 26px;line-height:1.35;}
+#pv .ph .prule{width:38px;height:3px;background:var(--accent);}
+#pv .ph .ptag{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:#a8a8a8;text-transform:uppercase;}
+
+/* mobile fallback ≤860px — fixed thumbnail per row, no floating card */
+@media (max-width:860px){
+  .more h3{font-size:30px;}
+  #pv{display:none;}
+  .more .row{grid-template-columns:56px 1fr;grid-template-areas:"thumb nm" "thumb ds" "thumb lk";
+    gap:5px 14px;padding:16px 0;align-items:start;}
+  .more .nm{grid-area:nm;font-size:16.5px;}
+  .more .ds{grid-area:ds;}
+  .more .lkrow{grid-area:lk;margin-top:3px;}
+  .thumb{display:block;grid-area:thumb;width:56px;height:56px;border-radius:12px;object-fit:cover;background:var(--ink);}
+  .thumb.ph{display:flex;align-items:center;justify-content:center;color:#fff;
+    font-family:var(--disp);font-size:14px;text-transform:uppercase;
+    background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+    background-size:14px 14px;}
+}
+@media (prefers-reduced-motion: reduce){
+  #pv{transition:opacity .01s;}
+  #pv .slide{transition:opacity .01s;}
+  .more .nm{transition:none;}
+}

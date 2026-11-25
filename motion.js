@@ -114,3 +114,54 @@
     requestAnimationFrame(frame);
   }
 })();
+
+/* ---------- More Projects — hover preview card ----------
+   One fixed card follows the cursor (damped lerp, same feel as the
+   trailing cursor ring) and crossfades between project slides.
+   Desktop hover only; on small screens the rows carry fixed
+   thumbnails instead and this stays inert. */
+(function () {
+  "use strict";
+  var pv = document.getElementById("pv");
+  var more = document.querySelector(".more");
+  if (!pv || !more) return;
+  var rows = Array.prototype.slice.call(more.querySelectorAll(".row"));
+  var slides = {};
+  pv.querySelectorAll(".slide").forEach(function (s) { slides[s.dataset.slug] = s; });
+  var canHover = window.matchMedia("(hover: hover) and (min-width: 861px)").matches;
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function activate(row) {
+    rows.forEach(function (r) { r.classList.toggle("hovering", r === row); });
+    Object.keys(slides).forEach(function (k) { slides[k].classList.toggle("act", k === row.dataset.slug); });
+    pv.classList.add("on");
+  }
+  function deactivate() {
+    rows.forEach(function (r) { r.classList.remove("hovering"); });
+    pv.classList.remove("on");
+  }
+
+  if (!canHover) return;
+
+  /* damped follow — same lerp feel as the site's trailing cursor ring */
+  var targetY = window.innerHeight / 2, curY = targetY, running = false;
+  function loop() {
+    curY += (targetY - curY) * (reduced ? 1 : 0.12);
+    var h = pv.offsetHeight;
+    var y = Math.min(Math.max(curY - h / 2, 10), window.innerHeight - h - 10);
+    pv.style.top = y + "px";
+    if (Math.abs(targetY - curY) > 0.4) { requestAnimationFrame(loop); }
+    else { running = false; }
+  }
+  function kick() { if (!running) { running = true; requestAnimationFrame(loop); } }
+
+  rows.forEach(function (row) {
+    row.addEventListener("mouseenter", function (e) {
+      targetY = e.clientY; activate(row); kick();
+    });
+  });
+  more.addEventListener("mousemove", function (e) {
+    targetY = e.clientY; kick();
+  });
+  more.addEventListener("mouseleave", deactivate);
+})();
