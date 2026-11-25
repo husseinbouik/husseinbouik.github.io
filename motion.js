@@ -118,8 +118,10 @@
 /* ---------- More Projects — hover preview card ----------
    One fixed card follows the cursor (damped lerp, same feel as the
    trailing cursor ring) and crossfades between project slides.
-   Desktop hover only; on small screens the rows carry fixed
-   thumbnails instead and this stays inert. */
+   Trigger: the project title only, so the card never covers the
+   description text while it is being read. Desktop hover only;
+   on small screens the rows carry fixed thumbnails instead and
+   this stays inert. */
 (function () {
   "use strict";
   var pv = document.getElementById("pv");
@@ -155,13 +157,26 @@
   }
   function kick() { if (!running) { running = true; requestAnimationFrame(loop); } }
 
+  /* Trigger is the project title (.nm) only — hovering the
+     description or links must not cover the text being read.
+     Leaving a title defers the hide by one frame so moving
+     directly to the next title keeps the card up and crossfades. */
+  var pendingHide = 0;
   rows.forEach(function (row) {
-    row.addEventListener("mouseenter", function (e) {
+    var nm = row.querySelector(".nm");
+    if (!nm) return;
+    nm.addEventListener("mouseenter", function (e) {
+      if (pendingHide) { cancelAnimationFrame(pendingHide); pendingHide = 0; }
       targetY = e.clientY; activate(row); kick();
     });
+    nm.addEventListener("mousemove", function (e) {
+      targetY = e.clientY; kick();
+    });
+    nm.addEventListener("mouseleave", function () {
+      if (pendingHide) cancelAnimationFrame(pendingHide);
+      pendingHide = requestAnimationFrame(function () {
+        pendingHide = 0; deactivate();
+      });
+    });
   });
-  more.addEventListener("mousemove", function (e) {
-    targetY = e.clientY; kick();
-  });
-  more.addEventListener("mouseleave", deactivate);
 })();
