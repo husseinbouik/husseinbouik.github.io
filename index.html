@@ -123,6 +123,7 @@
         <div class="meta"><span class="chipset">.NET</span><span class="chipset">Azure</span><span class="chipset">CQRS</span><span class="chipset">SQL</span><span class="chipset">Hangfire</span><span class="chipset">Redis</span><span class="chipset">AppInsights</span></div>
         <ul class="uitems">
           <li>Cut the recruiter export from <b>2+ hours (~400 records)</b> to <b>under 30 minutes</b>.</li>
+          <li><b>How:</b> replaced <b>~400 per-candidate AI calls</b> with a <b>single bulk request</b>; <b>Hangfire</b> background jobs finish the export once the summaries land — and if the AI service stalls, the Excel is still delivered, with an <b>email notification</b>.</li>
           <li>Added <b>“Resend” history</b> with flattening, filters, sorting and pagination.</li>
           <li>Fixed <b>key defects</b> — funding type filter, progress tracker, B2C labels.</li>
           <li>Improved <b>stability</b> (telemetry crash, session handling) and <b>permissions</b>.</li>
