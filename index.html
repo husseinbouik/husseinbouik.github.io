@@ -249,6 +249,14 @@ footer .fl{display:flex;gap:26px;font-size:12.5px;font-weight:600;letter-spacing
   .about-grid .ph img{height:400px;}
   .sec-head{flex-direction:column;align-items:flex-start;}
 }
+@media (max-width:640px){
+  /* Hero visual re-composed for phones: circle + arch portrait centred and fully
+     on-screen; badge overlaps the portrait's lower-left edge instead of floating free */
+  .hero-visual{height:400px;}
+  .circle{width:min(84vw,340px);height:min(84vw,340px);left:50%;right:auto;top:4px;transform:translateX(-50%);}
+  .portrait{width:56%;max-width:230px;height:auto;aspect-ratio:400/545;left:50%;right:auto;transform:translateX(-50%);bottom:0;}
+  .badge{left:calc(50% - 142px);bottom:36px;}
+}
 </style>
 </head>
 <body>
