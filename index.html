@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hussein Bouik — Software Engineer · .NET, Azure & Interactive 3D</title>
-<meta name="description" content="Software Engineer based in Tangier, Morocco. I build enterprise .NET microservices on Azure for the UN Volunteers Platform at NTT DATA, and interactive 3D product configurators with my own linear-division engine.">
+<meta name="description" content="Enterprise .NET & Azure at NTT DATA (UN Volunteers Platform) · Interactive 3D configurators · Founder of Ouiboo. Tangier, Morocco — open to new opportunities.">
 <link rel="canonical" href="https://husseinbouik.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://husseinbouik.github.io/">
@@ -15,382 +15,502 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Hussein Bouik — Software Engineer · .NET, Azure & Interactive 3D">
-<meta name="twitter:description" content="Enterprise .NET & Azure at NTT DATA (UN Volunteers Platform) · Interactive 3D configurators · Founder of Ouiboo.">
+<meta name="twitter:description" content="Enterprise .NET & Azure at NTT DATA (UN Volunteers Platform) · Interactive 3D configurators · Founder of Ouiboo. Tangier, Morocco — open to new opportunities.">
 <meta name="twitter:image" content="https://husseinbouik.github.io/og-image.jpg">
-<meta name="theme-color" content="#060b18">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6bff'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='white' text-anchor='middle'%3EHB%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Hussein Bouik","jobTitle":"Software Engineer","url":"https://husseinbouik.github.io/","email":"mailto:husseinbouik5@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Tangier","addressCountry":"MA"},"sameAs":["https://github.com/husseinbouik","https://www.linkedin.com/in/hussein-bouik/"]}
-</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<style>
+@font-face{font-family:'Boldonse';src:url('fonts/Boldonse.woff2') format('woff2');font-display:swap;}
+@font-face{font-family:'Anton';src:url('fonts/Anton.woff2') format('woff2');font-display:swap;}
+@font-face{font-family:'Fragment Mono';src:url('fonts/FragmentMono.woff2') format('woff2');font-display:swap;}
+@font-face{font-family:'Inter';src:url('fonts/Inter400.woff2') format('woff2');font-weight:400;font-display:swap;}
+@font-face{font-family:'Inter';src:url('fonts/Inter600.woff2') format('woff2');font-weight:600;font-display:swap;}
+@font-face{font-family:'Inter';src:url('fonts/Inter700.woff2') format('woff2');font-weight:700;font-display:swap;}
+:root{
+  --ink:#212121; --ink2:#2b2b2b; --accent:#2e6bff; --accent-dk:#1e56d8;
+  --paper:#ffffff; --paper2:#f1f1f1; --ghost:#3d3d3d; --ghost-lt:#dcdcdc;
+  --mut:#a8a8a8; --mut-dk:#5a5a5a; --line-d:#383838; --line-l:#e3e3e3;
+  --disp:'Boldonse','Anton',sans-serif; --body:'Inter',sans-serif; --mono:'Fragment Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:var(--body);background:var(--ink);color:#fff;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:1280px;margin:0 auto;padding:0 48px;}
+.disp{font-family:var(--disp);text-transform:uppercase;font-weight:400;}
+.label{display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;}
+.label::before{content:'';width:8px;height:8px;background:var(--accent);flex:none;}
+a{color:inherit;text-decoration:none;}
+
+/* ---------- NAV ---------- */
+nav{display:flex;align-items:center;justify-content:space-between;padding:26px 0;}
+.logo{font-family:var(--disp);font-size:27px;letter-spacing:.01em;text-transform:uppercase;}
+.logo span{color:var(--accent);}
+.navlinks{display:flex;gap:52px;font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;}
+.btn-talk{display:flex;align-items:stretch;border:1px solid #4a4a4a;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;}
+.btn-talk .arr{background:var(--accent);color:#fff;display:flex;align-items:center;padding:0 13px;font-size:15px;}
+.btn-talk .txt{padding:11px 18px;display:flex;align-items:center;}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;padding-top:56px;}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:20px;position:relative;z-index:2;padding-bottom:112px;}
+.hero h1{font-family:var(--disp);text-transform:uppercase;font-size:clamp(48px,5.7vw,84px);line-height:1.26;margin:24px 0 26px;}
+.hero h1 .w{color:#fff;} .hero h1 .g{color:var(--ghost);}
+.hero p.lede{color:var(--mut);font-size:16.5px;line-height:1.65;max-width:500px;}
+.facts{margin-top:22px;display:flex;flex-direction:column;gap:12px;}
+.chip{display:inline-flex;align-items:center;gap:9px;border:1px solid #4a4a4a;border-radius:99px;padding:8px 16px;font-size:13px;color:#e8e8e8;width:max-content;}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:#3ddc68;flex:none;}
+.langs{font-size:13.5px;color:#8f8f8f;line-height:1.6;max-width:520px;}
+.langs b{color:#cfcfcf;font-weight:600;}
+.hero-btns{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap;}
+.btn{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:15px 26px;}
+.btn-solid{background:var(--accent);color:#fff;}
+.btn-line{border:1px solid #4a4a4a;color:#fff;}
+.socials{margin-top:16px;font-size:13px;color:#8f8f8f;display:flex;gap:8px;align-items:center;}
+.socials a{color:#d8d8d8;font-weight:600;}
+.socials a:hover{color:var(--accent);}
+.hero-visual{position:relative;min-height:620px;}
+.circle{position:absolute;width:600px;height:600px;border-radius:50%;right:-70px;top:-30px;
+  background:radial-gradient(circle at 38% 32%, #6ea8ff 0%, var(--accent) 42%, #14337a 74%, rgba(33,33,33,0) 99%);}
+.portrait{position:absolute;right:44px;bottom:0;width:400px;height:545px;object-fit:cover;object-position:50% 82%;
+  border-radius:200px 200px 0 0;z-index:2;}
+.badge{position:absolute;z-index:5;left:6%;bottom:185px;width:142px;height:142px;border-radius:50%;background:var(--accent);
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  font-family:var(--disp);font-size:12.5px;line-height:1.5;text-transform:uppercase;padding:16px;}
+.giant{position:relative;z-index:4;font-family:var(--disp);text-transform:uppercase;color:#fff;
+  font-size:clamp(54px,10vw,146px);line-height:.95;white-space:nowrap;margin-top:-48px;letter-spacing:.005em;}
+
+/* ---------- STATS ---------- */
+.stats{border-top:1px solid var(--line-d);margin-top:0;}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);}
+.stat{padding:34px 28px 38px;border-left:1px solid var(--line-d);min-width:0;}
+.stat:first-child{border-left:none;padding-left:0;}
+.stat .v{font-family:var(--disp);font-size:28px;text-transform:uppercase;line-height:1.18;overflow-wrap:break-word;}
+.stat .k{margin-top:10px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#8f8f8f;}
+
+/* ---------- SECTIONS ---------- */
+section{padding:110px 0;}
+.light{background:var(--paper);color:var(--ink);}
+.light2{background:var(--paper2);color:var(--ink);}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:56px;}
+.sec-head h2{font-family:var(--disp);text-transform:uppercase;font-size:clamp(42px,5.2vw,78px);line-height:1.22;margin-top:22px;}
+.sec-head h2 .gl{color:var(--ghost-lt);}
+.dark h2 .gd{color:var(--ghost);}
+.sec-head .side{max-width:300px;color:var(--mut-dk);font-size:14.5px;line-height:1.6;padding-bottom:8px;}
+.viewall{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;padding-bottom:10px;}
+.viewall span{color:var(--accent);}
+
+/* ---------- WORKS ---------- */
+.works-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;}
+.work .imgbox{position:relative;overflow:hidden;background:#ddd;}
+.work .imgbox img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:16/10.4;}
+.tags{position:absolute;top:14px;right:14px;display:flex;gap:7px;z-index:2;}
+.tags i{font-style:normal;background:#fff;color:var(--ink);font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;}
+.work h3{font-family:var(--disp);text-transform:uppercase;font-size:29px;margin:20px 0 9px;display:flex;justify-content:space-between;align-items:center;}
+.work h3 .go{color:var(--accent);font-size:22px;}
+.work p{color:var(--mut-dk);font-size:15px;line-height:1.6;max-width:480px;}
+.work .meta{display:flex;gap:8px;margin-top:15px;flex-wrap:wrap;align-items:center;}
+.chipset{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border:1px solid #cfcfcf;padding:6px 11px;color:#444;}
+.work .links{margin-left:auto;display:flex;gap:16px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;}
+.work .links a span{color:var(--accent);}
+.work.offset{margin-top:84px;}
+.uvp{margin-top:34px;background:var(--ink);color:#fff;display:grid;grid-template-columns:.9fr 1.1fr;overflow:hidden;}
+.uvp .big{padding:52px 48px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--line-d);}
+.uvp .big .u{font-family:var(--disp);font-size:110px;line-height:.9;color:#fff;}
+.uvp .big .u em{font-style:normal;color:var(--accent);}
+.uvp .big .sub{margin-top:14px;font-family:var(--mono);font-size:12.5px;color:#9a9a9a;line-height:1.7;}
+.uvp .info{padding:52px 48px;display:flex;flex-direction:column;justify-content:center;}
+.uvp .info .tagline{display:inline-flex;gap:8px;align-items:center;font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);}
+.uvp .info h3{font-family:var(--disp);text-transform:uppercase;font-size:31px;margin:14px 0 10px;}
+.uvp .info p{color:var(--mut);font-size:15px;line-height:1.65;}
+.uvp .meta{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap;}
+.uvp .chipset{border-color:#4a4a4a;color:#d5d5d5;}
+
+/* ---------- CLICK-TO-LOAD DEMO EMBED ---------- */
+.demo-stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#141414;z-index:3;}
+.demo-stage.is-live img{visibility:hidden;}
+.demo-stage.is-live .tags{display:none;}
+.demo-play{position:absolute;left:14px;bottom:14px;z-index:4;background:var(--accent);color:#fff;border:0;cursor:pointer;
+  font-family:var(--body);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:12px 18px;}
+.demo-play:hover{background:var(--accent-dk);}
+.demo-close{position:absolute;top:14px;left:14px;z-index:5;background:rgba(18,18,18,.92);color:#fff;border:1px solid #5a5a5a;cursor:pointer;
+  font-family:var(--body);font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:9px 13px;}
+.demo-close:hover{border-color:#fff;}
+
+/* ---------- MORE PROJECTS (list rows) ---------- */
+.more{margin-top:96px;}
+.more h3{font-family:var(--disp);text-transform:uppercase;font-size:40px;margin-bottom:8px;}
+.more .row{display:grid;grid-template-columns:300px 1fr auto;gap:26px;align-items:center;padding:21px 0;border-bottom:1px solid var(--line-l);}
+.more .row:first-of-type{border-top:1px solid var(--line-l);}
+.more .nm{font-family:var(--disp);text-transform:uppercase;font-size:19.5px;}
+.more .ds{color:var(--mut-dk);font-size:14px;line-height:1.55;}
+.more .lk{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;}
+.more .lk span{color:var(--accent);}
+.more .lk + .lk{margin-left:14px;}
+.more .note{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);white-space:nowrap;}
+
+/* ---------- IMPACT (dark) ---------- */
+.dark{background:var(--ink);color:#fff;}
+.impact-head h2{font-family:var(--disp);text-transform:uppercase;font-size:clamp(40px,4.8vw,70px);line-height:1.2;margin-top:22px;}
+.impact-head h2 .gd{color:var(--ghost);}
+.impact-sub{margin-top:20px;font-size:19px;font-weight:600;}
+.impact-head p{color:var(--mut);font-size:15.5px;line-height:1.65;max-width:640px;margin-top:12px;}
+.impact-rows{margin-top:58px;}
+.irow{display:grid;grid-template-columns:90px 1fr;gap:24px;padding:26px 0;border-top:1px solid var(--line-d);align-items:baseline;}
+.irow:last-child{border-bottom:1px solid var(--line-d);}
+.irow .n{font-family:var(--mono);color:var(--accent);font-size:14px;}
+.irow .t{font-size:17.5px;line-height:1.55;color:#e2e2e2;max-width:820px;}
+.irow .t b{color:#fff;} .irow .t .hl{color:var(--accent);font-weight:700;}
+
+/* ---------- SKILLS ---------- */
+.pills{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:54px;}
+.pill{display:inline-flex;align-items:center;gap:11px;border:1px solid #c9c9c9;border-radius:99px;padding:13px 22px;font-weight:600;font-size:15px;text-transform:uppercase;letter-spacing:.05em;}
+.pill i{width:8px;height:8px;background:var(--accent);flex:none;}
+.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;}
+.skill{border-top:3px solid var(--ink);padding-top:20px;}
+.skill h4{font-family:var(--disp);text-transform:uppercase;font-size:19px;line-height:1.3;margin-bottom:12px;}
+.skill p{color:var(--mut-dk);font-size:14px;line-height:1.75;}
+
+/* ---------- EXPERIENCE (process style) ---------- */
+.ghost-title{font-family:var(--disp);text-transform:uppercase;line-height:1.16;font-size:clamp(48px,7.8vw,114px);}
+.ghost-title .l1{background:linear-gradient(180deg,#fff 20%,#6f6f6f 100%);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.ghost-title .l2{color:#2e2e2e;}
+.process{position:relative;margin-top:80px;}
+.process::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line-d);}
+.step{position:relative;width:50%;padding:0 56px 64px 0;}
+.step:nth-child(even){margin-left:50%;padding:0 0 64px 56px;}
+.step .n{font-family:var(--mono);color:var(--accent);font-size:13.5px;}
+.step h4{font-family:var(--disp);text-transform:uppercase;font-size:31px;margin:10px 0 8px;}
+.step .yr{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#cfcfcf;}
+.step p{color:#9a9a9a;font-size:14.5px;line-height:1.6;margin-top:8px;}
+.step::after{content:'';position:absolute;top:8px;right:-5px;width:9px;height:9px;background:var(--accent);}
+.step:nth-child(even)::after{right:auto;left:-4px;}
+
+/* ---------- ACHIEVEMENTS ---------- */
+.achieve{border-top:1px solid var(--line-d);}
+.achieve .wrap{display:grid;grid-template-columns:repeat(4,1fr);}
+.ach{padding:36px 28px 42px;border-left:1px solid var(--line-d);min-width:0;}
+.ach:first-child{border-left:none;padding-left:0;}
+.ach .k{font-family:var(--disp);text-transform:uppercase;font-size:19px;color:var(--accent);}
+.ach .v{margin-top:10px;font-size:15px;color:#d8d8d8;line-height:1.5;}
+
+/* ---------- ABOUT ---------- */
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center;}
+.about-grid .ph img{width:100%;height:520px;object-fit:cover;object-position:50% 82%;border-radius:200px 200px 0 0;display:block;}
+.about-grid h2{font-family:var(--disp);text-transform:uppercase;font-size:clamp(36px,4vw,56px);line-height:1.22;margin:20px 0 22px;}
+.about-grid h2 .gl{color:var(--ghost-lt);}
+.about-grid p{color:#4c4c4c;font-size:16.5px;line-height:1.75;}
+.about-facts{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap;}
+.about-facts .chipset{border-color:#c9c9c9;color:#333;}
+
+/* ---------- CTA / FOOTER ---------- */
+.cta{background:var(--paper2);color:var(--ink);text-align:center;padding:120px 0 110px;position:relative;overflow:hidden;}
+.cta h2{font-family:var(--disp);text-transform:uppercase;font-size:clamp(38px,6.2vw,94px);line-height:1.2;max-width:1060px;margin:0 auto;}
+.cta h2 .o{color:var(--accent);}
+.cta .badge2{display:inline-flex;margin-top:8px;width:118px;height:118px;border-radius:50%;background:var(--accent);color:#fff;
+  align-items:center;justify-content:center;font-family:var(--disp);font-size:11.5px;line-height:1.45;text-transform:uppercase;padding:14px;vertical-align:middle;}
+.cta p{color:var(--mut-dk);font-size:16.5px;margin-top:30px;}
+.cta-btns{display:flex;gap:14px;justify-content:center;margin-top:34px;flex-wrap:wrap;}
+.btn-ink{background:var(--ink);color:#fff;}
+.btn-line-ink{border:1px solid #bdbdbd;color:var(--ink);}
+footer{background:var(--ink);color:#fff;padding:34px 0;}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;}
+footer .copy{font-size:13px;color:#8f8f8f;}
+footer .fl{display:flex;gap:26px;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;}
+
+@media (max-width:820px){
+  .wrap{padding:0 22px;}
+  .navlinks{display:none;}
+  section{padding:72px 0;}
+  .hero{padding-top:30px;}
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-visual{min-height:0;height:430px;margin-top:16px;}
+  .circle{width:360px;height:360px;right:-60px;top:0;}
+  .portrait{width:250px;height:330px;right:12px;}
+  .badge{width:104px;height:104px;font-size:11px;left:0;bottom:96px;}
+  .giant{font-size:10.3vw;margin-top:-30px;letter-spacing:-.01em;}
+  /* Stats: clean 2x2 grid, cells can shrink, long display words wrap instead of colliding */
+  .stats .wrap{grid-template-columns:1fr 1fr;column-gap:22px;}
+  .stat{padding:24px 0 26px;border-left:none;border-top:1px solid var(--line-d);min-width:0;}
+  .stat:nth-child(-n+2){border-top:none;}
+  .stat .v{font-size:15px;line-height:1.3;letter-spacing:-.01em;overflow-wrap:break-word;}
+  .stat .k{font-size:11px;margin-top:8px;}
+  .works-grid{grid-template-columns:1fr;}
+  .work.offset{margin-top:0;}
+  .uvp{grid-template-columns:1fr;}
+  .uvp .big{border-right:none;border-bottom:1px solid var(--line-d);padding:38px 28px;}
+  .uvp .big .u{font-size:76px;}
+  .uvp .info{padding:38px 28px;}
+  .more .row{grid-template-columns:1fr;gap:7px;padding:18px 0;}
+  .skill-grid{grid-template-columns:1fr 1fr;gap:20px;}
+  .process::before{left:4px;}
+  .step,.step:nth-child(even){width:100%;margin-left:0;padding:0 0 44px 30px;}
+  .step::after,.step:nth-child(even)::after{left:0;right:auto;}
+  .achieve .wrap{grid-template-columns:1fr 1fr;}
+  .ach{border-left:none;padding:26px 14px 30px 0;}
+  .about-grid{grid-template-columns:1fr;gap:36px;}
+  .about-grid .ph img{height:400px;}
+  .sec-head{flex-direction:column;align-items:flex-start;}
+}
+</style>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap header-in">
-    <a class="brand" href="#home" aria-label="Hussein Bouik — home">
-      <span class="brand-mark">HB</span>
-      <span class="brand-name">Hussein Bouik</span>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
-    <nav class="main-nav" id="mainNav" aria-label="Main">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <a class="btn btn-sm" href="Hussein_Bouik_CV.pdf" download>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download CV
-      </a>
+<!-- ================= NAV + HERO (dark) ================= -->
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="https://husseinbouik.github.io/">B<span>o</span>uik</a>
+      <div class="navlinks"><a href="#works">Works</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+      <a class="btn-talk" href="#contact"><span class="arr">→</span><span class="txt">Let's Talk</span></a>
     </nav>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="label">Software Engineer · .NET, Azure &amp; Interactive 3D</div>
+          <h1><span class="w">Software</span><br><span class="g">that scales,</span><br><span class="g">3D that</span><br><span class="g">feels real</span></h1>
+          <p class="lede">I build reliable, scalable web applications and enterprise solutions with .NET and Azure, and create interactive 3D product configurators with real-time rendering and custom engines.</p>
+          <div class="facts">
+            <span class="chip"><span class="dot"></span>Open to new opportunities · Tangier, Morocco</span>
+            <div class="langs"><b>Languages —</b> Arabic (native) · English &amp; French (full professional) · German B1 · Spanish (learning) &nbsp;·&nbsp; <b>Open to relocation</b></div>
+          </div>
+          <div class="hero-btns">
+            <a class="btn btn-solid" href="#works">View My Projects →</a>
+            <a class="btn btn-line" href="Hussein_Bouik_CV.pdf">Download CV</a>
+          </div>
+          <div class="socials"><a href="https://github.com/husseinbouik" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/hussein-bouik/" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:husseinbouik5@gmail.com">husseinbouik5@gmail.com</a></div>
+        </div>
+        <div class="hero-visual">
+          <div class="circle"></div>
+          <img class="portrait" src="assets/portrait.jpg" alt="Portrait of Hussein Bouik" width="270" height="480">
+          <div class="badge">Open to<br>Work</div>
+        </div>
+      </div>
+      <div class="giant">Hussein Bouik</div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><div class="v">3<em>+</em> Years</div><div class="k">Professional Experience</div></div>
+      <div class="stat"><div class="v">Enterprise <em>.NET</em></div><div class="k">Microservices &amp; Azure</div></div>
+      <div class="stat"><div class="v">3D <em>&amp;</em> Configurators</div><div class="k">Own Linear-Division Engine</div></div>
+      <div class="stat"><div class="v">1<em>st</em> Place</div><div class="k">SoliHackathon ’24</div></div>
+    </div>
   </div>
 </header>
 
-<main id="home">
-
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <span class="chip"><span class="dot"></span> Open to new opportunities · Tangier, Morocco</span>
-        <h1>Hussein Bouik</h1>
-        <p class="role">Software Engineer · .NET, Azure &amp; Interactive 3D</p>
-        <p class="lede">I build reliable, scalable web applications and enterprise solutions with .NET and Azure, and create interactive 3D product configurators with real-time rendering and custom engines.</p>
-        <div class="hero-cta">
-          <a class="btn" href="#projects">View My Projects
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <a class="btn btn-outline" href="Hussein_Bouik_CV.pdf" download>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download CV
-          </a>
-        </div>
-        <div class="social-row">
-          <a href="https://github.com/husseinbouik" target="_blank" rel="noopener"><img src="assets/icons/github.svg" alt="" width="17" height="17"> GitHub</a>
-          <a href="https://www.linkedin.com/in/hussein-bouik/" target="_blank" rel="noopener"><img src="assets/icons/linkedin.svg" alt="" width="16" height="16"> LinkedIn</a>
-          <a href="mailto:husseinbouik5@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> husseinbouik5@gmail.com</a>
-        </div>
-        <p class="facts">
-          <span><b>Languages</b> Arabic (native) · English &amp; French (full professional) · German B1 · Spanish (learning)</span>
-          <span>Open to relocation</span>
-        </p>
-      </div>
-      <div class="hero-visual">
-        <div class="browser-frame">
-          <div class="browser-bar"><span></span><span></span><span></span><em>zoning-studio — live demo</em></div>
-          <div class="demo-stage demo-stage-hero" data-demo-stage>
-            <img src="assets/zoning-hero.jpg" alt="Zoning Studio — 3D partition configurator built on my own linear-division engine" width="590" height="615">
-            <button type="button" class="demo-play" data-demo-play aria-label="Play the Zoning Studio live demo right here">
-              <span class="demo-play-pill">▶ Play the live demo</span>
-            </button>
-            <span class="hero-badge">▶ Playable demo — my own 3D engine</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ STATS ============ -->
-  <section class="wrap">
-    <div class="stats panel">
-      <div class="stat">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        <div><strong>3+ years</strong><span>Professional experience</span></div>
-      </div>
-      <div class="stat">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-        <div><strong>Enterprise .NET</strong><span>Microservices &amp; Azure</span></div>
-      </div>
-      <div class="stat">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-        <div><strong>3D &amp; Product Configurators</strong><span>Own linear-division engine</span></div>
-      </div>
-      <div class="stat">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-        <div><strong>1st place</strong><span>SoliHackathon ’24</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ TECH STACK ============ -->
-  <section class="wrap techstack" aria-label="Tech stack">
-    <h2 class="tech-title">Tech Stack</h2>
-    <ul class="tech-row">
-      <li><img src="assets/icons/dotnetcore-original.svg" alt="" width="27" height="27"> .NET</li>
-      <li><img src="assets/icons/azure-original.svg" alt="" width="27" height="27"> Azure</li>
-      <li><img src="assets/icons/react-original.svg" alt="" width="27" height="27"> React</li>
-      <li><img src="assets/icons/typescript-original.svg" alt="" width="25" height="25"> TypeScript</li>
-      <li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#5ea2ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg> SQL</li>
-      <li><img src="assets/icons/redis-original.svg" alt="" width="27" height="27"> Redis</li>
-      <li><img src="assets/icons/docker-original.svg" alt="" width="27" height="27"> Docker</li>
-    </ul>
-  </section>
-
-  <!-- ============ FEATURED PROJECTS ============ -->
-  <section class="wrap section" id="projects">
-    <div class="section-head">
+<!-- ================= WORKS (light) ================= -->
+<section class="light" id="works">
+  <div class="wrap">
+    <div class="sec-head">
       <div>
-        <h2>Featured Projects</h2>
-        <p>A selection of real projects that show my work, problem-solving and impact.</p>
+        <div class="label" style="color:var(--ink)">Selected Works</div>
+        <h2>Featured <span class="gl">Projects</span></h2>
       </div>
-      <a class="view-all" href="#more-projects">View all projects
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
+      <div class="side">A selection of real projects that show my work, problem-solving and impact.<br><br><a class="viewall" href="#more-projects">View all projects <span>→</span></a></div>
     </div>
 
-    <div class="cards">
-      <article class="card">
-        <div class="card-media demo-stage" data-demo-stage>
-          <img src="assets/zoning-card.jpg" alt="Zoning Studio — interactive 3D partition and cabinet configurator" width="900" height="540" loading="lazy">
-          <button type="button" class="badge badge-play" data-demo-play aria-label="Play the Zoning Studio live demo right here">▶ Play the live demo</button>
+    <div class="works-grid">
+      <article class="work">
+        <div class="imgbox demo-stage" data-demo-stage>
+          <img src="assets/zoning-card.jpg" alt="Zoning Studio — interactive 3D partition configurator" width="900" height="540">
+          <div class="tags"><i>React Three Fiber</i><i>3D Engine</i></div>
+          <button type="button" class="demo-play" data-demo-play aria-label="Play the Zoning Studio live demo right here">▶ Play the live demo</button>
         </div>
-        <div class="card-body">
-          <h3>Zoning Studio <a class="ext" href="https://husseinbouik.github.io/zoning-studio/" target="_blank" rel="noopener" aria-label="Open Zoning Studio live demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a></h3>
-          <p>Interactive 3D partition &amp; cabinet configurator driven by my own linear-division engine — real-time, parametric and scalable.</p>
-          <div class="card-foot">
-            <span class="tags"><span>React Three Fiber</span><span>TypeScript</span><span>3D Engine</span></span>
-            <span class="card-links"><a href="https://husseinbouik.github.io/zoning-studio/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/husseinbouik/zoning-studio" target="_blank" rel="noopener">Code</a></span>
-          </div>
+        <h3>Zoning Studio <a class="go" href="https://husseinbouik.github.io/zoning-studio/" target="_blank" rel="noopener" aria-label="Open Zoning Studio live demo">↗</a></h3>
+        <p>Interactive 3D partition &amp; cabinet configurator driven by my own linear-division engine — real-time, parametric and scalable.</p>
+        <div class="meta">
+          <span class="chipset">▶ Playable Demo — Live</span>
+          <span class="links"><a href="https://husseinbouik.github.io/zoning-studio/" target="_blank" rel="noopener">Live Demo <span>↗</span></a><a href="https://github.com/husseinbouik/zoning-studio" target="_blank" rel="noopener">Code <span>↗</span></a></span>
         </div>
       </article>
 
-      <article class="card">
-        <div class="card-media media-uvp" role="img" aria-label="UN Volunteers Platform — enterprise case study">
-          <div class="uvp-inner">
-            <span class="uvp-mono">UVP</span>
-            <span class="uvp-line">Enterprise .NET microservices on Azure</span>
-            <span class="uvp-sub">Global-scale platform · United Nations Volunteers programme</span>
-          </div>
-          <span class="badge">▸ Case Study — Employer Work</span>
+      <article class="work offset">
+        <div class="imgbox">
+          <img src="assets/chefchaouen.jpg" alt="Ouiboo — travel marketplace for Morocco" width="960" height="540" loading="lazy" decoding="async">
+          <div class="tags"><i>Next.js</i><i>NestJS</i></div>
         </div>
-        <div class="card-body">
-          <h3>UN Volunteers Platform <a class="ext" href="#nttdata" aria-label="Read the UN Volunteers Platform case study"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a></h3>
-          <p>Enterprise .NET microservices on Azure for the UN’s global volunteering platform. I worked on key features, performance and stability.</p>
-          <div class="card-foot">
-            <span class="tags"><span>.NET</span><span>Azure</span><span>CQRS</span><span>SQL</span></span>
-            <span class="card-links"><a href="#nttdata">Case study</a></span>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-media">
-          <img src="assets/chefchaouen.jpg" alt="Chefchaouen, Morocco — the blue city" width="960" height="540" loading="lazy">
-          <span class="badge">◎ Founder Project</span>
-        </div>
-        <div class="card-body">
-          <h3>Ouiboo <a class="ext" href="https://github.com/husseinbouik/ouiboo" target="_blank" rel="noopener" aria-label="Open the Ouiboo repository"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a></h3>
-          <p>A travel marketplace for Morocco. I’m building it as founder/developer. Pre-launch, with a focus on scalable and reusable architecture.</p>
-          <div class="card-foot">
-            <span class="tags"><span>Next.js</span><span>NestJS</span><span>PostgreSQL</span></span>
-            <span class="card-links"><a href="https://github.com/husseinbouik/ouiboo" target="_blank" rel="noopener">Code</a></span>
-          </div>
+        <h3>Ouiboo <a class="go" href="https://github.com/husseinbouik/ouiboo" target="_blank" rel="noopener" aria-label="Open the Ouiboo repository">↗</a></h3>
+        <p>A travel marketplace for Morocco. I’m building it as founder/developer. Pre-launch, with a focus on scalable and reusable architecture.</p>
+        <div class="meta">
+          <span class="chipset">◎ Founder Project</span><span class="chipset">PostgreSQL</span>
+          <span class="links"><a href="https://github.com/husseinbouik/ouiboo" target="_blank" rel="noopener">Code <span>↗</span></a></span>
         </div>
       </article>
     </div>
-  </section>
 
-  <!-- ============ NTT DATA PANEL ============ -->
-  <section class="wrap section" id="nttdata">
-    <div class="panel ntt">
-      <div class="ntt-left">
-        <p class="ntt-logo">NTT DATA</p>
-        <h2>Work at NTT DATA</h2>
-        <p class="ntt-sub">Building the UN Volunteers Platform (UVP)</p>
-        <p class="ntt-text">I contribute to the development and improvement of the UVP (DoA &amp; BackOffice), working across backend, frontend, and SQL, with Azure, Hangfire, Redis and AppInsights.</p>
-        <a class="btn" href="#experience">Read detailed case study
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
+    <article class="uvp">
+      <div class="big">
+        <div class="u">UV<em>P</em></div>
+        <div class="sub">ENTERPRISE .NET MICROSERVICES ON AZURE<br>GLOBAL-SCALE PLATFORM</div>
       </div>
-      <div class="ntt-right">
-        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Selected impact</h3>
-        <ul class="impact">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> <span>Cut the recruiter export from <b>2+ hours (~400 records)</b> to <b>under 30 minutes</b>.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> <span>Added “Resend” history with flattening, filters, sorting and pagination.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> <span>Fixed key defects (funding type filter, progress tracker, B2C labels).</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> <span>Improved stability (telemetry crash, session handling) and permissions.</span></li>
-        </ul>
+      <div class="info">
+        <span class="tagline">▸ Case Study — Employer Work</span>
+        <h3>UN Volunteers Platform</h3>
+        <p>Enterprise .NET microservices on Azure for the UN’s global volunteering platform. I worked on key features, performance and stability.</p>
+        <div class="meta"><span class="chipset">.NET</span><span class="chipset">Azure</span><span class="chipset">CQRS</span><span class="chipset">SQL</span><span class="chipset">Case Study</span></div>
       </div>
+    </article>
+
+    <div class="more" id="more-projects">
+      <h3>More Projects</h3>
+      <div class="row"><div class="nm">Article Models</div><div class="ds">Parametric door &amp; panel configurator — 13 model families generated procedurally, with CSG-cut handle openings.</div><div><a class="lk" href="https://husseinbouik.github.io/articles-models/" target="_blank" rel="noopener">Live Demo <span>↗</span></a><a class="lk" href="https://github.com/husseinbouik/articles-models" target="_blank" rel="noopener">Code <span>↗</span></a></div></div>
+      <div class="row"><div class="nm">Article Designer</div><div class="ds">Full-stack 3D article configurator with zones, divisions and articles — co-built with Mohamed Alfakir.</div><div><a class="lk" href="https://husseinbouik.github.io/Imoslogicdesigner/" target="_blank" rel="noopener">Live Demo <span>↗</span></a><a class="lk" href="https://github.com/husseinbouik/Imoslogicdesigner" target="_blank" rel="noopener">Code <span>↗</span></a></div></div>
+      <div class="row"><div class="nm">QATRA</div><div class="ds">Water-saving app for households — 1st place at SoliHackathon 2024, with Team Coding Commanders.</div><div class="note">★ Hackathon Winner</div></div>
+      <div class="row"><div class="nm">NotfallCode</div><div class="ds">Emergency-information QR platform — live in production.</div><div><a class="lk" href="https://notfallcode.de" target="_blank" rel="noopener">Visit Site <span>↗</span></a></div></div>
+      <div class="row"><div class="nm">Spring / React CRUD</div><div class="ds">Full-stack CRUD application — Spring Boot back end, React front end.</div><div><a class="lk" href="https://github.com/husseinbouik/crud-app-spring-react" target="_blank" rel="noopener">Code <span>↗</span></a></div></div>
+      <div class="row"><div class="nm">3D Office Table</div><div class="ds">Early 3D prototype of a configurable office table — where the configurator work began.</div><div><a class="lk" href="https://github.com/husseinbouik/v0-3-d-office-table" target="_blank" rel="noopener">Code <span>↗</span></a></div></div>
+      <div class="row"><div class="nm">Linear-Zone-Divider</div><div class="ds">The standalone TypeScript engine behind Zoning Studio, with its own test suite.</div><div><a class="lk" href="https://github.com/husseinbouik/linear-zone-divider" target="_blank" rel="noopener">Code <span>↗</span></a></div></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ============ SKILLS ============ -->
-  <section class="wrap section" id="skills">
-    <div class="section-head">
+<!-- ================= IMPACT (dark) ================= -->
+<section class="dark">
+  <div class="wrap">
+    <div class="impact-head">
+      <div class="label">NTT Data — Selected Impact</div>
+      <h2>Work at <span class="gd">NTT Data</span></h2>
+      <div class="impact-sub">Building the UN Volunteers Platform (UVP)</div>
+      <p>I contribute to the development and improvement of the UVP (DoA &amp; BackOffice), working across backend, frontend, and SQL, with Azure, Hangfire, Redis and AppInsights.</p>
+    </div>
+    <div class="impact-rows">
+      <div class="irow"><div class="n">/ 01</div><div class="t">Cut the recruiter export from <b>2+ hours (~400 records)</b> to <span class="hl">under 30 minutes</span>.</div></div>
+      <div class="irow"><div class="n">/ 02</div><div class="t">Added <b>“Resend” history</b> with flattening, filters, sorting and pagination.</div></div>
+      <div class="irow"><div class="n">/ 03</div><div class="t">Fixed <b>key defects</b> — funding type filter, progress tracker, B2C labels.</div></div>
+      <div class="irow"><div class="n">/ 04</div><div class="t">Improved <b>stability</b> (telemetry crash, session handling) and <b>permissions</b>.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS (light) ================= -->
+<section class="light">
+  <div class="wrap">
+    <div class="sec-head">
       <div>
-        <h2>Skills &amp; Tools</h2>
-        <p>Technologies I use to build, deploy and scale reliable products.</p>
+        <div class="label" style="color:var(--ink)">What I Work With</div>
+        <h2>Skills <span class="gl">&amp; Tools</span></h2>
       </div>
+      <div class="side">Technologies I use to build, deploy and scale reliable products.</div>
+    </div>
+    <div class="pills">
+      <span class="pill"><i></i>.NET</span><span class="pill"><i></i>Azure</span><span class="pill"><i></i>React</span><span class="pill"><i></i>TypeScript</span><span class="pill"><i></i>SQL</span><span class="pill"><i></i>Redis</span><span class="pill"><i></i>Docker</span>
     </div>
     <div class="skill-grid">
-      <div class="panel skill">
-        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg> Backend &amp; Architecture</h3>
-        <p>.NET · C# · CQRS · Microservices</p>
-        <p>API Design · Clean Code</p>
-      </div>
-      <div class="panel skill">
-        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Frontend &amp; 3D</h3>
-        <p>React · TypeScript · R3F</p>
-        <p>3D Configurators · UI/UX</p>
-      </div>
-      <div class="panel skill">
-        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg> Cloud &amp; DevOps</h3>
-        <p>Azure · CI/CD · Docker · Redis</p>
-        <p>Hangfire · AppInsights</p>
-      </div>
-      <div class="panel skill">
-        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Tools &amp; Practices</h3>
-        <p>Git · SQL · Testing · Code Quality</p>
-        <p>Agile · Problem Solving</p>
-      </div>
+      <div class="skill"><h4>Backend &amp; Architecture</h4><p>.NET · C# · CQRS · Microservices<br>API Design · Clean Code</p></div>
+      <div class="skill"><h4>Frontend &amp; 3D</h4><p>React · TypeScript · R3F<br>3D Configurators · UI/UX</p></div>
+      <div class="skill"><h4>Cloud &amp; DevOps</h4><p>Azure · CI/CD · Docker · Redis<br>Hangfire · AppInsights</p></div>
+      <div class="skill"><h4>Tools &amp; Practices</h4><p>Git · SQL · Testing · Code Quality<br>Agile · Problem Solving</p></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ============ EXPERIENCE ============ -->
-  <section class="wrap section" id="experience">
-    <div class="section-head">
+<!-- ================= EXPERIENCE (dark, process style) ================= -->
+<section class="dark" id="experience">
+  <div class="wrap">
+    <div class="ghost-title"><div class="l1">My Working</div><div class="l2">Experience</div></div>
+    <div class="process">
+      <div class="step"><div class="n">01</div><div class="yr">2022</div><h4>Solicode</h4><p>Foundations · PHP — where the journey started.</p></div>
+      <div class="step"><div class="n">02</div><div class="yr">2024</div><h4>WINS</h4><p>Full-stack .NET development.</p></div>
+      <div class="step"><div class="n">03</div><div class="yr">2025</div><h4>Tecnibo</h4><p>3D Configurators — advanced Three.js product configurators.</p></div>
+      <div class="step"><div class="n">04</div><div class="yr">Now</div><h4>NTT Data</h4><p>UN Volunteers Platform — enterprise .NET microservices on Azure.</p></div>
+    </div>
+  </div>
+  <div class="achieve">
+    <div class="wrap">
+      <div class="ach"><div class="k">Performance</div><div class="v">&lt; 30 min export (from 2h+)</div></div>
+      <div class="ach"><div class="k">Mentoring</div><div class="v">Supported new joiners</div></div>
+      <div class="ach"><div class="k">Reliability</div><div class="v">Fixed critical production issues</div></div>
+      <div class="ach"><div class="k">Recognition</div><div class="v">1st place — SoliHackathon ’24</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT (light) ================= -->
+<section class="light" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="ph"><img src="assets/portrait.jpg" alt="Portrait of Hussein Bouik in Tangier" width="270" height="480" loading="lazy" decoding="async"></div>
       <div>
-        <h2>Experience</h2>
-        <p>My professional journey so far.</p>
+        <div class="label" style="color:var(--ink)">About Me</div>
+        <h2>Engineer,<br>Builder, <span class="gl">Founder</span></h2>
+        <p>I’m a software engineer based in Tangier with 3+ years of experience across enterprise platforms and 3D product configurators. At NTT DATA I build .NET microservices and React front ends for the UN Volunteers Platform; before that, I built advanced Three.js configurators for made-to-measure wood products at Tecnibo and full-stack .NET software at WINS. In parallel I’m founding Ouiboo, a travel marketplace for Morocco, and I integrate AI services into products where they genuinely help. My focus: clean architecture, measurable impact, and interfaces people enjoy using.</p>
+        <div class="about-facts">
+          <span class="chipset">Tangier, Morocco</span><span class="chipset">Arabic · English · French · German B1</span><span class="chipset">Open to Relocation</span>
+        </div>
       </div>
     </div>
-    <ol class="timeline">
-      <li>
-        <span class="t-year">2022</span>
-        <span class="t-dot"></span>
-        <h3>Solicode</h3>
-        <p>Foundations · PHP</p>
-      </li>
-      <li>
-        <span class="t-year">2024</span>
-        <span class="t-dot"></span>
-        <h3>WINS</h3>
-        <p>Full-stack .NET</p>
-      </li>
-      <li>
-        <span class="t-year">2025</span>
-        <span class="t-dot"></span>
-        <h3>Tecnibo</h3>
-        <p>3D Configurators</p>
-      </li>
-      <li class="now">
-        <span class="t-year">Now</span>
-        <span class="t-dot"></span>
-        <h3>NTT DATA</h3>
-        <p>UN Volunteers Platform</p>
-      </li>
-    </ol>
-  </section>
+  </div>
+</section>
 
-  <!-- ============ ACHIEVEMENTS ============ -->
-  <section class="wrap section" id="achievements">
-    <div class="section-head">
-      <div><h2>Key Achievements</h2></div>
+<!-- ================= CTA + FOOTER ================= -->
+<div class="cta" id="contact">
+  <div class="wrap">
+    <h2>Let’s build something <span class="o">impactful</span> together <a href="mailto:husseinbouik5@gmail.com" aria-label="Email Hussein Bouik"><span class="badge2">Get in<br>Touch ↗</span></a></h2>
+    <p>Open to opportunities in .NET, cloud, and product engineering.</p>
+    <div class="cta-btns">
+      <a class="btn btn-solid" href="mailto:husseinbouik5@gmail.com">Get in Touch</a>
+      <a class="btn btn-line-ink" href="https://www.linkedin.com/in/hussein-bouik/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-line-ink" href="https://github.com/husseinbouik" target="_blank" rel="noopener">GitHub</a>
     </div>
-    <div class="ach-grid">
-      <div class="ach">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-        <div><h3>Performance</h3><p>&lt; 30 min export (from 2h+)</p></div>
-      </div>
-      <div class="ach">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        <div><h3>Mentoring</h3><p>Supported new joiners</p></div>
-      </div>
-      <div class="ach">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <div><h3>Reliability</h3><p>Fixed critical production issues</p></div>
-      </div>
-      <div class="ach">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-        <div><h3>Recognition</h3><p>1st place — SoliHackathon ’24</p></div>
-      </div>
-    </div>
-  </section>
+  </div>
+</div>
+<footer>
+  <div class="wrap">
+    <a class="logo" href="https://husseinbouik.github.io/">B<span>o</span>uik</a>
+    <div class="copy">© 2026 Hussein Bouik · Tangier, Morocco</div>
+    <div class="fl"><a href="https://github.com/husseinbouik" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/hussein-bouik/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:husseinbouik5@gmail.com">Email</a></div>
+  </div>
+</footer>
 
-  <!-- ============ MORE PROJECTS ============ -->
-  <section class="wrap section" id="more-projects">
-    <div class="section-head">
-      <div>
-        <h2>More Projects</h2>
-        <p>Everything else I’ve built and learned from, in one list.</p>
-      </div>
-    </div>
-    <ul class="more-list">
-      <li>
-        <div><h3>Article Models</h3><p>Parametric door &amp; panel configurator — 13 model families generated procedurally, with CSG-cut handle openings.</p></div>
-        <span class="more-links"><a href="https://husseinbouik.github.io/articles-models/" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/husseinbouik/articles-models" target="_blank" rel="noopener">Code ↗</a></span>
-      </li>
-      <li>
-        <div><h3>Article Designer</h3><p>Full-stack 3D article configurator with zones, divisions and articles — co-built with Mohamed Alfakir.</p></div>
-        <span class="more-links"><a href="https://husseinbouik.github.io/Imoslogicdesigner/" target="_blank" rel="noopener">Live demo ↗</a><a href="https://github.com/husseinbouik/Imoslogicdesigner" target="_blank" rel="noopener">Code ↗</a></span>
-      </li>
-      <li>
-        <div><h3>QATRA</h3><p>Water-saving app for households — 1st place at SoliHackathon 2024, with Team Coding Commanders.</p></div>
-        <span class="more-links"><span class="no-link">Hackathon winner</span></span>
-      </li>
-      <li>
-        <div><h3>NotfallCode</h3><p>Emergency-information QR platform — live in production.</p></div>
-        <span class="more-links"><a href="https://notfallcode.de" target="_blank" rel="noopener">Visit site ↗</a></span>
-      </li>
-      <li>
-        <div><h3>Spring / React CRUD</h3><p>Full-stack CRUD application — Spring Boot back end, React front end.</p></div>
-        <span class="more-links"><a href="https://github.com/husseinbouik/crud-app-spring-react" target="_blank" rel="noopener">Code ↗</a></span>
-      </li>
-      <li>
-        <div><h3>3D Office Table</h3><p>Early 3D prototype of a configurable office table — where the configurator work began.</p></div>
-        <span class="more-links"><a href="https://github.com/husseinbouik/v0-3-d-office-table" target="_blank" rel="noopener">Code ↗</a></span>
-      </li>
-      <li>
-        <div><h3>linear-zone-divider</h3><p>The standalone TypeScript engine behind Zoning Studio, with its own test suite.</p></div>
-        <span class="more-links"><a href="https://github.com/husseinbouik/linear-zone-divider" target="_blank" rel="noopener">Code ↗</a></span>
-      </li>
-    </ul>
-  </section>
+<script>
+/* Click-to-load live demo embed (Zoning Studio). Nothing is fetched
+   until the Play button is clicked; Close fully unloads the iframe. */
+(function () {
+  var DEMO_URL = "https://husseinbouik.github.io/zoning-studio/";
+  var stages = document.querySelectorAll("[data-demo-stage]");
+  Array.prototype.forEach.call(stages, function (stage) {
+    var playBtn = stage.querySelector("[data-demo-play]");
+    if (!playBtn) return;
+    var iframe = null;
+    var closeBtn = null;
 
-  <!-- ============ ABOUT ============ -->
-  <section class="wrap section" id="about">
-    <div class="section-head">
-      <div><h2>About</h2></div>
-    </div>
-    <div class="panel about">
-      <img src="assets/portrait.jpg" alt="Portrait of Hussein Bouik in Tangier" width="270" height="480" loading="lazy">
-      <p>I’m a software engineer based in Tangier with 3+ years of experience across enterprise platforms and 3D product configurators. At NTT DATA I build .NET microservices and React front ends for the UN Volunteers Platform; before that, I built advanced Three.js configurators for made-to-measure wood products at Tecnibo and full-stack .NET software at WINS. In parallel I’m founding Ouiboo, a travel marketplace for Morocco, and I integrate AI services into products where they genuinely help. My focus: clean architecture, measurable impact, and interfaces people enjoy using.</p>
-    </div>
-  </section>
+    function activate() {
+      if (iframe) return;
+      iframe = document.createElement("iframe");
+      iframe.src = DEMO_URL;
+      iframe.title = "Zoning Studio — interactive 3D partition configurator (live demo)";
+      iframe.setAttribute("allow", "fullscreen");
+      iframe.allowFullscreen = true;
+      iframe.addEventListener("load", function () {
+        stage.classList.remove("is-loading");
+      });
+      closeBtn = document.createElement("button");
+      closeBtn.type = "button";
+      closeBtn.className = "demo-close";
+      closeBtn.textContent = "✕ Close demo";
+      closeBtn.setAttribute("aria-label", "Close the live demo and restore the preview image");
+      closeBtn.addEventListener("click", deactivate);
+      stage.classList.add("is-live", "is-loading");
+      stage.appendChild(iframe);
+      stage.appendChild(closeBtn);
+      playBtn.hidden = true;
+      closeBtn.focus();
+    }
 
-  <!-- ============ CTA / CONTACT ============ -->
-  <section class="wrap section" id="contact">
-    <div class="cta">
-      <div>
-        <h2>Let’s build something impactful together.</h2>
-        <p>Open to opportunities in .NET, cloud, and product engineering.</p>
-      </div>
-      <div class="cta-btns">
-        <a class="btn" href="mailto:husseinbouik5@gmail.com">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Get in touch
-        </a>
-        <a class="btn btn-outline" href="https://www.linkedin.com/in/hussein-bouik/" target="_blank" rel="noopener">
-          <img src="assets/icons/linkedin.svg" alt="" width="16" height="16"> LinkedIn
-        </a>
-      </div>
-    </div>
-    <footer class="site-footer">
-      <span>© 2026 Hussein Bouik · Tangier, Morocco</span>
-      <span class="foot-links">
-        <a href="https://github.com/husseinbouik" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/hussein-bouik/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:husseinbouik5@gmail.com">Email</a>
-      </span>
-    </footer>
-  </section>
+    function deactivate() {
+      if (iframe) { iframe.remove(); iframe = null; }
+      if (closeBtn) { closeBtn.remove(); closeBtn = null; }
+      stage.classList.remove("is-live", "is-loading");
+      playBtn.hidden = false;
+      playBtn.focus();
+    }
 
-</main>
+    playBtn.addEventListener("click", activate);
+  });
+})();
+</script>
 
-<script src="script.js"></script>
 </body>
 </html>
