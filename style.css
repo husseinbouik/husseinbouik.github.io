@@ -127,6 +127,13 @@ section{padding:110px 0;}
 .more .lk + .lk{margin-left:14px;}
 .more .note{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);white-space:nowrap;}
 
+/* ---------- EDUCATION & CERTIFICATIONS (hairline rows) ---------- */
+.edu .erow{display:grid;grid-template-columns:1.25fr 1fr auto;gap:26px;align-items:baseline;padding:21px 0;border-bottom:1px solid var(--line-l);}
+.edu .erow:first-child{border-top:1px solid var(--line-l);}
+.edu .cred{font-family:var(--disp);text-transform:uppercase;font-size:19.5px;line-height:1.3;}
+.edu .inst{color:var(--mut-dk);font-size:14.5px;line-height:1.55;}
+.edu .yrs{font-family:var(--mono);font-size:13.5px;color:var(--accent);white-space:nowrap;}
+
 /* ---------- IMPACT (dark) ---------- */
 .dark{background:var(--ink);color:#fff;}
 .impact-head h2{font-family:var(--disp);text-transform:uppercase;font-size:clamp(40px,4.8vw,70px);line-height:1.2;margin-top:22px;}
@@ -239,6 +246,7 @@ footer .fl{display:flex;gap:26px;font-size:12.5px;font-weight:600;letter-spacing
   .uvp .big .u{font-size:76px;}
   .uvp .info{padding:38px 28px;}
   .more .row{grid-template-columns:1fr;gap:7px;padding:18px 0;}
+  .edu .erow{grid-template-columns:1fr;gap:6px;padding:18px 0;}
   .skill-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;}
   .skill{min-width:0;}
   .skill h4{font-size:17px;overflow-wrap:break-word;}
