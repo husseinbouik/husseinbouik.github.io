@@ -18,7 +18,7 @@
 <meta name="twitter:description" content="Enterprise .NET & Azure at NTT DATA (UN Volunteers Platform) · Interactive 3D configurators. Tangier, Morocco — open to new opportunities.">
 <meta name="twitter:image" content="https://husseinbouik.github.io/og-image.jpg">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="stylesheet" href="style.css?v=9">
+<link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -64,7 +64,7 @@
       <div class="stat"><div class="v">3<em>+</em> Years</div><div class="k">Professional Experience</div></div>
       <div class="stat"><div class="v">Enterprise <em>.NET</em></div><div class="k">Microservices &amp; Azure</div></div>
       <div class="stat"><div class="v">3D <em>&amp;</em> Configurators</div><div class="k">Own Linear-Division Engine</div></div>
-      <div class="stat"><div class="v">1<em>st</em> Place</div><div class="k">SoliHackathon ’24</div></div>
+      <div class="stat"><div class="v">2h+ <em>→</em> &lt;30 min</div><div class="k">Recruiter Export · ~400 Records</div></div>
     </div>
   </div>
 </header>
@@ -102,7 +102,7 @@
           <button type="button" class="demo-play" data-demo-play aria-label="Play The Library live demo right here">▶ Play the live demo</button>
         </div>
         <h3>The Library <a class="go" href="https://husseinbouik.github.io/library-studio/" target="_blank" rel="noopener" aria-label="Open The Library live demo">↗</a></h3>
-        <p>Real-time 3D bookcase configurator — classical shelf editing plus one-tap linear division, powered by my linear-zone-divider engine.</p>
+        <p>Same engine, second product — a real-time 3D bookcase configurator powered by the same linear-division engine as Zoning Studio, with classical shelf editing plus one-tap linear division.</p>
         <div class="meta">
           <span class="chipset">▶ Playable Demo — Live</span>
           <span class="links"><a href="https://husseinbouik.github.io/library-studio/" target="_blank" rel="noopener">Live Demo <span>↗</span></a><a href="https://github.com/husseinbouik/library-studio" target="_blank" rel="noopener">Code <span>↗</span></a></span>
@@ -117,10 +117,27 @@
         <div class="sub">ENTERPRISE .NET MICROSERVICES ON AZURE<br>GLOBAL-SCALE PLATFORM</div>
       </div>
       <div class="info">
-        <span class="tagline">▸ Case Study — Employer Work</span>
-        <h3>UN Volunteers Platform</h3>
-        <p>Enterprise .NET microservices on Azure for the UN’s global volunteering platform. I worked on key features, performance and stability.</p>
-        <div class="meta"><span class="chipset">.NET</span><span class="chipset">Azure</span><span class="chipset">CQRS</span><span class="chipset">SQL</span><span class="chipset">Case Study</span></div>
+        <span class="tagline">▸ Case Study — Employer Work · NTT Data</span>
+        <h3>Recruiter export: 2+ hours → under 30 minutes</h3>
+        <p><b>UN Volunteers Platform (UVP)</b> — enterprise .NET microservices on Azure for the UN’s global volunteering platform. As a software engineer at NTT DATA, I develop and improve the UVP (DoA &amp; BackOffice), working across backend, frontend, and SQL.</p>
+        <div class="meta"><span class="chipset">.NET</span><span class="chipset">Azure</span><span class="chipset">CQRS</span><span class="chipset">SQL</span><span class="chipset">Hangfire</span><span class="chipset">Redis</span><span class="chipset">AppInsights</span></div>
+        <ul class="uitems">
+          <li>Cut the recruiter export from <b>2+ hours (~400 records)</b> to <b>under 30 minutes</b>.</li>
+          <li>Added <b>“Resend” history</b> with flattening, filters, sorting and pagination.</li>
+          <li>Fixed <b>key defects</b> — funding type filter, progress tracker, B2C labels.</li>
+          <li>Improved <b>stability</b> (telemetry crash, session handling) and <b>permissions</b>.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="engine">
+      <span class="tagline">▸ Under the Hood — The Engine</span>
+      <h3>Linear-Zone-Divider</h3>
+      <div class="egrid">
+        <div class="eitem"><div class="ek">Pipeline</div><p>A Scanner tokenises the division formula → a Parser builds an AST of sections and expressions → an Evaluator resolves each section to an absolute mm value or a ratio weight → a Calculator subtracts divider thickness and absolute sections from the total length, then distributes the remainder across the ratio sections.</p></div>
+        <div class="eitem"><div class="ek">The Invariant</div><p>The engine returns clear openings, so sum(zones) + (zones − 1) × thickness = total length — exactly, on every run.</p></div>
+        <div class="eitem"><div class="ek">What Is Verified</div><p>The Scanner suite passes completely, and the demos ship only the formula features the current engine computes correctly — ratios and absolute mm sections, nested per column. Every preset in the apps was verified against the engine.</p></div>
+        <div class="eitem"><div class="ek">What Is Not — Yet</div><p>The library is a work-in-progress refactor: 48 of 70 upstream engine tests currently fail (repetition groups, spreads and binary-expression sections, edge-reference ordering). The demos ship a verified subset; the full suite is in active refactor, with the complete status disclosed in the repo.</p></div>
       </div>
     </article>
 
@@ -135,7 +152,7 @@
       <div class="row"><div class="nm">Desert Rose</div><div class="ds">WordPress e-commerce website for a perfume store — designed and built by Hussein.</div><div><a class="lk" href="https://dev-desert-rose.pantheonsite.io/" target="_blank" rel="noopener">Visit Site <span>↗</span></a></div></div>
       <div class="row"><div class="nm">3D Office Table</div><div class="ds">Early 3D prototype of a configurable office table — where the configurator work began.</div><div><a class="lk" href="https://husseinbouik.github.io/v0-3-d-office-table/" target="_blank" rel="noopener">Live Demo <span>↗</span></a><a class="lk" href="https://github.com/husseinbouik/v0-3-d-office-table" target="_blank" rel="noopener">Code <span>↗</span></a></div></div>
       <div class="row"><div class="nm">Haunted House</div><div class="ds">Three.js Journey learning project — real-time 3D scene with fog, dynamic lighting and textures.</div><div><a class="lk" href="https://husseinbouik.github.io/The-Witch-house/" target="_blank" rel="noopener">Live Demo <span>↗</span></a><a class="lk" href="https://github.com/husseinbouik/The-Witch-house" target="_blank" rel="noopener">Code <span>↗</span></a></div></div>
-      <div class="row"><div class="nm">Linear-Zone-Divider</div><div class="ds">The standalone TypeScript engine behind Zoning Studio, with its own test suite.</div><div><a class="lk" href="https://github.com/husseinbouik/linear-zone-divider" target="_blank" rel="noopener">Code <span>↗</span></a></div></div>
+      <div class="row"><div class="nm">Linear-Zone-Divider</div><div class="ds">The standalone TypeScript engine behind Zoning Studio and The Library — the demos ship a verified subset; the full suite is in active refactor, status in the repo.</div><div><a class="lk" href="https://github.com/husseinbouik/linear-zone-divider" target="_blank" rel="noopener">Code <span>↗</span></a></div></div>
     </div>
   </div>
 </section>
@@ -232,7 +249,7 @@
       <div class="astat"><div class="anum">1<span class="accst">st</span></div><div class="alab">SoliHackathon ’24</div></div>
     </div>
     <div class="about-body">
-      <h2>Engineer,<br>Builder, <span class="gl">Founder</span></h2>
+      <h2>Engineer,<br><span class="gl">Builder</span></h2>
       <p>I’m a software engineer based in Tangier with 3+ years of experience across enterprise platforms and 3D product configurators. At NTT DATA I build .NET microservices and React front ends for the UN Volunteers Platform; before that, I built advanced Three.js configurators for made-to-measure wood products at Tecnibo and full-stack .NET software at WINS. I integrate AI services into products where they genuinely help. My focus: clean architecture, measurable impact, and interfaces people enjoy using.</p>
       <div class="about-facts">
         <span class="chipset">Tangier, Morocco</span><span class="chipset">Arabic · English · French · German B1</span><span class="chipset">Open to Relocation</span>
