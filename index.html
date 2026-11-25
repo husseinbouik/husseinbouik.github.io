@@ -82,7 +82,7 @@
 
     <div class="works-grid">
       <article class="work">
-        <div class="imgbox demo-stage" data-demo-stage>
+        <div class="imgbox demo-stage" data-demo-stage data-demo-url="https://husseinbouik.github.io/zoning-studio/" data-demo-title="Zoning Studio — interactive 3D partition configurator (live demo)">
           <img src="assets/zoning-card.jpg" alt="Zoning Studio — interactive 3D partition configurator" width="900" height="540">
           <div class="tags"><i>React Three Fiber</i><i>3D Engine</i></div>
           <button type="button" class="demo-play" data-demo-play aria-label="Play the Zoning Studio live demo right here">▶ Play the live demo</button>
@@ -96,14 +96,15 @@
       </article>
 
       <article class="work offset">
-        <div class="imgbox">
+        <div class="imgbox demo-stage" data-demo-stage data-demo-url="https://husseinbouik.github.io/library-studio/?embed=1" data-demo-title="The Library — real-time 3D bookcase configurator (live demo)">
           <img src="assets/library.jpg" alt="The Library — real-time 3D bookcase configurator" width="1200" height="630">
           <div class="tags"><i>React Three Fiber</i><i>3D Configurator</i></div>
+          <button type="button" class="demo-play" data-demo-play aria-label="Play The Library live demo right here">▶ Play the live demo</button>
         </div>
         <h3>The Library <a class="go" href="https://husseinbouik.github.io/library-studio/" target="_blank" rel="noopener" aria-label="Open The Library live demo">↗</a></h3>
         <p>Real-time 3D bookcase configurator — classical shelf editing plus one-tap linear division, powered by my linear-zone-divider engine.</p>
         <div class="meta">
-          <span class="chipset">3D Configurator — Live</span>
+          <span class="chipset">▶ Playable Demo — Live</span>
           <span class="links"><a href="https://husseinbouik.github.io/library-studio/" target="_blank" rel="noopener">Live Demo <span>↗</span></a><a href="https://github.com/husseinbouik/library-studio" target="_blank" rel="noopener">Code <span>↗</span></a></span>
         </div>
       </article>
@@ -259,22 +260,25 @@
 </footer>
 
 <script>
-/* Click-to-load live demo embed (Zoning Studio). Nothing is fetched
-   until the Play button is clicked; Close fully unloads the iframe. */
+/* Click-to-load live demo embeds (Zoning Studio + The Library).
+   Nothing is fetched until a Play button is clicked; Close fully
+   unloads the iframe. Each stage carries its own data-demo-url —
+   The Library loads its scene-only embed view (?embed=1). */
 (function () {
-  var DEMO_URL = "https://husseinbouik.github.io/zoning-studio/";
   var stages = document.querySelectorAll("[data-demo-stage]");
   Array.prototype.forEach.call(stages, function (stage) {
     var playBtn = stage.querySelector("[data-demo-play]");
     if (!playBtn) return;
+    var demoUrl = stage.getAttribute("data-demo-url") || "https://husseinbouik.github.io/zoning-studio/";
+    var demoTitle = stage.getAttribute("data-demo-title") || "Live demo";
     var iframe = null;
     var closeBtn = null;
 
     function activate() {
       if (iframe) return;
       iframe = document.createElement("iframe");
-      iframe.src = DEMO_URL;
-      iframe.title = "Zoning Studio — interactive 3D partition configurator (live demo)";
+      iframe.src = demoUrl;
+      iframe.title = demoTitle;
       iframe.setAttribute("allow", "fullscreen");
       iframe.allowFullscreen = true;
       iframe.addEventListener("load", function () {
