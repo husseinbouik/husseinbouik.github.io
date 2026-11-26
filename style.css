@@ -30,7 +30,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:26px 0
 
 /* ---------- HERO ---------- */
 .hero{position:relative;overflow:hidden;padding-top:56px;}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:20px;position:relative;z-index:2;padding-bottom:112px;}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:20px;position:relative;z-index:5;padding-bottom:112px;}
 .hero h1{font-family:var(--disp);text-transform:uppercase;font-size:clamp(48px,5.7vw,84px);line-height:1.26;margin:24px 0 26px;}
 .hero h1 .w{color:#fff;} .hero h1 .g{color:var(--ghost);}
 .hero p.lede{color:var(--mut);font-size:16.5px;line-height:1.65;max-width:500px;}
@@ -508,7 +508,9 @@ body.motion-on .rv.in{opacity:1;transform:none;}
    The hero Download CV button is progressively enhanced by
    motion.js into a toggle for this popover — without JS it
    stays a plain link to the English CV. Surface, border and
-   shadow reuse the floating preview card's language (#pv). */
+   shadow reuse the floating preview card's language (#pv).
+   Stacking: the popover lives inside .hero-grid, whose z-index (5) must stay
+   above .giant (4) — the popover's own z-index only competes inside the grid. */
 .cvwrap{position:relative;display:inline-flex;}
 .cv-caret{color:var(--accent);font-size:10px;line-height:1;}
 .cvpop{position:absolute;left:0;top:calc(100% + 10px);width:252px;z-index:70;
