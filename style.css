@@ -467,3 +467,21 @@ body.motion-on .rv.in{opacity:1;transform:none;}
   .process.tl-on .step p{color:#9a9a9a;}
   .process.tl-on .step::after{background:var(--accent);box-shadow:none;}
 }
+
+/* ================= MOTION LAYER 3 — HERO (idea 01: breathe · badge ring · parallax) =================
+   Ported from the motion demo's hero. The circle's breathing and the
+   badge's pulse ring are pure CSS, defined only under
+   prefers-reduced-motion: no-preference — under reduce neither exists
+   and the hero renders exactly as the static design. The parallax is
+   driven by motion.js through the independent CSS `translate`
+   property, so it composes with — never fights — the breathing
+   `transform` animation, and the settled hero geometry is untouched
+   (the drift is 0 at the top of the page and capped inside the hero,
+   which clips it via overflow:hidden). */
+@media (prefers-reduced-motion: no-preference){
+  .hero .circle{animation:heroBreathe 7s ease-in-out infinite alternate;will-change:transform;}
+  .hero .badge::after{content:"";position:absolute;inset:0;border-radius:50%;
+    border:1px solid var(--accent);animation:heroRing 2.8s ease-out infinite;pointer-events:none;}
+}
+@keyframes heroBreathe{from{transform:scale(1) translate(0,0);}to{transform:scale(1.02) translate(-3px,3px);}}
+@keyframes heroRing{from{transform:scale(1);opacity:.7;}to{transform:scale(1.45);opacity:0;}}

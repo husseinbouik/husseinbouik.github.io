@@ -210,7 +210,18 @@
     steps = Array.prototype.slice.call(proc.querySelectorAll(".step"));
   }
 
-  /* One rAF loop drives the bar and the timeline fill together. */
+  /* ---------- Hero parallax (idea 01): circle + portrait drift at
+     different rates while the hero scrolls out. Uses the independent
+     CSS `translate` property so it composes with the circle's CSS
+     breathing (a `transform` animation) instead of fighting it.
+     Progress is clamped to the hero's own height, the drift is 0 at
+     the top of the page, and updates stop once the hero has left the
+     viewport — nothing beyond the hero is affected. ---------- */
+  var hero = document.querySelector(".hero");
+  var heroCircle = hero ? hero.querySelector(".circle") : null;
+  var heroPortrait = hero ? hero.querySelector(".portrait") : null;
+
+  /* One rAF loop drives the bar, the hero parallax and the timeline fill. */
   var ticking = false;
   function frame() {
     ticking = false;
@@ -218,6 +229,14 @@
     var doc = document.documentElement;
     var max = doc.scrollHeight - vh;
     bar.style.transform = "scaleX(" + (max > 0 ? window.scrollY / max : 0) + ")";
+    if (hero && heroCircle && heroPortrait) {
+      var hr = hero.getBoundingClientRect();
+      if (hr.bottom > 0 && hr.top < vh) {
+        var hp = Math.max(0, Math.min(1, -hr.top / hr.height));
+        heroCircle.style.translate = "0 " + (hp * 34).toFixed(1) + "px";
+        heroPortrait.style.translate = "0 " + (hp * -16).toFixed(1) + "px";
+      }
+    }
     if (proc && fill) {
       var r = proc.getBoundingClientRect();
       var p = (vh * 0.72 - r.top) / r.height;
