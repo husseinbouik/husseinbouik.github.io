@@ -18,7 +18,7 @@
 <meta name="twitter:description" content="Enterprise .NET & Azure at NTT DATA (UN Volunteers Platform) · Interactive 3D configurators. Tangier, Morocco — open to new opportunities.">
 <meta name="twitter:image" content="https://husseinbouik.github.io/og-image.jpg">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="stylesheet" href="style.css?v=19">
+<link rel="stylesheet" href="style.css?v=20">
 </head>
 <body>
 
@@ -109,20 +109,30 @@
         </div>
       </article>
 
-    </div>
+      <article class="work">
+        <div class="imgbox tl-stage">
+          <div class="tl-panel">
+            <div class="tl-wm">Tier<em>Ledger</em></div>
+            <div class="tl-doc">
+              <div class="tl-doc-head"><span>Invoice</span><span class="tl-no">INV-2026-0001</span></div>
+              <div class="tl-lines"><i></i><i></i><i class="s"></i></div>
+              <div class="tl-total"><span>Total</span><b>12,400 MAD</b></div>
+              <div class="tl-stamp">Paid</div>
+            </div>
+            <div class="tl-steps"><span>Draft</span><em>&rarr;</em><span>Submitted</span><em>&rarr;</em><span>Approved</span><em>&rarr;</em><span class="on">Paid</span></div>
+          </div>
+          <div class="tags"><i>.NET 10</i><i>Backend System</i></div>
+        </div>
+        <h3><span class="tl-name">Tier<em>Ledger</em></span> <a class="go" href="https://github.com/husseinbouik/tier-ledger" target="_blank" rel="noopener" aria-label="Open the TierLedger code repository">&#8599;</a></h3>
+        <p>My own reference system for third-parties and invoicing, built from zero on <b>.NET 10</b> clean architecture &mdash; CQRS with MediatR, EF Core behind a transactional outbox, and a payment-process saga. <b>45/45 tests pass</b>; CI green, Docker build included.</p>
+        <div class="meta">
+          <span class="chipset">.NET</span><span class="chipset">EF Core</span><span class="chipset">MediatR</span><span class="chipset">CQRS</span><span class="chipset">Saga</span><span class="chipset">Docker</span>
+          <span class="links"><a href="https://github.com/husseinbouik/tier-ledger" target="_blank" rel="noopener">Code <span>&#8599;</span></a></span>
+        </div>
+      </article>
 
-    <article class="uvp">
-      <div class="big">
-        <div class="u wm-long">Tier<em>Ledger</em></div>
-        <div class="sub">.NET REFERENCE SYSTEM<br>THIRD-PARTIES &amp; INVOICES</div>
-      </div>
-      <div class="info">
-        <span class="tagline">▸ Case Study — Own Project · .NET</span>
-        <h3>A complete invoice lifecycle, engineered properly</h3>
-        <p><b>TierLedger</b> is my own reference system for third-parties and invoicing, designed and built from zero on <b>.NET 10</b> clean architecture — CQRS with MediatR, EF Core behind a <b>transactional outbox</b>, and a payment-process <b>saga</b> driving the full invoice lifecycle: <b>Draft → Submitted → Approved → Paid</b>, with overpayment refused and per-year numbering (INV-2026-0001). <b>45/45 tests pass</b> and CI is green, Docker build included — the suite even caught a real EF Core bug (store-generated Guid tracking), documented in the README.</p>
-        <div class="meta"><span class="chipset">.NET</span><span class="chipset">EF Core</span><span class="chipset">MediatR</span><span class="chipset">CQRS</span><span class="chipset">Saga</span><span class="chipset">Docker</span><span class="links"><a href="https://github.com/husseinbouik/tier-ledger" target="_blank" rel="noopener">Code <span>↗</span></a></span></div>
-      </div>
-    </article>
+
+    </div>
 
     <article class="uvp">
       <div class="big">
