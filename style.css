@@ -471,20 +471,29 @@ body.motion-on .rv.in{opacity:1;transform:none;}
   .process.tl-on .step::after{background:var(--accent);box-shadow:none;}
 }
 
-/* ================= MOTION LAYER 3 — HERO (idea 01: breathe · badge ring · parallax) =================
-   Ported from the motion demo's hero. The circle's breathing and the
-   badge's pulse ring are pure CSS, defined only under
-   prefers-reduced-motion: no-preference — under reduce neither exists
-   and the hero renders exactly as the static design. The parallax is
-   driven by motion.js through the independent CSS `translate`
-   property, so it composes with — never fights — the breathing
-   `transform` animation, and the settled hero geometry is untouched
-   (the drift is 0 at the top of the page and capped inside the hero,
-   which clips it via overflow:hidden). */
+/* ================= MOTION LAYER 3 — HERO (idea 01: breathe · float · sheen · badge ring · parallax) =================
+   Strengthened 2026-11-26: the old single `transform` breathing read
+   as static in practice, so the circle now layers three motions on
+   three independent properties that compose without fighting — the
+   breath on the CSS `scale` property (9s), a gentle float on
+   `transform: translateY` (7s), and a soft conic-gradient light sheen
+   (the circle's ::before, masked to the disc's own falloff) rotating
+   once every 24s. The parallax stays on the independent `translate`
+   property driven by motion.js. Everything is defined only under
+   prefers-reduced-motion: no-preference — under reduce none of it
+   exists (no sheen layer at all) and the hero renders exactly as the
+   static design; the settled hero geometry is untouched and the hero
+   clips any excursion via overflow:hidden. */
 @media (prefers-reduced-motion: no-preference){
-  .hero .circle{animation:heroBreathe 8s ease-in-out infinite alternate;will-change:transform;}
+  .hero .circle{animation:heroBreathe 9s ease-in-out infinite alternate, heroFloat 7s ease-in-out infinite alternate;will-change:transform,scale;}
+  .hero .circle::before{content:"";position:absolute;inset:0;border-radius:50%;pointer-events:none;
+    background:conic-gradient(from 0deg, transparent 0deg, rgba(255,255,255,.16) 45deg, transparent 105deg, transparent 185deg, rgba(255,255,255,.07) 230deg, transparent 285deg);
+    -webkit-mask-image:radial-gradient(circle, #000 52%, transparent 71%);mask-image:radial-gradient(circle, #000 52%, transparent 71%);
+    animation:heroSheen 24s linear infinite;will-change:transform;}
   .hero .badge::after{content:"";position:absolute;inset:0;border-radius:50%;
     border:1px solid var(--accent);animation:heroRing 2.8s ease-out infinite;pointer-events:none;}
 }
-@keyframes heroBreathe{from{transform:scale(1) translate(0,0);}to{transform:scale(1.05) translate(-6px,6px);}}
+@keyframes heroBreathe{from{scale:1;}to{scale:1.04;}}
+@keyframes heroFloat{from{transform:translateY(-10px);}to{transform:translateY(10px);}}
+@keyframes heroSheen{to{transform:rotate(360deg);}}
 @keyframes heroRing{from{transform:scale(1);opacity:.7;}to{transform:scale(1.45);opacity:0;}}
