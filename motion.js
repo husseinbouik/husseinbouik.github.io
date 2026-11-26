@@ -180,3 +180,140 @@
     });
   });
 })();
+
+/* ---------- Scroll motion — progress bar · reveals · counters · timeline ----------
+   Ported from the verified motion demo (ideas 03/04/05 + the frame bar).
+   Progressive enhancement: with JS disabled — or under
+   prefers-reduced-motion — nothing here runs and the page is exactly
+   the static design (final values already in the markup, timeline
+   undimmed, no bar). All animation is transform/opacity only. */
+(function () {
+  "use strict";
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  /* ---------- Scroll-progress bar (JS-created) ---------- */
+  var bar = document.createElement("div");
+  bar.id = "pbar";
+  bar.setAttribute("aria-hidden", "true");
+  document.body.appendChild(bar);
+
+  /* ---------- Experience timeline: fill + lit steps ---------- */
+  var proc = document.querySelector(".process");
+  var fill = null;
+  var steps = [];
+  if (proc) {
+    fill = document.createElement("div");
+    fill.className = "process-fill";
+    fill.setAttribute("aria-hidden", "true");
+    proc.insertBefore(fill, proc.firstChild);
+    proc.classList.add("tl-on");
+    steps = Array.prototype.slice.call(proc.querySelectorAll(".step"));
+  }
+
+  /* One rAF loop drives the bar and the timeline fill together. */
+  var ticking = false;
+  function frame() {
+    ticking = false;
+    var vh = window.innerHeight;
+    var doc = document.documentElement;
+    var max = doc.scrollHeight - vh;
+    bar.style.transform = "scaleX(" + (max > 0 ? window.scrollY / max : 0) + ")";
+    if (proc && fill) {
+      var r = proc.getBoundingClientRect();
+      var p = (vh * 0.72 - r.top) / r.height;
+      p = Math.max(0, Math.min(1, p));
+      fill.style.transform = "scaleY(" + p + ")";
+      var fillPx = p * r.height;
+      steps.forEach(function (s) {
+        s.classList.toggle("lit", s.offsetTop + 8 <= fillPx);
+      });
+    }
+  }
+  function kick() { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }
+  window.addEventListener("scroll", kick, { passive: true });
+  window.addEventListener("resize", kick);
+  frame();
+
+  /* ---------- Scroll reveal (IntersectionObserver, staggered) ---------- */
+  var TARGETS = ".sec-head, .work, .uvp, .engine, .more h3, .more .row, " +
+    ".impact-head, .irow, .pills, .skill, .ghost-title, .step, .ach, " +
+    ".erow, .about-stats, .about-body, .cta h2, .cta p, .cta-btns";
+  var targets = Array.prototype.slice.call(document.querySelectorAll(TARGETS));
+  if (targets.length) {
+    document.body.classList.add("motion-on");
+    /* Stagger: delay grows per sibling within the same parent. */
+    var byParent = new Map();
+    targets.forEach(function (el) {
+      el.classList.add("rv");
+      var i = byParent.get(el.parentNode) || 0;
+      byParent.set(el.parentNode, i + 1);
+      el.style.setProperty("--d", Math.min(i * 0.07, 0.35).toFixed(2) + "s");
+    });
+    if (!("IntersectionObserver" in window)) {
+      targets.forEach(function (el) { el.classList.add("in"); });
+    } else {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.15 });
+      targets.forEach(function (el) { io.observe(el); });
+    }
+  }
+
+  /* ---------- Count-up numbers (run once, land on the exact value) ---------- */
+  function animateTextInt(node, dur) {
+    var orig = node.nodeValue;
+    var m = orig.match(/\d+/);
+    if (!m) return;
+    var target = parseInt(m[0], 10);
+    if (target <= 1) return; /* nothing to count — markup already final */
+    var pre = orig.slice(0, m.index);
+    var post = orig.slice(m.index + m[0].length);
+    var t0 = null;
+    function step(t) {
+      if (!t0) t0 = t;
+      var k = Math.min(1, (t - t0) / dur);
+      var e = 1 - Math.pow(1 - k, 3);
+      node.nodeValue = pre + Math.round(target * e) + post;
+      if (k < 1) requestAnimationFrame(step);
+      else node.nodeValue = orig; /* land on the exact original text */
+    }
+    requestAnimationFrame(step);
+  }
+  function animateIntsIn(el, dur) {
+    if (!el) return;
+    Array.prototype.forEach.call(el.childNodes, function (n) {
+      if (n.nodeType === 3 && /\d/.test(n.nodeValue)) animateTextInt(n, dur);
+    });
+  }
+  function runCounters(host) {
+    if (host.classList.contains("astat")) {
+      animateIntsIn(host.querySelector(".anum"), 1200);
+    } else if (host.classList.contains("stat")) {
+      var v = host.querySelector(".v");
+      animateIntsIn(v, 1200);
+      /* stat 04: the "~400 Records" metric lives in the key line */
+      if (host.querySelector(".k") && /400/.test(host.querySelector(".k").textContent)) {
+        animateIntsIn(host.querySelector(".k"), 1400);
+      }
+    }
+  }
+  var counterHosts = [];
+  document.querySelectorAll(".about-stats .astat").forEach(function (el) { counterHosts.push(el); });
+  document.querySelectorAll(".stats .stat").forEach(function (el, i) {
+    if (i === 0 || i === 3) counterHosts.push(el); /* 3+ Years · the export metric (stat 03's "3D" stays static) */
+  });
+  if (counterHosts.length) {
+    if (!("IntersectionObserver" in window)) {
+      /* markup already shows the final values — nothing to do */
+    } else {
+      var io2 = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { runCounters(e.target); io2.unobserve(e.target); }
+        });
+      }, { threshold: 0.4 });
+      counterHosts.forEach(function (el) { io2.observe(el); });
+    }
+  }
+})();
