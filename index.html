@@ -18,7 +18,7 @@
 <meta name="twitter:description" content="Enterprise .NET & Azure at NTT DATA (UN Volunteers Platform) · Interactive 3D configurators. Tangier, Morocco — open to new opportunities.">
 <meta name="twitter:image" content="https://husseinbouik.github.io/og-image.jpg">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="stylesheet" href="style.css?v=11">
+<link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 
@@ -119,17 +119,39 @@
       <div class="info">
         <span class="tagline">▸ Case Study — Employer Work · NTT Data</span>
         <h3>Recruiter export: 2+ hours → under 30 minutes</h3>
-        <p><b>UN Volunteers Platform (UVP)</b> — enterprise .NET microservices on Azure for the UN’s global volunteering platform. As a software engineer at NTT DATA, I develop and improve the UVP (DoA &amp; BackOffice), working across backend, frontend, and SQL.</p>
+        <p><b>UN Volunteers Platform (UVP)</b> — enterprise .NET microservices on Azure for the UN’s global volunteering platform. As a software engineer at NTT DATA, I build AI-integration features and core product functionality, working across backend, frontend, and SQL.</p>
+        <p>The headline result: I cut the recruiter candidate export for <b>~400 records</b> from <b>2+ hours</b> to <b>under 30 minutes</b> — one bulk AI request replaced ~400 individual per-candidate calls, background jobs complete the export once the summaries land, and a graceful fallback still delivers the file, with an email notification, if the AI service stalls.</p>
         <div class="meta"><span class="chipset">.NET</span><span class="chipset">Azure</span><span class="chipset">CQRS</span><span class="chipset">SQL</span><span class="chipset">Hangfire</span><span class="chipset">Redis</span><span class="chipset">AppInsights</span></div>
-        <ul class="uitems">
-          <li>Cut the recruiter export from <b>2+ hours (~400 records)</b> to <b>under 30 minutes</b>.</li>
-          <li><b>How:</b> replaced <b>~400 per-candidate AI calls</b> with a <b>single bulk request</b>; <b>Hangfire</b> background jobs finish the export once the summaries land — and if the AI service stalls, the Excel is still delivered, with an <b>email notification</b>.</li>
-          <li>Added <b>“Resend” history</b> with flattening, filters, sorting and pagination.</li>
-          <li>Fixed <b>key defects</b> — funding type filter, progress tracker, B2C labels.</li>
-          <li>Improved <b>stability</b> (telemetry crash, session handling) and <b>permissions</b>.</li>
-        </ul>
       </div>
     </article>
+
+    <div class="emp-grid">
+      <article class="uvp half">
+        <div class="big">
+          <div class="u">Win<em>Hub</em></div>
+          <div class="sub">BUSINESS &amp; ACCOUNTING PLATFORM<br>FULL-STACK .NET · MUDBLAZOR</div>
+        </div>
+        <div class="info">
+          <span class="tagline">▸ Case Study — Employer Work · WINS</span>
+          <h3>Bank statements: manual entry → AI import</h3>
+          <p>At <b>WINS</b> I worked full-stack on <b>WinHub</b>, a business and accounting platform. Its flagship feature is an <b>AI-powered bank-statement import</b> that replaced manual transaction data entry: Azure + LlamaIndex parse PDF statements into a 12-month view with per-month opening and closing balances, guarded by a <b>balance-continuity validation</b> layer — each month’s opening must equal the prior month’s closing — with a human review step for unclear items. I also built <b>bulk conversion of orders</b> into sales and purchase invoices.</p>
+          <div class="meta"><span class="chipset">.NET</span><span class="chipset">MudBlazor</span><span class="chipset">Azure</span><span class="chipset">LlamaIndex</span><span class="chipset">SQL</span></div>
+        </div>
+      </article>
+
+      <article class="uvp half">
+        <div class="big">
+          <div class="u">3<em>D</em></div>
+          <div class="sub">3D PRODUCT CONFIGURATOR<br>MADE-TO-MEASURE WOOD PRODUCTS</div>
+        </div>
+        <div class="info">
+          <span class="tagline">▸ Case Study — Employer Work · Tecnibo</span>
+          <h3>The tooling behind the 3D configurator</h3>
+          <p>At <b>Tecnibo</b>, a manufacturer of made-to-measure wooden articles, I built the front-end tooling for its <b>3D product configurator</b>: a <b>typed-tree structure editor</b> with drag-and-drop and search, and the <b>configurator back office</b> — configurators, items, attributes and translations — alongside performance work on the configurator itself.</p>
+          <div class="meta"><span class="chipset">React</span><span class="chipset">TypeScript</span><span class="chipset">Three.js</span></div>
+        </div>
+      </article>
+    </div>
 
     <article class="engine">
       <span class="tagline">▸ Under the Hood — The Engine</span>
@@ -166,13 +188,13 @@
       <div class="label">NTT Data — Selected Impact</div>
       <h2>Work at <span class="gd">NTT Data</span></h2>
       <div class="impact-sub">Building the UN Volunteers Platform (UVP)</div>
-      <p>I contribute to the development and improvement of the UVP (DoA &amp; BackOffice), working across backend, frontend, and SQL, with Azure, Hangfire, Redis and AppInsights.</p>
+      <p>I contribute to the development and improvement of the UVP, working across backend, frontend, and SQL, with Azure, Hangfire, Redis and AppInsights.</p>
     </div>
     <div class="impact-rows">
       <div class="irow"><div class="n">/ 01</div><div class="t">Cut the recruiter export from <b>2+ hours (~400 records)</b> to <span class="hl">under 30 minutes</span>.</div></div>
-      <div class="irow"><div class="n">/ 02</div><div class="t">Added <b>“Resend” history</b> with flattening, filters, sorting and pagination.</div></div>
-      <div class="irow"><div class="n">/ 03</div><div class="t">Fixed <b>key defects</b> — funding type filter, progress tracker, B2C labels.</div></div>
-      <div class="irow"><div class="n">/ 04</div><div class="t">Improved <b>stability</b> (telemetry crash, session handling) and <b>permissions</b>.</div></div>
+      <div class="irow"><div class="n">/ 02</div><div class="t">Develop <b>AI-integration features</b> — connecting the platform to AI services, end to end.</div></div>
+      <div class="irow"><div class="n">/ 03</div><div class="t">Mentored a <b>new teammate</b> through a complex backend, frontend and SQL task — delivered with only minor review changes.</div></div>
+      <div class="irow"><div class="n">/ 04</div><div class="t">Fixed <b>critical production issues</b> and improved platform reliability.</div></div>
     </div>
   </div>
 </section>
@@ -208,7 +230,7 @@
       <div class="step"><div class="n">02</div><div class="yr">2024</div><h4>INETTECH</h4><p>Web Development Intern — web development for international clients.</p></div>
       <div class="step"><div class="n">03</div><div class="yr">2024</div><h4>WINS</h4><p>Full-stack .NET development.</p></div>
       <div class="step"><div class="n">04</div><div class="yr">2025</div><h4>Tecnibo</h4><p>3D Configurators — advanced Three.js product configurators.</p></div>
-      <div class="step"><div class="n">05</div><div class="yr">Now</div><h4>NTT Data</h4><p>UN Volunteers Platform — enterprise .NET microservices on Azure.</p></div>
+      <div class="step"><div class="n">05</div><div class="yr">Now</div><h4>NTT Data</h4><p>Enterprise .NET/React microservices on Azure for the UN Volunteers Platform — AI-integration features; recruiter export cut from 2h+ to &lt;30 min.</p></div>
     </div>
   </div>
   <div class="achieve">

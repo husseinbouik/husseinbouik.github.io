@@ -108,6 +108,12 @@ section{padding:110px 0;}
 .uvp .uitems li{color:var(--mut);font-size:14.5px;line-height:1.55;padding-left:18px;position:relative;}
 .uvp .uitems li::before{content:'▸';position:absolute;left:0;color:var(--accent);}
 .uvp .uitems li b{color:#fff;}
+.emp-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;}
+.uvp.half{margin-top:30px;grid-template-columns:1fr;}
+.uvp.half .big{border-right:none;border-bottom:1px solid var(--line-d);padding:36px 40px 30px;}
+.uvp.half .big .u{font-size:60px;}
+.uvp.half .info{padding:30px 40px 38px;}
+.uvp.half .info h3{font-size:26px;}
 
 /* ---------- ENGINE BLOCK (light panel inside Works) ---------- */
 .engine{margin-top:34px;border:1px solid var(--line-l);background:var(--paper);padding:46px 48px;}
@@ -259,6 +265,9 @@ footer .fl{display:flex;gap:26px;font-size:12.5px;font-weight:600;letter-spacing
   .uvp .big .u{font-size:76px;}
   .uvp .info{padding:38px 28px;}
   .engine{padding:34px 24px;}
+  .emp-grid{grid-template-columns:1fr;}
+  .uvp.half .big{padding:30px 28px 24px;}
+  .uvp.half .info{padding:26px 28px 32px;}
   .engine .egrid{grid-template-columns:1fr;}
   .more .row{grid-template-columns:1fr;gap:7px;padding:18px 0;}
   .edu .erow{grid-template-columns:1fr;gap:6px;padding:18px 0;}
