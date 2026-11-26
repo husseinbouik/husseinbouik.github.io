@@ -112,6 +112,8 @@ section{padding:110px 0;}
 .uvp.half{margin-top:30px;grid-template-columns:1fr;}
 .uvp.half .big{border-right:none;border-bottom:1px solid var(--line-d);padding:36px 40px 30px;}
 .uvp.half .big .u{font-size:60px;}
+/* Longer wordmarks (Oaksome, 7 glyphs vs WinHub's 6) scale fluidly so the name never clips its half card */
+.uvp.half .big .u.wm-long{font-size:clamp(42px,5.3vw,60px);}
 .uvp.half .info{padding:30px 40px 38px;}
 .uvp.half .info h3{font-size:26px;}
 
@@ -267,6 +269,7 @@ footer .fl{display:flex;gap:26px;font-size:12.5px;font-weight:600;letter-spacing
   .engine{padding:34px 24px;}
   .emp-grid{grid-template-columns:1fr;}
   .uvp.half .big{padding:30px 28px 24px;}
+  .uvp.half .big .u.wm-long{font-size:clamp(34px,10.5vw,52px);}
   .uvp.half .info{padding:26px 28px 32px;}
   .engine .egrid{grid-template-columns:1fr;}
   .more .row{grid-template-columns:1fr;gap:7px;padding:18px 0;}
@@ -479,9 +482,9 @@ body.motion-on .rv.in{opacity:1;transform:none;}
    (the drift is 0 at the top of the page and capped inside the hero,
    which clips it via overflow:hidden). */
 @media (prefers-reduced-motion: no-preference){
-  .hero .circle{animation:heroBreathe 7s ease-in-out infinite alternate;will-change:transform;}
+  .hero .circle{animation:heroBreathe 8s ease-in-out infinite alternate;will-change:transform;}
   .hero .badge::after{content:"";position:absolute;inset:0;border-radius:50%;
     border:1px solid var(--accent);animation:heroRing 2.8s ease-out infinite;pointer-events:none;}
 }
-@keyframes heroBreathe{from{transform:scale(1) translate(0,0);}to{transform:scale(1.02) translate(-3px,3px);}}
+@keyframes heroBreathe{from{transform:scale(1) translate(0,0);}to{transform:scale(1.05) translate(-6px,6px);}}
 @keyframes heroRing{from{transform:scale(1);opacity:.7;}to{transform:scale(1.45);opacity:0;}}
