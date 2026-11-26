@@ -503,3 +503,28 @@ body.motion-on .rv.in{opacity:1;transform:none;}
 @keyframes heroFloat{from{transform:translateY(-10px);}to{transform:translateY(10px);}}
 @keyframes heroSheen{to{transform:rotate(360deg);}}
 @keyframes heroRing{from{transform:scale(1);opacity:.7;}to{transform:scale(1.45);opacity:0;}}
+
+/* ================= CV LANGUAGE CHOOSER =================
+   The hero Download CV button is progressively enhanced by
+   motion.js into a toggle for this popover — without JS it
+   stays a plain link to the English CV. Surface, border and
+   shadow reuse the floating preview card's language (#pv). */
+.cvwrap{position:relative;display:inline-flex;}
+.cv-caret{color:var(--accent);font-size:10px;line-height:1;}
+.cvpop{position:absolute;left:0;top:calc(100% + 10px);width:252px;z-index:70;
+  background:var(--ink2);border:1px solid #4a4a4a;border-radius:16px;
+  box-shadow:0 34px 64px rgba(33,33,33,.28),0 4px 16px rgba(33,33,33,.14);
+  padding:10px;text-align:left;
+  opacity:0;visibility:hidden;transform:translateY(4px);pointer-events:none;}
+.cvpop.open{opacity:1;visibility:visible;transform:none;pointer-events:auto;}
+@media (prefers-reduced-motion: no-preference){
+  .cvpop{transition:opacity .18s ease,transform .18s ease,visibility 0s linear .18s;}
+  .cvpop.open{transition:opacity .18s ease,transform .18s ease,visibility 0s;}
+}
+.cvpop .cvh{font-size:11px;color:var(--mut);padding:4px 8px 8px;}
+.cvpop .cvrow{display:flex;align-items:center;gap:7px;padding:11px 12px;border-radius:10px;
+  color:#fff;font-size:15.5px;font-weight:600;}
+.cvpop .cvrow:hover{background:#343434;}
+.cvpop .cvrow .pdf{color:var(--mut);font-weight:500;}
+.cvpop .cvrow .dl{margin-left:auto;color:var(--accent);font-size:16px;font-weight:700;}
+.cvpop .cvdiv{height:1px;background:var(--line-d);margin:2px 6px;}

@@ -336,3 +336,63 @@
     }
   }
 })();
+
+/* CV language chooser — progressive enhancement of the hero
+   Download CV button. Without JS the button stays a plain link
+   to the English CV; with JS it becomes a toggle that opens a
+   small popover offering the French and English PDFs. */
+(function () {
+  "use strict";
+
+  var link = document.querySelector('.hero-btns a[href="Hussein_Bouik_CV.pdf"]');
+  if (!link) return;
+
+  var wrap = document.createElement("span");
+  wrap.className = "cvwrap";
+  link.parentNode.insertBefore(wrap, link);
+  wrap.appendChild(link);
+
+  var caret = document.createElement("span");
+  caret.className = "cv-caret";
+  caret.setAttribute("aria-hidden", "true");
+  caret.textContent = "▾";
+  link.appendChild(caret);
+  link.setAttribute("aria-haspopup", "true");
+  link.setAttribute("aria-expanded", "false");
+
+  var pop = document.createElement("div");
+  pop.className = "cvpop";
+  pop.innerHTML =
+    '<div class="label cvh">CV — Choose Language</div>' +
+    '<a class="cvrow" href="Hussein_Bouik_CV_FR.pdf">Français <span class="pdf">— PDF</span><span class="dl" aria-hidden="true">↓</span></a>' +
+    '<div class="cvdiv"></div>' +
+    '<a class="cvrow" href="Hussein_Bouik_CV.pdf">English <span class="pdf">— PDF</span><span class="dl" aria-hidden="true">↓</span></a>';
+  wrap.appendChild(pop);
+
+  function isOpen() { return pop.classList.contains("open"); }
+  function open() {
+    pop.classList.add("open");
+    link.setAttribute("aria-expanded", "true");
+  }
+  function close() {
+    pop.classList.remove("open");
+    link.setAttribute("aria-expanded", "false");
+  }
+
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (isOpen()) close(); else open();
+  });
+  document.addEventListener("click", function (e) {
+    if (isOpen() && !wrap.contains(e.target)) close();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && isOpen()) {
+      close();
+      link.focus();
+    }
+  });
+  pop.addEventListener("click", function (e) {
+    if (e.target.closest("a")) close();
+  });
+})();
